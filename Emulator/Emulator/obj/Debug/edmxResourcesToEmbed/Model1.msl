@@ -1,0 +1,2422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище Gimnazia1ModelContainer" CdmEntityContainer="Gimnazia1Entities">
+    <EntitySetMapping Name="AccessZone">
+      <EntityTypeMapping TypeName="Gimnazia1Model.AccessZone">
+        <MappingFragment StoreEntitySet="AccessZone">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="GIndex" ColumnName="GIndex" />
+          <ScalarProperty Name="Config" ColumnName="Config" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AcessPoint">
+      <EntityTypeMapping TypeName="Gimnazia1Model.AcessPoint">
+        <MappingFragment StoreEntitySet="AcessPoint">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ComputerID" ColumnName="ComputerID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="GIndex" ColumnName="GIndex" />
+          <ScalarProperty Name="Gtype" ColumnName="Gtype" />
+          <ScalarProperty Name="InKeyID" ColumnName="InKeyID" />
+          <ScalarProperty Name="InDuration" ColumnName="InDuration" />
+          <ScalarProperty Name="InCommand" ColumnName="InCommand" />
+          <ScalarProperty Name="OutKeyID" ColumnName="OutKeyID" />
+          <ScalarProperty Name="OutDuration" ColumnName="OutDuration" />
+          <ScalarProperty Name="OutCommand" ColumnName="OutCommand" />
+          <ScalarProperty Name="InKeyID2" ColumnName="InKeyID2" />
+          <ScalarProperty Name="InDuration2" ColumnName="InDuration2" />
+          <ScalarProperty Name="InCommand2" ColumnName="InCommand2" />
+          <ScalarProperty Name="OutKeyID2" ColumnName="OutKeyID2" />
+          <ScalarProperty Name="OutDuration2" ColumnName="OutDuration2" />
+          <ScalarProperty Name="OutCommand2" ColumnName="OutCommand2" />
+          <ScalarProperty Name="Config" ColumnName="Config" />
+          <ScalarProperty Name="IndexZone1" ColumnName="IndexZone1" />
+          <ScalarProperty Name="IndexZone2" ColumnName="IndexZone2" />
+          <ScalarProperty Name="IndexZone3" ColumnName="IndexZone3" />
+          <ScalarProperty Name="IndexZone4" ColumnName="IndexZone4" />
+          <ScalarProperty Name="WorkTimeZone1" ColumnName="WorkTimeZone1" />
+          <ScalarProperty Name="WorkTimeZone2" ColumnName="WorkTimeZone2" />
+          <ScalarProperty Name="WorkTimeZone3" ColumnName="WorkTimeZone3" />
+          <ScalarProperty Name="WorkTimeZone4" ColumnName="WorkTimeZone4" />
+          <ScalarProperty Name="Mode" ColumnName="Mode" />
+          <ScalarProperty Name="WeightTerminalID" ColumnName="WeightTerminalID" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="adc">
+      <EntityTypeMapping TypeName="Gimnazia1Model.adc">
+        <MappingFragment StoreEntitySet="adc">
+          <ScalarProperty Name="TimeVal" ColumnName="TimeVal" />
+          <ScalarProperty Name="IndexZone" ColumnName="IndexZone" />
+          <ScalarProperty Name="IndexDevice" ColumnName="IndexDevice" />
+          <ScalarProperty Name="ComputerID" ColumnName="ComputerID" />
+          <ScalarProperty Name="LogID" ColumnName="LogID" />
+          <ScalarProperty Name="ADC1" ColumnName="ADC" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="TypeADC" ColumnName="TypeADC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ApplicationModifData">
+      <EntityTypeMapping TypeName="Gimnazia1Model.ApplicationModifData">
+        <MappingFragment StoreEntitySet="ApplicationModifData">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_Parent" ColumnName="ID_Parent" />
+          <ScalarProperty Name="Caption" ColumnName="Caption" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Authorities">
+      <EntityTypeMapping TypeName="Gimnazia1Model.Authorities">
+        <MappingFragment StoreEntitySet="Authorities">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+          <ScalarProperty Name="ProgramID" ColumnName="ProgramID" />
+          <ScalarProperty Name="ProgramSubItemID" ColumnName="ProgramSubItemID" />
+          <ScalarProperty Name="aBrowse" ColumnName="aBrowse" />
+          <ScalarProperty Name="aInsert" ColumnName="aInsert" />
+          <ScalarProperty Name="aEdit" ColumnName="aEdit" />
+          <ScalarProperty Name="aDelete" ColumnName="aDelete" />
+          <ScalarProperty Name="Archive" ColumnName="Archive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BindingCommandScenarios">
+      <EntityTypeMapping TypeName="Gimnazia1Model.BindingCommandScenarios">
+        <MappingFragment StoreEntitySet="BindingCommandScenarios">
+          <ScalarProperty Name="ID_ItemsScenarios" ColumnName="ID_ItemsScenarios" />
+          <ScalarProperty Name="ID_CommandScenarios" ColumnName="ID_CommandScenarios" />
+          <ScalarProperty Name="ID_Level" ColumnName="ID_Level" />
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+          <ScalarProperty Name="Def" ColumnName="Def" />
+          <ScalarProperty Name="isNumber" ColumnName="isNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BindingConditionStepScen">
+      <EntityTypeMapping TypeName="Gimnazia1Model.BindingConditionStepScen">
+        <MappingFragment StoreEntitySet="BindingConditionStepScen">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_ScenDevice" ColumnName="ID_ScenDevice" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="ID_ConditionScen" ColumnName="ID_ConditionScen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BindingGrObjectsStepScen">
+      <EntityTypeMapping TypeName="Gimnazia1Model.BindingGrObjectsStepScen">
+        <MappingFragment StoreEntitySet="BindingGrObjectsStepScen">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_ScenDevice" ColumnName="ID_ScenDevice" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="ID_GrObject" ColumnName="ID_GrObject" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BindingItemsDevScenarios">
+      <EntityTypeMapping TypeName="Gimnazia1Model.BindingItemsDevScenarios">
+        <MappingFragment StoreEntitySet="BindingItemsDevScenarios">
+          <ScalarProperty Name="ID_ElementType" ColumnName="ID_ElementType" />
+          <ScalarProperty Name="ID_ItemsScenarios" ColumnName="ID_ItemsScenarios" />
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+          <ScalarProperty Name="ReadOnly" ColumnName="ReadOnly" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BindingItemsScenarios">
+      <EntityTypeMapping TypeName="Gimnazia1Model.BindingItemsScenarios">
+        <MappingFragment StoreEntitySet="BindingItemsScenarios">
+          <ScalarProperty Name="ID_ScenariosTypes" ColumnName="ID_ScenariosTypes" />
+          <ScalarProperty Name="ID_ItemsScenarios" ColumnName="ID_ItemsScenarios" />
+          <ScalarProperty Name="ID_Level" ColumnName="ID_Level" />
+          <ScalarProperty Name="Def" ColumnName="Def" />
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+          <ScalarProperty Name="ReadOnly" ColumnName="ReadOnly" />
+          <ScalarProperty Name="RegExp" ColumnName="RegExp" />
+          <ScalarProperty Name="SortExp" ColumnName="SortExp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BindingObjectsStepScen">
+      <EntityTypeMapping TypeName="Gimnazia1Model.BindingObjectsStepScen">
+        <MappingFragment StoreEntitySet="BindingObjectsStepScen">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_ScenDevice" ColumnName="ID_ScenDevice" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="ID_Object" ColumnName="ID_Object" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CameraMatrix">
+      <EntityTypeMapping TypeName="Gimnazia1Model.CameraMatrix">
+        <MappingFragment StoreEntitySet="CameraMatrix">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Matrix" ColumnName="Matrix" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Reserv" ColumnName="Reserv" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cameras">
+      <EntityTypeMapping TypeName="Gimnazia1Model.Cameras">
+        <MappingFragment StoreEntitySet="Cameras">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CamNumber" ColumnName="CamNumber" />
+          <ScalarProperty Name="MonNumber" ColumnName="MonNumber" />
+          <ScalarProperty Name="GType" ColumnName="GType" />
+          <ScalarProperty Name="FAlertRecord" ColumnName="FAlertRecord" />
+          <ScalarProperty Name="RecTimeAfterAlarm" ColumnName="RecTimeAfterAlarm" />
+          <ScalarProperty Name="Settings" ColumnName="Settings" />
+          <ScalarProperty Name="IPCamParams" ColumnName="IPCamParams" />
+          <ScalarProperty Name="ChangeTime" ColumnName="ChangeTime" />
+          <ScalarProperty Name="AutoTakeOff" ColumnName="AutoTakeOff" />
+          <ScalarProperty Name="GIndex" ColumnName="GIndex" />
+          <ScalarProperty Name="IPAddr" ColumnName="IPAddr" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClientFieldsNames">
+      <EntityTypeMapping TypeName="Gimnazia1Model.ClientFieldsNames">
+        <MappingFragment StoreEntitySet="ClientFieldsNames">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClientFieldsValues">
+      <EntityTypeMapping TypeName="Gimnazia1Model.ClientFieldsValues">
+        <MappingFragment StoreEntitySet="ClientFieldsValues">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="field_id" ColumnName="field_id" />
+          <ScalarProperty Name="owner" ColumnName="owner" />
+          <ScalarProperty Name="value" ColumnName="value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CodesList">
+      <EntityTypeMapping TypeName="Gimnazia1Model.CodesList">
+        <MappingFragment StoreEntitySet="CodesList">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Letter" ColumnName="Letter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ComPorts">
+      <EntityTypeMapping TypeName="Gimnazia1Model.ComPorts">
+        <MappingFragment StoreEntitySet="ComPorts">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ComputerID" ColumnName="ComputerID" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Adaptor" ColumnName="Adaptor" />
+          <ScalarProperty Name="PrAdaptor" ColumnName="PrAdaptor" />
+          <ScalarProperty Name="PortType" ColumnName="PortType" />
+          <ScalarProperty Name="AdaptorAddress" ColumnName="AdaptorAddress" />
+          <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+          <ScalarProperty Name="Protokoltype" ColumnName="Protokoltype" />
+          <ScalarProperty Name="TypeLine" ColumnName="TypeLine" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+          <ScalarProperty Name="Baud" ColumnName="Baud" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Comps">
+      <EntityTypeMapping TypeName="Gimnazia1Model.Comps">
+        <MappingFragment StoreEntitySet="Comps">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Gindex" ColumnName="Gindex" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Psevdonim" ColumnName="Psevdonim" />
+          <ScalarProperty Name="TCP_IP" ColumnName="TCP_IP" />
+          <ScalarProperty Name="Gtype" ColumnName="Gtype" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Works" ColumnName="Works" />
+          <ScalarProperty Name="TypeEvents" ColumnName="TypeEvents" />
+          <ScalarProperty Name="IpReservSrv" ColumnName="IpReservSrv" />
+          <ScalarProperty Name="AbonentNumber" ColumnName="AbonentNumber" />
+          <ScalarProperty Name="ApplicationGuid" ColumnName="ApplicationGuid" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CompTrns">
+      <EntityTypeMapping TypeName="Gimnazia1Model.CompTrns">
+        <MappingFragment StoreEntitySet="CompTrns">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SenderID" ColumnName="SenderID" />
+          <ScalarProperty Name="ReceptorID" ColumnName="ReceptorID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ConditionStepScenarios">
+      <EntityTypeMapping TypeName="Gimnazia1Model.ConditionStepScenarios">
+        <MappingFragment StoreEntitySet="ConditionStepScenarios">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LatName" ColumnName="LatName" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ControlItems">
+      <EntityTypeMapping TypeName="Gimnazia1Model.ControlItems">
+        <MappingFragment StoreEntitySet="ControlItems">
+          <ScalarProperty Name="item_type" ColumnName="item_type" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="tmvl" ColumnName="tmvl" />
+          <ScalarProperty Name="cmd" ColumnName="cmd" />
+          <ScalarProperty Name="action" ColumnName="action" />
+          <ScalarProperty Name="guid_cmd" ColumnName="guid_cmd" />
+          <ScalarProperty Name="id_owner" ColumnName="id_owner" />
+          <ScalarProperty Name="result_cmd" ColumnName="result_cmd" />
+          <ScalarProperty Name="OwnercompId" ColumnName="OwnercompId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Counters">
+      <EntityTypeMapping TypeName="Gimnazia1Model.Counters">
+        <MappingFragment StoreEntitySet="Counters">
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+          <ScalarProperty Name="FieldName" ColumnName="FieldName" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DevCamerasItems">
+      <EntityTypeMapping TypeName="Gimnazia1Model.DevCamerasItems">
+        <MappingFragment StoreEntitySet="DevCamerasItems">
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="ObjType" ColumnName="ObjType" />
+          <ScalarProperty Name="GIndex" ColumnName="GIndex" />
+          <ScalarProperty Name="CamIndex" ColumnName="CamIndex" />
+          <ScalarProperty Name="Param" ColumnName="Param" />
+          <ScalarProperty Name="IsEventRec" ColumnName="IsEventRec" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DevElms">
+      <EntityTypeMapping TypeName="Gimnazia1Model.DevElms">
+        <MappingFragment StoreEntitySet="DevElms">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DevID" ColumnName="DevID" />
+          <ScalarProperty Name="GType" ColumnName="GType" />
+          <ScalarProperty Name="UnitID" ColumnName="UnitID" />
+          <ScalarProperty Name="PhonesId" ColumnName="PhonesId" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="devicemasterslave">
+      <EntityTypeMapping TypeName="Gimnazia1Model.devicemasterslave">
+        <MappingFragment StoreEntitySet="devicemasterslave">
+          <ScalarProperty Name="mastertype" ColumnName="mastertype" />
+          <ScalarProperty Name="slavetype" ColumnName="slavetype" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DevItems">
+      <EntityTypeMapping TypeName="Gimnazia1Model.DevItems">
+        <MappingFragment StoreEntitySet="DevItems">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ComputerID" ColumnName="ComputerID" />
+          <ScalarProperty Name="DeviceID" ColumnName="DeviceID" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="GIndex" ColumnName="GIndex" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="GType" ColumnName="GType" />
+          <ScalarProperty Name="ItemType" ColumnName="ItemType" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Command" ColumnName="Command" />
+          <ScalarProperty Name="TimeOutControl" ColumnName="TimeOutControl" />
+          <ScalarProperty Name="TimeOutConfig" ColumnName="TimeOutConfig" />
+          <ScalarProperty Name="Config" ColumnName="Config" />
+          <ScalarProperty Name="Flags" ColumnName="Flags" />
+          <ScalarProperty Name="IndexForContactId" ColumnName="IndexForContactId" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="drivers">
+      <EntityTypeMapping TypeName="Gimnazia1Model.drivers">
+        <MappingFragment StoreEntitySet="drivers">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="port" ColumnName="port" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="mac" ColumnName="mac" />
+          <ScalarProperty Name="files" ColumnName="files" />
+          <ScalarProperty Name="mainfile" ColumnName="mainfile" />
+          <ScalarProperty Name="inifile" ColumnName="inifile" />
+          <ScalarProperty Name="parameters" ColumnName="parameters" />
+          <ScalarProperty Name="start_cmd" ColumnName="start_cmd" />
+          <ScalarProperty Name="stop_cmd" ColumnName="stop_cmd" />
+          <ScalarProperty Name="install_cmd" ColumnName="install_cmd" />
+          <ScalarProperty Name="uninstall_cmd" ColumnName="uninstall_cmd" />
+          <ScalarProperty Name="folder" ColumnName="folder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="drivers_comps">
+      <EntityTypeMapping TypeName="Gimnazia1Model.drivers_comps">
+        <MappingFragment StoreEntitySet="drivers_comps">
+          <ScalarProperty Name="id_computer" ColumnName="id_computer" />
+          <ScalarProperty Name="id_driver" ColumnName="id_driver" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dTypes">
+      <EntityTypeMapping TypeName="Gimnazia1Model.dTypes">
+        <MappingFragment StoreEntitySet="dTypes">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CountShl" ColumnName="CountShl" />
+          <ScalarProperty Name="CountKey" ColumnName="CountKey" />
+          <ScalarProperty Name="CountReader" ColumnName="CountReader" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Face" ColumnName="Face" />
+          <ScalarProperty Name="Icon" ColumnName="Icon" />
+          <ScalarProperty Name="ProtokolType" ColumnName="ProtokolType" />
+          <ScalarProperty Name="Interfaces" ColumnName="Interfaces" />
+          <ScalarProperty Name="WorkLib" ColumnName="WorkLib" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dTypesElement">
+      <EntityTypeMapping TypeName="Gimnazia1Model.dTypesElement">
+        <MappingFragment StoreEntitySet="dTypesElement">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DeviceType" ColumnName="DeviceType" />
+          <ScalarProperty Name="DeviceVersion" ColumnName="DeviceVersion" />
+          <ScalarProperty Name="ElementType" ColumnName="ElementType" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CountShl" ColumnName="CountShl" />
+          <ScalarProperty Name="CountKey" ColumnName="CountKey" />
+          <ScalarProperty Name="CountReader" ColumnName="CountReader" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="EventGroupID" ColumnName="EventGroupID" />
+          <ScalarProperty Name="DeviceVersionStr" ColumnName="DeviceVersionStr" />
+          <ScalarProperty Name="Property" ColumnName="Property" />
+          <ScalarProperty Name="ElementsTypesGroupId" ColumnName="ElementsTypesGroupId" />
+          <ScalarProperty Name="SortingNum" ColumnName="SortingNum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DvsMass">
+      <EntityTypeMapping TypeName="Gimnazia1Model.DvsMass">
+        <MappingFragment StoreEntitySet="DvsMass">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IconGroup" ColumnName="IconGroup" />
+          <ScalarProperty Name="GroupSort" ColumnName="GroupSort" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Left" ColumnName="Left" />
+          <ScalarProperty Name="Top" ColumnName="Top" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="LargeIcon" ColumnName="LargeIcon" />
+          <ScalarProperty Name="NumberRelation" ColumnName="NumberRelation" />
+          <ScalarProperty Name="ResourceIco" ColumnName="ResourceIco" />
+          <ScalarProperty Name="ResWidth" ColumnName="ResWidth" />
+          <ScalarProperty Name="ResHeight" ColumnName="ResHeight" />
+          <ScalarProperty Name="ResCountIco" ColumnName="ResCountIco" />
+          <ScalarProperty Name="DefaultLargeIcon" ColumnName="DefaultLargeIcon" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ElementsTypesGroups">
+      <EntityTypeMapping TypeName="Gimnazia1Model.ElementsTypesGroups">
+        <MappingFragment StoreEntitySet="ElementsTypesGroups">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EventGroup">
+      <EntityTypeMapping TypeName="Gimnazia1Model.EventGroup">
+        <MappingFragment StoreEntitySet="EventGroup">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EventGroupCont">
+      <EntityTypeMapping TypeName="Gimnazia1Model.EventGroupCont">
+        <MappingFragment StoreEntitySet="EventGroupCont">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="EventGroupID" ColumnName="EventGroupID" />
+          <ScalarProperty Name="EventID" ColumnName="EventID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EventOnModificationData">
+      <EntityTypeMapping TypeName="Gimnazia1Model.EventOnModificationData">
+        <MappingFragment StoreEntitySet="EventOnModificationData">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ChangeDate" ColumnName="ChangeDate" />
+          <ScalarProperty Name="ID_Application" ColumnName="ID_Application" />
+          <ScalarProperty Name="UpdateStatus" ColumnName="UpdateStatus" />
+          <ScalarProperty Name="AGuid" ColumnName="AGuid" />
+          <ScalarProperty Name="ID_Subj" ColumnName="ID_Subj" />
+          <ScalarProperty Name="Subj" ColumnName="Subj" />
+          <ScalarProperty Name="AData" ColumnName="AData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Events">
+      <EntityTypeMapping TypeName="Gimnazia1Model.Events">
+        <MappingFragment StoreEntitySet="Events">
+          <ScalarProperty Name="Event" ColumnName="Event" />
+          <ScalarProperty Name="CharID" ColumnName="CharID" />
+          <ScalarProperty Name="Contents" ColumnName="Contents" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="RealEvent" ColumnName="RealEvent" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="FormatView" ColumnName="FormatView" />
+          <ScalarProperty Name="SoundNumber" ColumnName="SoundNumber" />
+          <ScalarProperty Name="AlarmLevel" ColumnName="AlarmLevel" />
+          <ScalarProperty Name="GpEvent" ColumnName="GpEvent" />
+          <ScalarProperty Name="EventsCategoryID" ColumnName="EventsCategoryID" />
+          <ScalarProperty Name="IsAlarm" ColumnName="IsAlarm" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EventsCategories">
+      <EntityTypeMapping TypeName="Gimnazia1Model.EventsCategories">
+        <MappingFragment StoreEntitySet="EventsCategories">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="HexColor" ColumnName="HexColor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EvReply">
+      <EntityTypeMapping TypeName="Gimnazia1Model.EvReply">
+        <MappingFragment StoreEntitySet="EvReply">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ComputerID" ColumnName="ComputerID" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="EventType" ColumnName="EventType" />
+          <ScalarProperty Name="UnitID" ColumnName="UnitID" />
+          <ScalarProperty Name="ScriptID" ColumnName="ScriptID" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="DataType" ColumnName="DataType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GrAccess">
+      <EntityTypeMapping TypeName="Gimnazia1Model.GrAccess">
+        <MappingFragment StoreEntitySet="GrAccess">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+          <ScalarProperty Name="Mode" ColumnName="Mode" />
+          <ScalarProperty Name="AccessID" ColumnName="AccessID" />
+          <ScalarProperty Name="Config" ColumnName="Config" />
+          <ScalarProperty Name="TimeZone" ColumnName="TimeZone" />
+          <ScalarProperty Name="Antipassback" ColumnName="Antipassback" />
+          <ScalarProperty Name="PardonTime" ColumnName="PardonTime" />
+          <ScalarProperty Name="ConfirmID" ColumnName="ConfirmID" />
+          <ScalarProperty Name="ConfirmID2" ColumnName="ConfirmID2" />
+          <ScalarProperty Name="Flags" ColumnName="Flags" />
+          <ScalarProperty Name="CodeType" ColumnName="CodeType" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Config2" ColumnName="Config2" />
+          <ScalarProperty Name="PswAddCode" ColumnName="PswAddCode" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GrObjCont">
+      <EntityTypeMapping TypeName="Gimnazia1Model.GrObjCont">
+        <MappingFragment StoreEntitySet="GrObjCont">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GrObjID" ColumnName="GrObjID" />
+          <ScalarProperty Name="ObjID" ColumnName="ObjID" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GroupObj">
+      <EntityTypeMapping TypeName="Gimnazia1Model.GroupObj">
+        <MappingFragment StoreEntitySet="GroupObj">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GIndex" ColumnName="GIndex" />
+          <ScalarProperty Name="ComputerID" ColumnName="ComputerID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Config" ColumnName="Config" />
+          <ScalarProperty Name="AlarmKey" ColumnName="AlarmKey" />
+          <ScalarProperty Name="GuardKey" ColumnName="GuardKey" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Groups">
+      <EntityTypeMapping TypeName="Gimnazia1Model.Groups">
+        <MappingFragment StoreEntitySet="Groups">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Flags" ColumnName="Flags" />
+          <ScalarProperty Name="GUID_1C" ColumnName="GUID_1C" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+          <ScalarProperty Name="Flags2" ColumnName="Flags2" />
+          <ScalarProperty Name="isTemplate" ColumnName="isTemplate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GsmSettings">
+      <EntityTypeMapping TypeName="Gimnazia1Model.GsmSettings">
+        <MappingFragment StoreEntitySet="GsmSettings">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RsLinesID" ColumnName="RsLinesID" />
+          <ScalarProperty Name="Apn" ColumnName="Apn" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Passw" ColumnName="Passw" />
+          <ScalarProperty Name="SmtpServer" ColumnName="SmtpServer" />
+          <ScalarProperty Name="SmtpPort" ColumnName="SmtpPort" />
+          <ScalarProperty Name="SmtpLogin" ColumnName="SmtpLogin" />
+          <ScalarProperty Name="SmtpPassw" ColumnName="SmtpPassw" />
+          <ScalarProperty Name="SmtpMailFrom" ColumnName="SmtpMailFrom" />
+          <ScalarProperty Name="PopServer" ColumnName="PopServer" />
+          <ScalarProperty Name="PopPort" ColumnName="PopPort" />
+          <ScalarProperty Name="PopLogin" ColumnName="PopLogin" />
+          <ScalarProperty Name="PopPassw" ColumnName="PopPassw" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GTime">
+      <EntityTypeMapping TypeName="Gimnazia1Model.GTime">
+        <MappingFragment StoreEntitySet="GTime">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Calendar" ColumnName="Calendar" />
+          <ScalarProperty Name="TimeWinType" ColumnName="TimeWinType" />
+          <ScalarProperty Name="WorkMode" ColumnName="WorkMode" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Guest">
+      <EntityTypeMapping TypeName="Gimnazia1Model.Guest">
+        <MappingFragment StoreEntitySet="Guest">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PListID" ColumnName="PListID" />
+          <ScalarProperty Name="ReceiveListId" ColumnName="ReceiveListId" />
+          <ScalarProperty Name="CompanyReceive" ColumnName="CompanyReceive" />
+          <ScalarProperty Name="SectionReceive" ColumnName="SectionReceive" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Avto" ColumnName="Avto" />
+          <ScalarProperty Name="AutoNumber" ColumnName="AutoNumber" />
+          <ScalarProperty Name="Automarka" ColumnName="Automarka" />
+          <ScalarProperty Name="AutoColor" ColumnName="AutoColor" />
+          <ScalarProperty Name="AutoNigth" ColumnName="AutoNigth" />
+          <ScalarProperty Name="DateVisit" ColumnName="DateVisit" />
+          <ScalarProperty Name="ReceiveGuestName" ColumnName="ReceiveGuestName" />
+          <ScalarProperty Name="ReceiveGuestFamaly" ColumnName="ReceiveGuestFamaly" />
+          <ScalarProperty Name="ReceiveGuestSecondName" ColumnName="ReceiveGuestSecondName" />
+          <ScalarProperty Name="ReceiveGuestRoom" ColumnName="ReceiveGuestRoom" />
+          <ScalarProperty Name="ReceiveGuestPhone" ColumnName="ReceiveGuestPhone" />
+          <ScalarProperty Name="goalvisit" ColumnName="goalvisit" />
+          <ScalarProperty Name="RuleAccess" ColumnName="RuleAccess" />
+          <ScalarProperty Name="IDNoFace" ColumnName="IDNoFace" />
+          <ScalarProperty Name="DateVisitEnd" ColumnName="DateVisitEnd" />
+          <ScalarProperty Name="RecRoomID" ColumnName="RecRoomID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Holidays">
+      <EntityTypeMapping TypeName="Gimnazia1Model.Holidays">
+        <MappingFragment StoreEntitySet="Holidays">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="GDate" ColumnName="GDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="interfaceprotocol">
+      <EntityTypeMapping TypeName="Gimnazia1Model.interfaceprotocol">
+        <MappingFragment StoreEntitySet="interfaceprotocol">
+          <ScalarProperty Name="interface_id" ColumnName="interface_id" />
+          <ScalarProperty Name="protocol_id" ColumnName="protocol_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="interfaces">
+      <EntityTypeMapping TypeName="Gimnazia1Model.interfaces">
+        <MappingFragment StoreEntitySet="interfaces">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ItemEvents">
+      <EntityTypeMapping TypeName="Gimnazia1Model.ItemEvents">
+        <MappingFragment StoreEntitySet="ItemEvents">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ItemType" ColumnName="ItemType" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="ItemEvent" ColumnName="ItemEvent" />
+          <ScalarProperty Name="EventID" ColumnName="EventID" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KeyObjs">
+      <EntityTypeMapping TypeName="Gimnazia1Model.KeyObjs">
+        <MappingFragment StoreEntitySet="KeyObjs">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="KeyID" ColumnName="KeyID" />
+          <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kone_AllAccessMask">
+      <EntityTypeMapping TypeName="Gimnazia1Model.Kone_AllAccessMask">
+        <MappingFragment StoreEntitySet="Kone_AllAccessMask">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Floor" ColumnName="Floor" />
+          <ScalarProperty Name="SF" ColumnName="SF" />
+          <ScalarProperty Name="SR" ColumnName="SR" />
+          <ScalarProperty Name="DF" ColumnName="DF" />
+          <ScalarProperty Name="DR" ColumnName="DR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kone_COP">
+      <EntityTypeMapping TypeName="Gimnazia1Model.Kone_COP">
+        <MappingFragment StoreEntitySet="Kone_COP">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_KGS" ColumnName="ID_KGS" />
+          <ScalarProperty Name="ID_AcessPoint" ColumnName="ID_AcessPoint" />
+          <ScalarProperty Name="elevator_id" ColumnName="elevator_id" />
+          <ScalarProperty Name="group_id" ColumnName="group_id" />
+          <ScalarProperty Name="open_timeout" ColumnName="open_timeout" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kone_CopAccess">
+      <EntityTypeMapping TypeName="Gimnazia1Model.Kone_CopAccess">
+        <MappingFragment StoreEntitySet="Kone_CopAccess">
+          <ScalarProperty Name="ID_Elevator" ColumnName="ID_Elevator" />
+          <ScalarProperty Name="ID_Access" ColumnName="ID_Access" />
+          <ScalarProperty Name="Floor" ColumnName="Floor" />
+          <ScalarProperty Name="DF" ColumnName="DF" />
+          <ScalarProperty Name="DR" ColumnName="DR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kone_COPGlobalDefaultAccessMask">
+      <EntityTypeMapping TypeName="Gimnazia1Model.Kone_COPGlobalDefaultAccessMask">
+        <MappingFragment StoreEntitySet="Kone_COPGlobalDefaultAccessMask">
+          <ScalarProperty Name="ID_KGS" ColumnName="ID_KGS" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SystemState" ColumnName="SystemState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kone_COPSpecificMask">
+      <EntityTypeMapping TypeName="Gimnazia1Model.Kone_COPSpecificMask">
+        <MappingFragment StoreEntitySet="Kone_COPSpecificMask">
+          <ScalarProperty Name="ID_Elevator" ColumnName="ID_Elevator" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CopSpecificSystemState" ColumnName="CopSpecificSystemState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kone_DestinationAccessMask">
+      <EntityTypeMapping TypeName="Gimnazia1Model.Kone_DestinationAccessMask">
+        <MappingFragment StoreEntitySet="Kone_DestinationAccessMask">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Floor" ColumnName="Floor" />
+          <ScalarProperty Name="DF" ColumnName="DF" />
+          <ScalarProperty Name="DR" ColumnName="DR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kone_DopAccess">
+      <EntityTypeMapping TypeName="Gimnazia1Model.Kone_DopAccess">
+        <MappingFragment StoreEntitySet="Kone_DopAccess">
+          <ScalarProperty Name="ID_Dop" ColumnName="ID_Dop" />
+          <ScalarProperty Name="ID_Access" ColumnName="ID_Access" />
+          <ScalarProperty Name="Floor" ColumnName="Floor" />
+          <ScalarProperty Name="DF" ColumnName="DF" />
+          <ScalarProperty Name="DR" ColumnName="DR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kone_DOPGlobalDefaultAccessMask">
+      <EntityTypeMapping TypeName="Gimnazia1Model.Kone_DOPGlobalDefaultAccessMask">
+        <MappingFragment StoreEntitySet="Kone_DOPGlobalDefaultAccessMask">
+          <ScalarProperty Name="ID_KGS" ColumnName="ID_KGS" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SystemState" ColumnName="SystemState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kone_DOPSpecificMask">
+      <EntityTypeMapping TypeName="Gimnazia1Model.Kone_DOPSpecificMask">
+        <MappingFragment StoreEntitySet="Kone_DOPSpecificMask">
+          <ScalarProperty Name="ID_DOP" ColumnName="ID_DOP" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DopSpecificSystemState" ColumnName="DopSpecificSystemState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kone_KGS">
+      <EntityTypeMapping TypeName="Gimnazia1Model.Kone_KGS">
+        <MappingFragment StoreEntitySet="Kone_KGS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RSLines_ID" ColumnName="RSLines_ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PrimaryHost" ColumnName="PrimaryHost" />
+          <ScalarProperty Name="PrimaryPort" ColumnName="PrimaryPort" />
+          <ScalarProperty Name="BackupHost" ColumnName="BackupHost" />
+          <ScalarProperty Name="BackupPort" ColumnName="BackupPort" />
+          <ScalarProperty Name="Floors" ColumnName="Floors" />
+          <ScalarProperty Name="ByteOrder" ColumnName="ByteOrder" />
+          <ScalarProperty Name="HeartBeatOutTimeOut" ColumnName="HeartBeatOutTimeOut" />
+          <ScalarProperty Name="HeartBeatInTimeOut" ColumnName="HeartBeatInTimeOut" />
+          <ScalarProperty Name="ReConnectTimeOut" ColumnName="ReConnectTimeOut" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LinesBroadcast">
+      <EntityTypeMapping TypeName="Gimnazia1Model.LinesBroadcast">
+        <MappingFragment StoreEntitySet="LinesBroadcast">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="EventGroupID" ColumnName="EventGroupID" />
+          <ScalarProperty Name="DeviceID" ColumnName="DeviceID" />
+          <ScalarProperty Name="PhonesId" ColumnName="PhonesId" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="list_comments">
+      <EntityTypeMapping TypeName="Gimnazia1Model.list_comments">
+        <MappingFragment StoreEntitySet="list_comments">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ListComponents">
+      <EntityTypeMapping TypeName="Gimnazia1Model.ListComponents">
+        <MappingFragment StoreEntitySet="ListComponents">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TypePage" ColumnName="TypePage" />
+          <ScalarProperty Name="Caption" ColumnName="Caption" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="logs">
+      <EntityTypeMapping TypeName="Gimnazia1Model.logs">
+        <MappingFragment StoreEntitySet="logs">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="tpChange" ColumnName="tpChange" />
+          <ScalarProperty Name="OperatorName" ColumnName="OperatorName" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="ComputerName" ColumnName="ComputerName" />
+          <ScalarProperty Name="ComputerIP" ColumnName="ComputerIP" />
+          <ScalarProperty Name="TimeVal" ColumnName="TimeVal" />
+          <ScalarProperty Name="RuquestDATA" ColumnName="RuquestDATA" />
+          <ScalarProperty Name="Reserv0" ColumnName="Reserv0" />
+          <ScalarProperty Name="Reserv1" ColumnName="Reserv1" />
+          <ScalarProperty Name="Reserv2" ColumnName="Reserv2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="logs_change_bd">
+      <EntityTypeMapping TypeName="Gimnazia1Model.logs_change_bd">
+        <MappingFragment StoreEntitySet="logs_change_bd">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="timeVal" ColumnName="timeVal" />
+          <ScalarProperty Name="state_record" ColumnName="state_record" />
+          <ScalarProperty Name="table_name" ColumnName="table_name" />
+          <ScalarProperty Name="ValueId" ColumnName="ValueId" />
+          <ScalarProperty Name="OperatorId" ColumnName="OperatorId" />
+          <ScalarProperty Name="InsideSystem" ColumnName="InsideSystem" />
+          <ScalarProperty Name="xml_data" ColumnName="xml_data" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+          <ScalarProperty Name="Num" ColumnName="Num" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="m_alarm">
+      <EntityTypeMapping TypeName="Gimnazia1Model.m_alarm">
+        <MappingFragment StoreEntitySet="m_alarm">
+          <ScalarProperty Name="Time0" ColumnName="Time0" />
+          <ScalarProperty Name="NumCom" ColumnName="NumCom" />
+          <ScalarProperty Name="IDComp" ColumnName="IDComp" />
+          <ScalarProperty Name="Operator0" ColumnName="Operator0" />
+          <ScalarProperty Name="OperatorName" ColumnName="OperatorName" />
+          <ScalarProperty Name="EventName" ColumnName="EventName" />
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="Event" ColumnName="Event" />
+          <ScalarProperty Name="AddrCOM" ColumnName="AddrCOM" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Object" ColumnName="Object" />
+          <ScalarProperty Name="Action1" ColumnName="Action1" />
+          <ScalarProperty Name="Time1" ColumnName="Time1" />
+          <ScalarProperty Name="Operator1" ColumnName="Operator1" />
+          <ScalarProperty Name="Action2" ColumnName="Action2" />
+          <ScalarProperty Name="Time2" ColumnName="Time2" />
+          <ScalarProperty Name="Operator2" ColumnName="Operator2" />
+          <ScalarProperty Name="Action3" ColumnName="Action3" />
+          <ScalarProperty Name="Time3" ColumnName="Time3" />
+          <ScalarProperty Name="Operator3" ColumnName="Operator3" />
+          <ScalarProperty Name="Action4" ColumnName="Action4" />
+          <ScalarProperty Name="Time4" ColumnName="Time4" />
+          <ScalarProperty Name="Operator4" ColumnName="Operator4" />
+          <ScalarProperty Name="Action5" ColumnName="Action5" />
+          <ScalarProperty Name="Time5" ColumnName="Time5" />
+          <ScalarProperty Name="Operator5" ColumnName="Operator5" />
+          <ScalarProperty Name="Action6" ColumnName="Action6" />
+          <ScalarProperty Name="Time6" ColumnName="Time6" />
+          <ScalarProperty Name="Operator6" ColumnName="Operator6" />
+          <ScalarProperty Name="Stage" ColumnName="Stage" />
+          <ScalarProperty Name="DoorID" ColumnName="DoorID" />
+          <ScalarProperty Name="ZoneType" ColumnName="ZoneType" />
+          <ScalarProperty Name="AccessZoneIndex" ColumnName="AccessZoneIndex" />
+          <ScalarProperty Name="VEvent" ColumnName="VEvent" />
+          <ScalarProperty Name="ZReserv" ColumnName="ZReserv" />
+          <ScalarProperty Name="Zone" ColumnName="Zone" />
+          <ScalarProperty Name="IndexZone" ColumnName="IndexZone" />
+          <ScalarProperty Name="tpIndex" ColumnName="tpIndex" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Map_Elm">
+      <EntityTypeMapping TypeName="Gimnazia1Model.Map_Elm">
+        <MappingFragment StoreEntitySet="Map_Elm">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MapID" ColumnName="MapID" />
+          <ScalarProperty Name="GType" ColumnName="GType" />
+          <ScalarProperty Name="Num" ColumnName="Num" />
+          <ScalarProperty Name="UnitID" ColumnName="UnitID" />
+          <ScalarProperty Name="PictureCount" ColumnName="PictureCount" />
+          <ScalarProperty Name="Pictures" ColumnName="Pictures" />
+          <ScalarProperty Name="ChangeTime" ColumnName="ChangeTime" />
+          <ScalarProperty Name="Flags" ColumnName="Flags" />
+          <ScalarProperty Name="Link2Obj" ColumnName="Link2Obj" />
+          <ScalarProperty Name="ApplicationGuid" ColumnName="ApplicationGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="map_indicators">
+      <EntityTypeMapping TypeName="Gimnazia1Model.map_indicators">
+        <MappingFragment StoreEntitySet="map_indicators">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MapElmId" ColumnName="MapElmId" />
+          <ScalarProperty Name="range_min" ColumnName="range_min" />
+          <ScalarProperty Name="range_max" ColumnName="range_max" />
+          <ScalarProperty Name="range_color" ColumnName="range_color" />
+          <ScalarProperty Name="status_range" ColumnName="status_range" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MapElements">
+      <EntityTypeMapping TypeName="Gimnazia1Model.MapElements">
+        <MappingFragment StoreEntitySet="MapElements">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="table" ColumnName="table" />
+          <ScalarProperty Name="map_id" ColumnName="map_id" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="x" ColumnName="x" />
+          <ScalarProperty Name="y" ColumnName="y" />
+          <ScalarProperty Name="rotate" ColumnName="rotate" />
+          <ScalarProperty Name="scale" ColumnName="scale" />
+          <ScalarProperty Name="state_name" ColumnName="state_name" />
+          <ScalarProperty Name="item_type" ColumnName="item_type" />
+          <ScalarProperty Name="item_color" ColumnName="item_color" />
+          <ScalarProperty Name="value_off" ColumnName="value_off" />
+          <ScalarProperty Name="value_pos" ColumnName="value_pos" />
+          <ScalarProperty Name="text_off" ColumnName="text_off" />
+          <ScalarProperty Name="text_pos" ColumnName="text_pos" />
+          <ScalarProperty Name="value_x" ColumnName="value_x" />
+          <ScalarProperty Name="value_y" ColumnName="value_y" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MapElementsLinks">
+      <EntityTypeMapping TypeName="Gimnazia1Model.MapElementsLinks">
+        <MappingFragment StoreEntitySet="MapElementsLinks">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MapElementsID" ColumnName="MapElementsID" />
+          <ScalarProperty Name="x" ColumnName="x" />
+          <ScalarProperty Name="y" ColumnName="y" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MapElementsRegions">
+      <EntityTypeMapping TypeName="Gimnazia1Model.MapElementsRegions">
+        <MappingFragment StoreEntitySet="MapElementsRegions">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MapElementsID" ColumnName="MapElementsID" />
+          <ScalarProperty Name="x" ColumnName="x" />
+          <ScalarProperty Name="y" ColumnName="y" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MapIndicatorsDefault">
+      <EntityTypeMapping TypeName="Gimnazia1Model.MapIndicatorsDefault">
+        <MappingFragment StoreEntitySet="MapIndicatorsDefault">
+          <ScalarProperty Name="ID_Indicator" ColumnName="ID_Indicator" />
+          <ScalarProperty Name="RangeMin" ColumnName="RangeMin" />
+          <ScalarProperty Name="RangeMax" ColumnName="RangeMax" />
+          <ScalarProperty Name="RangeColor" ColumnName="RangeColor" />
+          <ScalarProperty Name="StatusRange" ColumnName="StatusRange" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MapInfoMarker">
+      <EntityTypeMapping TypeName="Gimnazia1Model.MapInfoMarker">
+        <MappingFragment StoreEntitySet="MapInfoMarker">
+          <ScalarProperty Name="ID_MapInfMark" ColumnName="ID_MapInfMark" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MasterSlave">
+      <EntityTypeMapping TypeName="Gimnazia1Model.MasterSlave">
+        <MappingFragment StoreEntitySet="MasterSlave">
+          <ScalarProperty Name="MasterType" ColumnName="MasterType" />
+          <ScalarProperty Name="SlaveType" ColumnName="SlaveType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NodeRepl">
+      <EntityTypeMapping TypeName="Gimnazia1Model.NodeRepl">
+        <MappingFragment StoreEntitySet="NodeRepl">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NodeID" ColumnName="NodeID" />
+          <ScalarProperty Name="ScriptID" ColumnName="ScriptID" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="orion_globalValues">
+      <EntityTypeMapping TypeName="Gimnazia1Model.orion_globalValues">
+        <MappingFragment StoreEntitySet="orion_globalValues">
+          <ScalarProperty Name="id_value" ColumnName="id_value" />
+          <ScalarProperty Name="value" ColumnName="value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pBioAccess">
+      <EntityTypeMapping TypeName="Gimnazia1Model.pBioAccess">
+        <MappingFragment StoreEntitySet="pBioAccess">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_pMark" ColumnName="ID_pMark" />
+          <ScalarProperty Name="GType" ColumnName="GType" />
+          <ScalarProperty Name="BioTemplate2" ColumnName="BioTemplate2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pBioParams">
+      <EntityTypeMapping TypeName="Gimnazia1Model.pBioParams">
+        <MappingFragment StoreEntitySet="pBioParams">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Device_Type" ColumnName="Device_Type" />
+          <ScalarProperty Name="Master" ColumnName="Master" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Caption" ColumnName="Caption" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Min" ColumnName="Min" />
+          <ScalarProperty Name="Max" ColumnName="Max" />
+          <ScalarProperty Name="DefValue" ColumnName="DefValue" />
+          <ScalarProperty Name="Values" ColumnName="Values" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pCar">
+      <EntityTypeMapping TypeName="Gimnazia1Model.pCar">
+        <MappingFragment StoreEntitySet="pCar">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="GIndex" ColumnName="GIndex" />
+          <ScalarProperty Name="Vin" ColumnName="Vin" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PCompany">
+      <EntityTypeMapping TypeName="Gimnazia1Model.PCompany">
+        <MappingFragment StoreEntitySet="PCompany">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Id_Number_Company" ColumnName="Id_Number_Company" />
+          <ScalarProperty Name="GUID_1C" ColumnName="GUID_1C" />
+          <ScalarProperty Name="IsGuest" ColumnName="IsGuest" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PDivision">
+      <EntityTypeMapping TypeName="Gimnazia1Model.PDivision">
+        <MappingFragment StoreEntitySet="PDivision">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Shedule" ColumnName="Shedule" />
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="PCompany_ID" ColumnName="PCompany_ID" />
+          <ScalarProperty Name="ID_Number_Division" ColumnName="ID_Number_Division" />
+          <ScalarProperty Name="ID_Owner_Division" ColumnName="ID_Owner_Division" />
+          <ScalarProperty Name="Patterns_ID" ColumnName="Patterns_ID" />
+          <ScalarProperty Name="GUID_1C" ColumnName="GUID_1C" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PersonsPhotos">
+      <EntityTypeMapping TypeName="Gimnazia1Model.PersonsPhotos">
+        <MappingFragment StoreEntitySet="PersonsPhotos">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PersonID" ColumnName="PersonID" />
+          <ScalarProperty Name="PhotoDescriptor" ColumnName="PhotoDescriptor" />
+          <ScalarProperty Name="DescriptorType" ColumnName="DescriptorType" />
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+          <ScalarProperty Name="PhotoNum" ColumnName="PhotoNum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pGroupExit">
+      <EntityTypeMapping TypeName="Gimnazia1Model.pGroupExit">
+        <MappingFragment StoreEntitySet="pGroupExit">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAme" ColumnName="NAme" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="phone_numbers">
+      <EntityTypeMapping TypeName="Gimnazia1Model.phone_numbers">
+        <MappingFragment StoreEntitySet="phone_numbers">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="phone_number" ColumnName="phone_number" />
+          <ScalarProperty Name="ip" ColumnName="ip" />
+          <ScalarProperty Name="port" ColumnName="port" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="translateProtocol" ColumnName="translateProtocol" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pList">
+      <EntityTypeMapping TypeName="Gimnazia1Model.pList">
+        <MappingFragment StoreEntitySet="pList">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MidName" ColumnName="MidName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="WorkPhone" ColumnName="WorkPhone" />
+          <ScalarProperty Name="HomePhone" ColumnName="HomePhone" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Section" ColumnName="Section" />
+          <ScalarProperty Name="Post" ColumnName="Post" />
+          <ScalarProperty Name="Schedule" ColumnName="Schedule" />
+          <ScalarProperty Name="Avto" ColumnName="Avto" />
+          <ScalarProperty Name="Spack" ColumnName="Spack" />
+          <ScalarProperty Name="Config" ColumnName="Config" />
+          <ScalarProperty Name="TabNumber" ColumnName="TabNumber" />
+          <ScalarProperty Name="GrStatus" ColumnName="GrStatus" />
+          <ScalarProperty Name="ChangeTime" ColumnName="ChangeTime" />
+          <ScalarProperty Name="IndexForContactId" ColumnName="IndexForContactId" />
+          <ScalarProperty Name="StatusRecord" ColumnName="StatusRecord" />
+          <ScalarProperty Name="Patterns_ID" ColumnName="Patterns_ID" />
+          <ScalarProperty Name="ID_Number_List" ColumnName="ID_Number_List" />
+          <ScalarProperty Name="weight" ColumnName="weight" />
+          <ScalarProperty Name="delta_weight" ColumnName="delta_weight" />
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+          <ScalarProperty Name="GUID_1C" ColumnName="GUID_1C" />
+          <ScalarProperty Name="status_list" ColumnName="status_list" />
+          <ScalarProperty Name="EmailList" ColumnName="EmailList" />
+          <ScalarProperty Name="fielddelete" ColumnName="fielddelete" />
+          <ScalarProperty Name="BlackList" ColumnName="BlackList" />
+          <ScalarProperty Name="INN" ColumnName="INN" />
+          <ScalarProperty Name="ReasonToBlackList" ColumnName="ReasonToBlackList" />
+          <ScalarProperty Name="TypeDocum" ColumnName="TypeDocum" />
+          <ScalarProperty Name="SexGuest" ColumnName="SexGuest" />
+          <ScalarProperty Name="DokumSeries" ColumnName="DokumSeries" />
+          <ScalarProperty Name="DokumNumber" ColumnName="DokumNumber" />
+          <ScalarProperty Name="DateDocument" ColumnName="DateDocument" />
+          <ScalarProperty Name="KodPodr" ColumnName="KodPodr" />
+          <ScalarProperty Name="Kem" ColumnName="Kem" />
+          <ScalarProperty Name="DateDocumentEnd" ColumnName="DateDocumentEnd" />
+          <ScalarProperty Name="birthplace" ColumnName="birthplace" />
+          <ScalarProperty Name="DateTimeInArchive" ColumnName="DateTimeInArchive" />
+          <ScalarProperty Name="FireToList" ColumnName="FireToList" />
+          <ScalarProperty Name="IDSCAN" ColumnName="IDSCAN" />
+          <ScalarProperty Name="RoomID" ColumnName="RoomID" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+          <ScalarProperty Name="IDGROUPEXIT" ColumnName="IDGROUPEXIT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pListNetPorts">
+      <EntityTypeMapping TypeName="Gimnazia1Model.pListNetPorts">
+        <MappingFragment StoreEntitySet="pListNetPorts">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME_TASK" ColumnName="NAME_TASK" />
+          <ScalarProperty Name="PORT_TASK" ColumnName="PORT_TASK" />
+          <ScalarProperty Name="COMMENT" ColumnName="COMMENT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pLogData">
+      <EntityTypeMapping TypeName="Gimnazia1Model.pLogData">
+        <MappingFragment StoreEntitySet="pLogData">
+          <ScalarProperty Name="TimeVal" ColumnName="TimeVal" />
+          <ScalarProperty Name="NumCom" ColumnName="NumCom" />
+          <ScalarProperty Name="IDComp" ColumnName="IDComp" />
+          <ScalarProperty Name="Par1" ColumnName="Par1" />
+          <ScalarProperty Name="Par2" ColumnName="Par2" />
+          <ScalarProperty Name="Par3" ColumnName="Par3" />
+          <ScalarProperty Name="Par4" ColumnName="Par4" />
+          <ScalarProperty Name="Event" ColumnName="Event" />
+          <ScalarProperty Name="IndexKey" ColumnName="IndexKey" />
+          <ScalarProperty Name="RazdIndex" ColumnName="RazdIndex" />
+          <ScalarProperty Name="HozOrgan" ColumnName="HozOrgan" />
+          <ScalarProperty Name="HozGuest" ColumnName="HozGuest" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="DoorIndex" ColumnName="DoorIndex" />
+          <ScalarProperty Name="Mode" ColumnName="Mode" />
+          <ScalarProperty Name="DeviceTime" ColumnName="DeviceTime" />
+          <ScalarProperty Name="VEvent" ColumnName="VEvent" />
+          <ScalarProperty Name="ZReserv" ColumnName="ZReserv" />
+          <ScalarProperty Name="ZoneIndex" ColumnName="ZoneIndex" />
+          <ScalarProperty Name="ReaderIndex" ColumnName="ReaderIndex" />
+          <ScalarProperty Name="Sign" ColumnName="Sign" />
+          <ScalarProperty Name="tpRzdIndex" ColumnName="tpRzdIndex" />
+          <ScalarProperty Name="tpPar4" ColumnName="tpPar4" />
+          <ScalarProperty Name="IndexZone" ColumnName="IndexZone" />
+          <ScalarProperty Name="tpIndex" ColumnName="tpIndex" />
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="IdComment" ColumnName="IdComment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pMaps">
+      <EntityTypeMapping TypeName="Gimnazia1Model.pMaps">
+        <MappingFragment StoreEntitySet="pMaps">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="GIndex" ColumnName="GIndex" />
+          <ScalarProperty Name="ComputerID" ColumnName="ComputerID" />
+          <ScalarProperty Name="PlanChild" ColumnName="PlanChild" />
+          <ScalarProperty Name="Spack" ColumnName="Spack" />
+          <ScalarProperty Name="Contents" ColumnName="Contents" />
+          <ScalarProperty Name="ChangeTime" ColumnName="ChangeTime" />
+          <ScalarProperty Name="design_width" ColumnName="design_width" />
+          <ScalarProperty Name="design_height" ColumnName="design_height" />
+          <ScalarProperty Name="design_scale" ColumnName="design_scale" />
+          <ScalarProperty Name="SchemaExt" ColumnName="SchemaExt" />
+          <ScalarProperty Name="ApplicationGuid" ColumnName="ApplicationGuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pMark">
+      <EntityTypeMapping TypeName="Gimnazia1Model.pMark">
+        <MappingFragment StoreEntitySet="pMark">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Gtype" ColumnName="Gtype" />
+          <ScalarProperty Name="GTypeCodeAdd" ColumnName="GTypeCodeAdd" />
+          <ScalarProperty Name="Config" ColumnName="Config" />
+          <ScalarProperty Name="CodeP" ColumnName="CodeP" />
+          <ScalarProperty Name="CodePAdd" ColumnName="CodePAdd" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerName" ColumnName="OwnerName" />
+          <ScalarProperty Name="GrStatus" ColumnName="GrStatus" />
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+          <ScalarProperty Name="Start" ColumnName="Start" />
+          <ScalarProperty Name="Finish" ColumnName="Finish" />
+          <ScalarProperty Name="IndexForContactId" ColumnName="IndexForContactId" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+          <ScalarProperty Name="fingertemplate" ColumnName="fingertemplate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pObjCont">
+      <EntityTypeMapping TypeName="Gimnazia1Model.pObjCont">
+        <MappingFragment StoreEntitySet="pObjCont">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+          <ScalarProperty Name="ShleifID" ColumnName="ShleifID" />
+          <ScalarProperty Name="ItemType" ColumnName="ItemType" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pObjects">
+      <EntityTypeMapping TypeName="Gimnazia1Model.pObjects">
+        <MappingFragment StoreEntitySet="pObjects">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GIndex" ColumnName="GIndex" />
+          <ScalarProperty Name="SimIndex" ColumnName="SimIndex" />
+          <ScalarProperty Name="ComputerID" ColumnName="ComputerID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Config" ColumnName="Config" />
+          <ScalarProperty Name="AlarmKey" ColumnName="AlarmKey" />
+          <ScalarProperty Name="GuardKey" ColumnName="GuardKey" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+          <ScalarProperty Name="ElementsTypesGroupId" ColumnName="ElementsTypesGroupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PPost">
+      <EntityTypeMapping TypeName="Gimnazia1Model.PPost">
+        <MappingFragment StoreEntitySet="PPost">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="StatusMark" ColumnName="StatusMark" />
+          <ScalarProperty Name="Company_ID" ColumnName="Company_ID" />
+          <ScalarProperty Name="Id_Number_Ppost" ColumnName="Id_Number_Ppost" />
+          <ScalarProperty Name="GUID_1C" ColumnName="GUID_1C" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PReason">
+      <EntityTypeMapping TypeName="Gimnazia1Model.PReason">
+        <MappingFragment StoreEntitySet="PReason">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="GUID_1C" ColumnName="GUID_1C" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProFiles">
+      <EntityTypeMapping TypeName="Gimnazia1Model.ProFiles">
+        <MappingFragment StoreEntitySet="ProFiles">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRooms">
+      <EntityTypeMapping TypeName="Gimnazia1Model.PRooms">
+        <MappingFragment StoreEntitySet="PRooms">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="protocoldevices">
+      <EntityTypeMapping TypeName="Gimnazia1Model.protocoldevices">
+        <MappingFragment StoreEntitySet="protocoldevices">
+          <ScalarProperty Name="protocol_id" ColumnName="protocol_id" />
+          <ScalarProperty Name="device_type_id" ColumnName="device_type_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="protocols">
+      <EntityTypeMapping TypeName="Gimnazia1Model.protocols">
+        <MappingFragment StoreEntitySet="protocols">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QueryLog">
+      <EntityTypeMapping TypeName="Gimnazia1Model.QueryLog">
+        <MappingFragment StoreEntitySet="QueryLog">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TimeVal" ColumnName="TimeVal" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="OperatorName" ColumnName="OperatorName" />
+          <ScalarProperty Name="ProgramID" ColumnName="ProgramID" />
+          <ScalarProperty Name="Query" ColumnName="Query" />
+          <ScalarProperty Name="Parameters" ColumnName="Parameters" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RdrAccessPoint">
+      <EntityTypeMapping TypeName="Gimnazia1Model.RdrAccessPoint">
+        <MappingFragment StoreEntitySet="RdrAccessPoint">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ReaderID" ColumnName="ReaderID" />
+          <ScalarProperty Name="Mode" ColumnName="Mode" />
+          <ScalarProperty Name="AccessPointID" ColumnName="AccessPointID" />
+          <ScalarProperty Name="ModeAcess" ColumnName="ModeAcess" />
+          <ScalarProperty Name="PenalID" ColumnName="PenalID" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reasons">
+      <EntityTypeMapping TypeName="Gimnazia1Model.Reasons">
+        <MappingFragment StoreEntitySet="Reasons">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="DateStart" ColumnName="DateStart" />
+          <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="TimeStart" ColumnName="TimeStart" />
+          <ScalarProperty Name="TimeEnd" ColumnName="TimeEnd" />
+          <ScalarProperty Name="Operator" ColumnName="Operator" />
+          <ScalarProperty Name="GoodTime" ColumnName="GoodTime" />
+          <ScalarProperty Name="BUTNOTCALC" ColumnName="BUTNOTCALC" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="ReasonID" ColumnName="ReasonID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReferenceCommandScenarios">
+      <EntityTypeMapping TypeName="Gimnazia1Model.ReferenceCommandScenarios">
+        <MappingFragment StoreEntitySet="ReferenceCommandScenarios">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LatName" ColumnName="LatName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReferenceItemsScenarios">
+      <EntityTypeMapping TypeName="Gimnazia1Model.ReferenceItemsScenarios">
+        <MappingFragment StoreEntitySet="ReferenceItemsScenarios">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LatName" ColumnName="LatName" />
+          <ScalarProperty Name="TypeValue" ColumnName="TypeValue" />
+          <ScalarProperty Name="TypeContrl" ColumnName="TypeContrl" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="RegExp" ColumnName="RegExp" />
+          <ScalarProperty Name="MaxValue" ColumnName="MaxValue" />
+          <ScalarProperty Name="MinValue" ColumnName="MinValue" />
+          <ScalarProperty Name="isRefresh" ColumnName="isRefresh" />
+          <ScalarProperty Name="ExpText" ColumnName="ExpText" />
+          <ScalarProperty Name="Increment" ColumnName="Increment" />
+          <ScalarProperty Name="IncrFixed" ColumnName="IncrFixed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReferenceScenariosTypes">
+      <EntityTypeMapping TypeName="Gimnazia1Model.ReferenceScenariosTypes">
+        <MappingFragment StoreEntitySet="ReferenceScenariosTypes">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LatName" ColumnName="LatName" />
+          <ScalarProperty Name="Def" ColumnName="Def" />
+          <ScalarProperty Name="Sort" ColumnName="Sort" />
+          <ScalarProperty Name="ImageIndex" ColumnName="ImageIndex" />
+          <ScalarProperty Name="ImageIDScen" ColumnName="ImageIDScen" />
+          <ScalarProperty Name="ImageIDStep" ColumnName="ImageIDStep" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReferenceTactics">
+      <EntityTypeMapping TypeName="Gimnazia1Model.ReferenceTactics">
+        <MappingFragment StoreEntitySet="ReferenceTactics">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LatName" ColumnName="LatName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RelatedCameras">
+      <EntityTypeMapping TypeName="Gimnazia1Model.RelatedCameras">
+        <MappingFragment StoreEntitySet="RelatedCameras">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CameraID" ColumnName="CameraID" />
+          <ScalarProperty Name="RelatedCameraID" ColumnName="RelatedCameraID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="relation_phone_id_dev">
+      <EntityTypeMapping TypeName="Gimnazia1Model.relation_phone_id_dev">
+        <MappingFragment StoreEntitySet="relation_phone_id_dev">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="id_phone" ColumnName="id_phone" />
+          <ScalarProperty Name="id_rslines" ColumnName="id_rslines" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RelationDiv">
+      <EntityTypeMapping TypeName="Gimnazia1Model.RelationDiv">
+        <MappingFragment StoreEntitySet="RelationDiv">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IdAuth" ColumnName="IdAuth" />
+          <ScalarProperty Name="IdDiv" ColumnName="IdDiv" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RelationsListCar">
+      <EntityTypeMapping TypeName="Gimnazia1Model.RelationsListCar">
+        <MappingFragment StoreEntitySet="RelationsListCar">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IdList" ColumnName="IdList" />
+          <ScalarProperty Name="IdCar" ColumnName="IdCar" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RelProf">
+      <EntityTypeMapping TypeName="Gimnazia1Model.RelProf">
+        <MappingFragment StoreEntitySet="RelProf">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IDListComp" ColumnName="IDListComp" />
+          <ScalarProperty Name="IDProfiles" ColumnName="IDProfiles" />
+          <ScalarProperty Name="Reserve" ColumnName="Reserve" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RemoteControlCategories">
+      <EntityTypeMapping TypeName="Gimnazia1Model.RemoteControlCategories">
+        <MappingFragment StoreEntitySet="RemoteControlCategories">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="RemoteAction" ColumnName="RemoteAction" />
+          <ScalarProperty Name="GroupByCategoryId" ColumnName="GroupByCategoryId" />
+          <ScalarProperty Name="IsVisibleInPersonalArea" ColumnName="IsVisibleInPersonalArea" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RemoteControlCategoryToDTypesElement">
+      <EntityTypeMapping TypeName="Gimnazia1Model.RemoteControlCategoryToDTypesElement">
+        <MappingFragment StoreEntitySet="RemoteControlCategoryToDTypesElement">
+          <ScalarProperty Name="dTypesElementId" ColumnName="dTypesElementId" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReservLine">
+      <EntityTypeMapping TypeName="Gimnazia1Model.ReservLine">
+        <MappingFragment StoreEntitySet="ReservLine">
+          <ScalarProperty Name="ComputerId" ColumnName="ComputerId" />
+          <ScalarProperty Name="MainId" ColumnName="MainId" />
+          <ScalarProperty Name="ReservId" ColumnName="ReservId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RSLines">
+      <EntityTypeMapping TypeName="Gimnazia1Model.RSLines">
+        <MappingFragment StoreEntitySet="RSLines">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GIndex" ColumnName="GIndex" />
+          <ScalarProperty Name="ComPortID" ColumnName="ComPortID" />
+          <ScalarProperty Name="PKUID" ColumnName="PKUID" />
+          <ScalarProperty Name="GLineNo" ColumnName="GLineNo" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DeviceType" ColumnName="DeviceType" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Broadcast" ColumnName="Broadcast" />
+          <ScalarProperty Name="DeviceVersion" ColumnName="DeviceVersion" />
+          <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+          <ScalarProperty Name="MACAddress" ColumnName="MACAddress" />
+          <ScalarProperty Name="GATEWAY" ColumnName="GATEWAY" />
+          <ScalarProperty Name="SUBMASK" ColumnName="SUBMASK" />
+          <ScalarProperty Name="Port" ColumnName="Port" />
+          <ScalarProperty Name="UseDHCP" ColumnName="UseDHCP" />
+          <ScalarProperty Name="IdContactName" ColumnName="IdContactName" />
+          <ScalarProperty Name="IdDevice" ColumnName="IdDevice" />
+          <ScalarProperty Name="DeviceInterface" ColumnName="DeviceInterface" />
+          <ScalarProperty Name="IndexForContactId" ColumnName="IndexForContactId" />
+          <ScalarProperty Name="DeviceTypeBIO" ColumnName="DeviceTypeBIO" />
+          <ScalarProperty Name="AbonentType" ColumnName="AbonentType" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScanDoc">
+      <EntityTypeMapping TypeName="Gimnazia1Model.ScanDoc">
+        <MappingFragment StoreEntitySet="ScanDoc">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IDPLIST" ColumnName="IDPLIST" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="Spack" ColumnName="Spack" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScenariosDevice">
+      <EntityTypeMapping TypeName="Gimnazia1Model.ScenariosDevice">
+        <MappingFragment StoreEntitySet="ScenariosDevice">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Num" ColumnName="Num" />
+          <ScalarProperty Name="ID_Parent" ColumnName="ID_Parent" />
+          <ScalarProperty Name="ID_ScenariosTypes" ColumnName="ID_ScenariosTypes" />
+          <ScalarProperty Name="ID_Device" ColumnName="ID_Device" />
+          <ScalarProperty Name="DeviceType" ColumnName="DeviceType" />
+          <ScalarProperty Name="ID_Level" ColumnName="ID_Level" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScenariosFilterDevice">
+      <EntityTypeMapping TypeName="Gimnazia1Model.ScenariosFilterDevice">
+        <MappingFragment StoreEntitySet="ScenariosFilterDevice">
+          <ScalarProperty Name="DeviceType" ColumnName="DeviceType" />
+          <ScalarProperty Name="ElementType" ColumnName="ElementType" />
+          <ScalarProperty Name="ID_ScenariosType" ColumnName="ID_ScenariosType" />
+          <ScalarProperty Name="DeviceVersion" ColumnName="DeviceVersion" />
+          <ScalarProperty Name="NumberDevItem" ColumnName="NumberDevItem" />
+          <ScalarProperty Name="ParentDevType" ColumnName="ParentDevType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Schedule">
+      <EntityTypeMapping TypeName="Gimnazia1Model.Schedule">
+        <MappingFragment StoreEntitySet="Schedule">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ScriptID" ColumnName="ScriptID" />
+          <ScalarProperty Name="Calendar" ColumnName="Calendar" />
+          <ScalarProperty Name="TimeID" ColumnName="TimeID" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Script">
+      <EntityTypeMapping TypeName="Gimnazia1Model.Script">
+        <MappingFragment StoreEntitySet="Script">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="HotKey" ColumnName="HotKey" />
+          <ScalarProperty Name="Config" ColumnName="Config" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Settings">
+      <EntityTypeMapping TypeName="Gimnazia1Model.Settings">
+        <MappingFragment StoreEntitySet="Settings">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ComputerID" ColumnName="ComputerID" />
+          <ScalarProperty Name="Settings1" ColumnName="Settings" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Settings_group">
+      <EntityTypeMapping TypeName="Gimnazia1Model.Settings_group">
+        <MappingFragment StoreEntitySet="Settings_group">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Settings_Value">
+      <EntityTypeMapping TypeName="Gimnazia1Model.Settings_Value">
+        <MappingFragment StoreEntitySet="Settings_Value">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="id_comp" ColumnName="id_comp" />
+          <ScalarProperty Name="Groups_Id" ColumnName="Groups_Id" />
+          <ScalarProperty Name="settings" ColumnName="settings" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="TypeValue" ColumnName="TypeValue" />
+          <ScalarProperty Name="Reserve" ColumnName="Reserve" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SmsGatesParams">
+      <EntityTypeMapping TypeName="Gimnazia1Model.SmsGatesParams">
+        <MappingFragment StoreEntitySet="SmsGatesParams">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Passw" ColumnName="Passw" />
+          <ScalarProperty Name="SenderName" ColumnName="SenderName" />
+          <ScalarProperty Name="InboundPhone" ColumnName="InboundPhone" />
+          <ScalarProperty Name="RsLinesId" ColumnName="RsLinesId" />
+          <ScalarProperty Name="ProxyServer" ColumnName="ProxyServer" />
+          <ScalarProperty Name="ProxyPort" ColumnName="ProxyPort" />
+          <ScalarProperty Name="ProxyLogin" ColumnName="ProxyLogin" />
+          <ScalarProperty Name="ProxyPassw" ColumnName="ProxyPassw" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SSLCertificate">
+      <EntityTypeMapping TypeName="Gimnazia1Model.SSLCertificate">
+        <MappingFragment StoreEntitySet="SSLCertificate">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RootCA" ColumnName="RootCA" />
+          <ScalarProperty Name="CAKey" ColumnName="CAKey" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Reserv" ColumnName="Reserv" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="states_item">
+      <EntityTypeMapping TypeName="Gimnazia1Model.states_item">
+        <MappingFragment StoreEntitySet="states_item">
+          <ScalarProperty Name="item_type" ColumnName="item_type" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="tmvl" ColumnName="tmvl" />
+          <ScalarProperty Name="state_item" ColumnName="state_item" />
+          <ScalarProperty Name="comps_id" ColumnName="comps_id" />
+          <ScalarProperty Name="id_owner" ColumnName="id_owner" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys">
+      <EntityTypeMapping TypeName="Gimnazia1Model.Sys">
+        <MappingFragment StoreEntitySet="Sys">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Gtype" ColumnName="Gtype" />
+          <ScalarProperty Name="MinValue" ColumnName="MinValue" />
+          <ScalarProperty Name="MaxValue" ColumnName="MaxValue" />
+          <ScalarProperty Name="DefaultValue" ColumnName="DefaultValue" />
+          <ScalarProperty Name="Required" ColumnName="Required" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Hint" ColumnName="Hint" />
+          <ScalarProperty Name="List" ColumnName="List" />
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+          <ScalarProperty Name="SysOrder" ColumnName="SysOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="Gimnazia1Model.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SysGroup">
+      <EntityTypeMapping TypeName="Gimnazia1Model.SysGroup">
+        <MappingFragment StoreEntitySet="SysGroup">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="SysOrder" ColumnName="SysOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SysParam">
+      <EntityTypeMapping TypeName="Gimnazia1Model.SysParam">
+        <MappingFragment StoreEntitySet="SysParam">
+          <ScalarProperty Name="Num" ColumnName="Num" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ComputerID" ColumnName="ComputerID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Gtype" ColumnName="Gtype" />
+          <ScalarProperty Name="GValue" ColumnName="GValue" />
+          <ScalarProperty Name="Required" ColumnName="Required" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SystemObjects">
+      <EntityTypeMapping TypeName="Gimnazia1Model.SystemObjects">
+        <MappingFragment StoreEntitySet="SystemObjects">
+          <ScalarProperty Name="GIndex" ColumnName="GIndex" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="ExState" ColumnName="ExState" />
+          <ScalarProperty Name="ChangeTime" ColumnName="ChangeTime" />
+          <ScalarProperty Name="Reserve1" ColumnName="Reserve1" />
+          <ScalarProperty Name="Reserve2" ColumnName="Reserve2" />
+          <ScalarProperty Name="Reserve3" ColumnName="Reserve3" />
+          <ScalarProperty Name="Reserve4" ColumnName="Reserve4" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TimeCont">
+      <EntityTypeMapping TypeName="Gimnazia1Model.TimeCont">
+        <MappingFragment StoreEntitySet="TimeCont">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TimeID" ColumnName="TimeID" />
+          <ScalarProperty Name="Num" ColumnName="Num" />
+          <ScalarProperty Name="Start" ColumnName="Start" />
+          <ScalarProperty Name="Finish" ColumnName="Finish" />
+          <ScalarProperty Name="Days" ColumnName="Days" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TimeTable">
+      <EntityTypeMapping TypeName="Gimnazia1Model.TimeTable">
+        <MappingFragment StoreEntitySet="TimeTable">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="WorkTimeZoneID" ColumnName="WorkTimeZoneID" />
+          <ScalarProperty Name="TimeID" ColumnName="TimeID" />
+          <ScalarProperty Name="Config" ColumnName="Config" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tKBPenals">
+      <EntityTypeMapping TypeName="Gimnazia1Model.tKBPenals">
+        <MappingFragment StoreEntitySet="tKBPenals">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GIndex" ColumnName="GIndex" />
+          <ScalarProperty Name="ID_Section" ColumnName="ID_Section" />
+          <ScalarProperty Name="BIndex" ColumnName="BIndex" />
+          <ScalarProperty Name="Box_Name" ColumnName="Box_Name" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="IndexForContactID" ColumnName="IndexForContactID" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+          <ScalarProperty Name="pListID" ColumnName="pListID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tKBSections">
+      <EntityTypeMapping TypeName="Gimnazia1Model.tKBSections">
+        <MappingFragment StoreEntitySet="tKBSections">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_Keybox" ColumnName="ID_Keybox" />
+          <ScalarProperty Name="SType" ColumnName="SType" />
+          <ScalarProperty Name="Rows" ColumnName="Rows" />
+          <ScalarProperty Name="Columns" ColumnName="Columns" />
+          <ScalarProperty Name="SecNo" ColumnName="SecNo" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tKeyBoxes">
+      <EntityTypeMapping TypeName="Gimnazia1Model.tKeyBoxes">
+        <MappingFragment StoreEntitySet="tKeyBoxes">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GIndex" ColumnName="GIndex" />
+          <ScalarProperty Name="IdComPort" ColumnName="IdComPort" />
+          <ScalarProperty Name="Adress" ColumnName="Adress" />
+          <ScalarProperty Name="DevName" ColumnName="DevName" />
+          <ScalarProperty Name="SectionsQTY" ColumnName="SectionsQTY" />
+          <ScalarProperty Name="Ver" ColumnName="Ver" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="CompID" ColumnName="CompID" />
+          <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+          <ScalarProperty Name="Port" ColumnName="Port" />
+          <ScalarProperty Name="AccessKey" ColumnName="AccessKey" />
+          <ScalarProperty Name="IndexForContactID" ColumnName="IndexForContactID" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tPersonalStuff">
+      <EntityTypeMapping TypeName="Gimnazia1Model.tPersonalStuff">
+        <MappingFragment StoreEntitySet="tPersonalStuff">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PListID" ColumnName="PListID" />
+          <ScalarProperty Name="PenalID" ColumnName="PenalID" />
+          <ScalarProperty Name="ReferenceBookID" ColumnName="ReferenceBookID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tPStuffLogData">
+      <EntityTypeMapping TypeName="Gimnazia1Model.tPStuffLogData">
+        <MappingFragment StoreEntitySet="tPStuffLogData">
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="PenalID" ColumnName="PenalID" />
+          <ScalarProperty Name="PListID" ColumnName="PListID" />
+          <ScalarProperty Name="ReferenceBookID" ColumnName="ReferenceBookID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="TimeVal" ColumnName="TimeVal" />
+          <ScalarProperty Name="FIO" ColumnName="FIO" />
+          <ScalarProperty Name="PStuffName" ColumnName="PStuffName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tPStuffPhoto">
+      <EntityTypeMapping TypeName="Gimnazia1Model.tPStuffPhoto">
+        <MappingFragment StoreEntitySet="tPStuffPhoto">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IDPLIST" ColumnName="IDPLIST" />
+          <ScalarProperty Name="picture" ColumnName="picture" />
+          <ScalarProperty Name="Spack" ColumnName="Spack" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TreeCtrl">
+      <EntityTypeMapping TypeName="Gimnazia1Model.TreeCtrl">
+        <MappingFragment StoreEntitySet="TreeCtrl">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AbsoluteIndex" ColumnName="AbsoluteIndex" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="GLevel" ColumnName="GLevel" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TreeNode">
+      <EntityTypeMapping TypeName="Gimnazia1Model.TreeNode">
+        <MappingFragment StoreEntitySet="TreeNode">
+          <ScalarProperty Name="Num" ColumnName="Num" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Icon" ColumnName="Icon" />
+          <ScalarProperty Name="Special" ColumnName="Special" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tReferenceBook">
+      <EntityTypeMapping TypeName="Gimnazia1Model.tReferenceBook">
+        <MappingFragment StoreEntitySet="tReferenceBook">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RefType" ColumnName="RefType" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeDocList">
+      <EntityTypeMapping TypeName="Gimnazia1Model.TypeDocList">
+        <MappingFragment StoreEntitySet="TypeDocList">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IndentSh" ColumnName="IndentSh" />
+          <ScalarProperty Name="NumberType" ColumnName="NumberType" />
+          <ScalarProperty Name="SibStringName" ColumnName="SibStringName" />
+          <ScalarProperty Name="NumInList" ColumnName="NumInList" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeShlDevice">
+      <EntityTypeMapping TypeName="Gimnazia1Model.TypeShlDevice">
+        <MappingFragment StoreEntitySet="TypeShlDevice">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DeviceType" ColumnName="DeviceType" />
+          <ScalarProperty Name="DeviceTypeName" ColumnName="DeviceTypeName" />
+          <ScalarProperty Name="DeviceVersion" ColumnName="DeviceVersion" />
+          <ScalarProperty Name="NumShBegin" ColumnName="NumShBegin" />
+          <ScalarProperty Name="NumShStop" ColumnName="NumShStop" />
+          <ScalarProperty Name="ElementType" ColumnName="ElementType" />
+          <ScalarProperty Name="ShlType" ColumnName="ShlType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ValueDevItemsScenarios">
+      <EntityTypeMapping TypeName="Gimnazia1Model.ValueDevItemsScenarios">
+        <MappingFragment StoreEntitySet="ValueDevItemsScenarios">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_Device" ColumnName="ID_Device" />
+          <ScalarProperty Name="ID_DeviceType" ColumnName="ID_DeviceType" />
+          <ScalarProperty Name="ID_RefItemsScen" ColumnName="ID_RefItemsScen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ValueItemsScenarios">
+      <EntityTypeMapping TypeName="Gimnazia1Model.ValueItemsScenarios">
+        <MappingFragment StoreEntitySet="ValueItemsScenarios">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_ScenDevice" ColumnName="ID_ScenDevice" />
+          <ScalarProperty Name="ID_RefItemsScen" ColumnName="ID_RefItemsScen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VersionDB">
+      <EntityTypeMapping TypeName="Gimnazia1Model.VersionDB">
+        <MappingFragment StoreEntitySet="VersionDB">
+          <ScalarProperty Name="Num" ColumnName="Num" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="VersionDataBase" ColumnName="VersionDataBase" />
+          <ScalarProperty Name="CountTable" ColumnName="CountTable" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="Rezerv1" ColumnName="Rezerv1" />
+          <ScalarProperty Name="GUID_DB" ColumnName="GUID_DB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VideoArchive">
+      <EntityTypeMapping TypeName="Gimnazia1Model.VideoArchive">
+        <MappingFragment StoreEntitySet="VideoArchive">
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+          <ScalarProperty Name="ObjType" ColumnName="ObjType" />
+          <ScalarProperty Name="GIndex" ColumnName="GIndex" />
+          <ScalarProperty Name="Param" ColumnName="Param" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VideoCamShots">
+      <EntityTypeMapping TypeName="Gimnazia1Model.VideoCamShots">
+        <MappingFragment StoreEntitySet="VideoCamShots">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CameraID" ColumnName="CameraID" />
+          <ScalarProperty Name="EventTime" ColumnName="EventTime" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="Reserv" ColumnName="Reserv" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VideoEvents">
+      <EntityTypeMapping TypeName="Gimnazia1Model.VideoEvents">
+        <MappingFragment StoreEntitySet="VideoEvents">
+          <ScalarProperty Name="GUID" ColumnName="GUID" />
+          <ScalarProperty Name="TypeObj" ColumnName="TypeObj" />
+          <ScalarProperty Name="GIndex" ColumnName="GIndex" />
+          <ScalarProperty Name="Event" ColumnName="Event" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="FileSize" ColumnName="FileSize" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="Param" ColumnName="Param" />
+          <ScalarProperty Name="PathID" ColumnName="PathID" />
+          <ScalarProperty Name="NumRec" ColumnName="NumRec" />
+          <ScalarProperty Name="NumPart" ColumnName="NumPart" />
+          <ScalarProperty Name="ProtectedRec" ColumnName="ProtectedRec" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VideoRecognizeAccessPoint">
+      <EntityTypeMapping TypeName="Gimnazia1Model.VideoRecognizeAccessPoint">
+        <MappingFragment StoreEntitySet="VideoRecognizeAccessPoint">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ReaderID" ColumnName="ReaderID" />
+          <ScalarProperty Name="Mode" ColumnName="Mode" />
+          <ScalarProperty Name="AccessPointID" ColumnName="AccessPointID" />
+          <ScalarProperty Name="ModeAccess" ColumnName="ModeAccess" />
+          <ScalarProperty Name="ReaderMode" ColumnName="ReaderMode" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VideoRecognizeChannels">
+      <EntityTypeMapping TypeName="Gimnazia1Model.VideoRecognizeChannels">
+        <MappingFragment StoreEntitySet="VideoRecognizeChannels">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="VideoInspectorID" ColumnName="VideoInspectorID" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="GIndex" ColumnName="GIndex" />
+          <ScalarProperty Name="ProfileID" ColumnName="ProfileID" />
+          <ScalarProperty Name="CameraID" ColumnName="CameraID" />
+          <ScalarProperty Name="ChannelMode" ColumnName="ChannelMode" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VideoRecognizeProfiles">
+      <EntityTypeMapping TypeName="Gimnazia1Model.VideoRecognizeProfiles">
+        <MappingFragment StoreEntitySet="VideoRecognizeProfiles">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Settings" ColumnName="Settings" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vInsp">
+      <EntityTypeMapping TypeName="Gimnazia1Model.vInsp">
+        <MappingFragment StoreEntitySet="vInsp">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ComputerID" ColumnName="ComputerID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TCP_IP" ColumnName="TCP_IP" />
+          <ScalarProperty Name="VinspType" ColumnName="VinspType" />
+          <ScalarProperty Name="ActiveX" ColumnName="ActiveX" />
+          <ScalarProperty Name="CompName" ColumnName="CompName" />
+          <ScalarProperty Name="GIndex" ColumnName="GIndex" />
+          <ScalarProperty Name="vInspParams" ColumnName="vInspParams" />
+          <ScalarProperty Name="ArchivePath" ColumnName="ArchivePath" />
+          <ScalarProperty Name="IsSecure" ColumnName="IsSecure" />
+          <ScalarProperty Name="Settings" ColumnName="Settings" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vInspTypes">
+      <EntityTypeMapping TypeName="Gimnazia1Model.vInspTypes">
+        <MappingFragment StoreEntitySet="vInspTypes">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="vInspType" ColumnName="vInspType" />
+          <ScalarProperty Name="Icon" ColumnName="Icon" />
+          <ScalarProperty Name="Flags" ColumnName="Flags" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="weightcamera">
+      <EntityTypeMapping TypeName="Gimnazia1Model.weightcamera">
+        <MappingFragment StoreEntitySet="weightcamera">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="door" ColumnName="door" />
+          <ScalarProperty Name="weightterminal" ColumnName="weightterminal" />
+          <ScalarProperty Name="weight0" ColumnName="weight0" />
+          <ScalarProperty Name="weightdiscret" ColumnName="weightdiscret" />
+          <ScalarProperty Name="deltaweightstable" ColumnName="deltaweightstable" />
+          <ScalarProperty Name="durationdooropen" ColumnName="durationdooropen" />
+          <ScalarProperty Name="durationdooropenclose" ColumnName="durationdooropenclose" />
+          <ScalarProperty Name="timefilter" ColumnName="timefilter" />
+          <ScalarProperty Name="timestep" ColumnName="timestep" />
+          <ScalarProperty Name="minpersonweight" ColumnName="minpersonweight" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkTimeZone">
+      <EntityTypeMapping TypeName="Gimnazia1Model.WorkTimeZone">
+        <MappingFragment StoreEntitySet="WorkTimeZone">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="GIndex" ColumnName="GIndex" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Codes_T12">
+      <EntityTypeMapping TypeName="Gimnazia1Model.Codes_T12">
+        <MappingFragment StoreEntitySet="Codes_T12">
+          <ScalarProperty Name="DateC" ColumnName="DateC" />
+          <ScalarProperty Name="IDHOZORGAN" ColumnName="IDHOZORGAN" />
+          <ScalarProperty Name="LetterID" ColumnName="LetterID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kone_DOP">
+      <EntityTypeMapping TypeName="Gimnazia1Model.Kone_DOP">
+        <MappingFragment StoreEntitySet="Kone_DOP">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_KGS" ColumnName="ID_KGS" />
+          <ScalarProperty Name="ID_AcessPoint" ColumnName="ID_AcessPoint" />
+          <ScalarProperty Name="dop_id" ColumnName="dop_id" />
+          <ScalarProperty Name="dop_floor_id" ColumnName="dop_floor_id" />
+          <ScalarProperty Name="open_timeout" ColumnName="open_timeout" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RSBioAccess">
+      <EntityTypeMapping TypeName="Gimnazia1Model.RSBioAccess">
+        <MappingFragment StoreEntitySet="RSBioAccess">
+          <ScalarProperty Name="ID_DeviceType" ColumnName="ID_DeviceType" />
+          <ScalarProperty Name="ID_ReaderTypeAvailable" ColumnName="ID_ReaderTypeAvailable" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RSBioAccess2">
+      <EntityTypeMapping TypeName="Gimnazia1Model.RSBioAccess2">
+        <MappingFragment StoreEntitySet="RSBioAccess2">
+          <ScalarProperty Name="ID_DeviceType" ColumnName="ID_DeviceType" />
+          <ScalarProperty Name="ID_ReaderTypeAvailable" ColumnName="ID_ReaderTypeAvailable" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RSBioParams">
+      <EntityTypeMapping TypeName="Gimnazia1Model.RSBioParams">
+        <MappingFragment StoreEntitySet="RSBioParams">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_Device" ColumnName="ID_Device" />
+          <ScalarProperty Name="ID_Param" ColumnName="ID_Param" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FixVersionRsLine">
+      <EntityTypeMapping TypeName="Gimnazia1Model.FixVersionRsLine">
+        <MappingFragment StoreEntitySet="FixVersionRsLine">
+          <ScalarProperty Name="ID_RsLine" ColumnName="ID_RsLine" />
+          <ScalarProperty Name="DeviceType" ColumnName="DeviceType" />
+          <ScalarProperty Name="DeviceVersionOld" ColumnName="DeviceVersionOld" />
+          <ScalarProperty Name="DeviceVersionNew" ColumnName="DeviceVersionNew" />
+          <ScalarProperty Name="ChangeDateTme" ColumnName="ChangeDateTme" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_ChangeLogForDB">
+      <EntityTypeMapping TypeName="Gimnazia1Model.v_ChangeLogForDB">
+        <MappingFragment StoreEntitySet="v_ChangeLogForDB">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="timeVal" ColumnName="timeVal" />
+          <ScalarProperty Name="state_record" ColumnName="state_record" />
+          <ScalarProperty Name="table_name" ColumnName="table_name" />
+          <ScalarProperty Name="ValueId" ColumnName="ValueId" />
+          <ScalarProperty Name="OperatorId" ColumnName="OperatorId" />
+          <ScalarProperty Name="InsideSystem" ColumnName="InsideSystem" />
+          <ScalarProperty Name="xml_data" ColumnName="xml_data" />
+          <ScalarProperty Name="Num" ColumnName="Num" />
+          <ScalarProperty Name="Workstation" ColumnName="Workstation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionName="Хранилище Gimnazia1Model.fn_ClientObjectTypeToDbType" FunctionImportName="fn_ClientObjectTypeToDbType">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Gimnazia1Model.fn_ClientObjectTypeToDbType_Result">
+          <ScalarProperty Name="ClientType" ColumnName="ClientType" />
+          <ScalarProperty Name="GType" ColumnName="GType" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="Хранилище Gimnazia1Model.fn_ParserStrToTable" FunctionImportName="fn_ParserStrToTable">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Gimnazia1Model.fn_ParserStrToTable_Result">
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="Хранилище Gimnazia1Model.fn_SelectCamerasTreePlan" FunctionImportName="fn_SelectCamerasTreePlan">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Gimnazia1Model.fn_SelectCamerasTreePlan_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MapID" ColumnName="MapID" />
+          <ScalarProperty Name="PictureCount" ColumnName="PictureCount" />
+          <ScalarProperty Name="MapElementID" ColumnName="MapElementID" />
+          <ScalarProperty Name="NameCamera" ColumnName="NameCamera" />
+          <ScalarProperty Name="GIndex" ColumnName="GIndex" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="Хранилище Gimnazia1Model.fn_SelectDevicesTreePlan" FunctionImportName="fn_SelectDevicesTreePlan">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Gimnazia1Model.fn_SelectDevicesTreePlan_Result">
+          <ScalarProperty Name="PKUID" ColumnName="PKUID" />
+          <ScalarProperty Name="GLineNo" ColumnName="GLineNo" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MapID" ColumnName="MapID" />
+          <ScalarProperty Name="PictureCount" ColumnName="PictureCount" />
+          <ScalarProperty Name="MapElementID" ColumnName="MapElementID" />
+          <ScalarProperty Name="NameDevice" ColumnName="NameDevice" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="Хранилище Gimnazia1Model.fn_SelectDoorsTreePlan" FunctionImportName="fn_SelectDoorsTreePlan">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Gimnazia1Model.fn_SelectDoorsTreePlan_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GIndex" ColumnName="GIndex" />
+          <ScalarProperty Name="MapID" ColumnName="MapID" />
+          <ScalarProperty Name="PictureCount" ColumnName="PictureCount" />
+          <ScalarProperty Name="MapElementID" ColumnName="MapElementID" />
+          <ScalarProperty Name="NameDoor" ColumnName="NameDoor" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="Хранилище Gimnazia1Model.fn_SelectGroupObjectsTreePlan" FunctionImportName="fn_SelectGroupObjectsTreePlan">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Gimnazia1Model.fn_SelectGroupObjectsTreePlan_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GIndex" ColumnName="GIndex" />
+          <ScalarProperty Name="MapID" ColumnName="MapID" />
+          <ScalarProperty Name="PictureCount" ColumnName="PictureCount" />
+          <ScalarProperty Name="GType" ColumnName="GType" />
+          <ScalarProperty Name="MapElementID" ColumnName="MapElementID" />
+          <ScalarProperty Name="NameGrObject" ColumnName="NameGrObject" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="Хранилище Gimnazia1Model.fn_SelectLinkTreePlan" FunctionImportName="fn_SelectLinkTreePlan">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Gimnazia1Model.fn_SelectLinkTreePlan_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MapID" ColumnName="MapID" />
+          <ScalarProperty Name="PictureCount" ColumnName="PictureCount" />
+          <ScalarProperty Name="MapElementID" ColumnName="MapElementID" />
+          <ScalarProperty Name="NameLinkPlan" ColumnName="NameLinkPlan" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="Хранилище Gimnazia1Model.fn_SelectMapElements" FunctionImportName="fn_SelectMapElements">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Gimnazia1Model.fn_SelectMapElements_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MapID" ColumnName="MapID" />
+          <ScalarProperty Name="GType" ColumnName="GType" />
+          <ScalarProperty Name="UnitID" ColumnName="UnitID" />
+          <ScalarProperty Name="UnitType" ColumnName="UnitType" />
+          <ScalarProperty Name="DeviceType" ColumnName="DeviceType" />
+          <ScalarProperty Name="LineNo" ColumnName="LineNo" />
+          <ScalarProperty Name="MACAddress" ColumnName="MACAddress" />
+          <ScalarProperty Name="DeviceInterface" ColumnName="DeviceInterface" />
+          <ScalarProperty Name="IdDevice" ColumnName="IdDevice" />
+          <ScalarProperty Name="ItemUnitType" ColumnName="ItemUnitType" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="ImageIndex" ColumnName="ImageIndex" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="D1" ColumnName="D1" />
+          <ScalarProperty Name="D2" ColumnName="D2" />
+          <ScalarProperty Name="PictureCount" ColumnName="PictureCount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="Хранилище Gimnazia1Model.fn_SelectMapIndicatorsDefault" FunctionImportName="fn_SelectMapIndicatorsDefault">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Gimnazia1Model.fn_SelectMapIndicatorsDefault_Result">
+          <ScalarProperty Name="ID_Indicator" ColumnName="ID_Indicator" />
+          <ScalarProperty Name="RangeMin" ColumnName="RangeMin" />
+          <ScalarProperty Name="RangeMax" ColumnName="RangeMax" />
+          <ScalarProperty Name="RangeColor" ColumnName="RangeColor" />
+          <ScalarProperty Name="StatusRange" ColumnName="StatusRange" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="Хранилище Gimnazia1Model.fn_SelectObjectsTreePlan" FunctionImportName="fn_SelectObjectsTreePlan">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Gimnazia1Model.fn_SelectObjectsTreePlan_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GIndex" ColumnName="GIndex" />
+          <ScalarProperty Name="MapID" ColumnName="MapID" />
+          <ScalarProperty Name="PictureCount" ColumnName="PictureCount" />
+          <ScalarProperty Name="MapElementID" ColumnName="MapElementID" />
+          <ScalarProperty Name="NameObject" ColumnName="NameObject" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="Хранилище Gimnazia1Model.fn_SelectReadersTreePlan" FunctionImportName="fn_SelectReadersTreePlan">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Gimnazia1Model.fn_SelectReadersTreePlan_Result">
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MapID" ColumnName="MapID" />
+          <ScalarProperty Name="PictureCount" ColumnName="PictureCount" />
+          <ScalarProperty Name="MapElementID" ColumnName="MapElementID" />
+          <ScalarProperty Name="NameReader" ColumnName="NameReader" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="Хранилище Gimnazia1Model.fn_SelectScenarios" FunctionImportName="fn_SelectScenarios">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Gimnazia1Model.fn_SelectScenarios_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_Parent" ColumnName="ID_Parent" />
+          <ScalarProperty Name="ID_ScenariosTypes" ColumnName="ID_ScenariosTypes" />
+          <ScalarProperty Name="ID_Device" ColumnName="ID_Device" />
+          <ScalarProperty Name="DeviceType" ColumnName="DeviceType" />
+          <ScalarProperty Name="ID_Level" ColumnName="ID_Level" />
+          <ScalarProperty Name="Num" ColumnName="Num" />
+          <ScalarProperty Name="ScenName" ColumnName="ScenName" />
+          <ScalarProperty Name="ImageIndex" ColumnName="ImageIndex" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="Хранилище Gimnazia1Model.fn_SelectScenariosDevicesName" FunctionImportName="fn_SelectScenariosDevicesName">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Gimnazia1Model.fn_SelectScenariosDevicesName_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DeviceType" ColumnName="DeviceType" />
+          <ScalarProperty Name="NameDevice" ColumnName="NameDevice" />
+          <ScalarProperty Name="ComPortNum" ColumnName="ComPortNum" />
+          <ScalarProperty Name="CompNum" ColumnName="CompNum" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="Хранилище Gimnazia1Model.fn_SelectSectionInputTreePlan" FunctionImportName="fn_SelectSectionInputTreePlan">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Gimnazia1Model.fn_SelectSectionInputTreePlan_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GIndex" ColumnName="GIndex" />
+          <ScalarProperty Name="PictureCount" ColumnName="PictureCount" />
+          <ScalarProperty Name="ElementName" ColumnName="ElementName" />
+          <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+          <ScalarProperty Name="MapID" ColumnName="MapID" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="Хранилище Gimnazia1Model.fn_SelectSectionOutputTreePlan" FunctionImportName="fn_SelectSectionOutputTreePlan">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Gimnazia1Model.fn_SelectSectionOutputTreePlan_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GIndex" ColumnName="GIndex" />
+          <ScalarProperty Name="PictureCount" ColumnName="PictureCount" />
+          <ScalarProperty Name="MapID" ColumnName="MapID" />
+          <ScalarProperty Name="ElementName" ColumnName="ElementName" />
+          <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="MapElementID" ColumnName="MapElementID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="Хранилище Gimnazia1Model.fn_SelectZoneIndicatorsTreePlan" FunctionImportName="fn_SelectZoneIndicatorsTreePlan">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Gimnazia1Model.fn_SelectZoneIndicatorsTreePlan_Result">
+          <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+          <ScalarProperty Name="GType" ColumnName="GType" />
+          <ScalarProperty Name="ElementName" ColumnName="ElementName" />
+          <ScalarProperty Name="HintElementName" ColumnName="HintElementName" />
+          <ScalarProperty Name="MapID" ColumnName="MapID" />
+          <ScalarProperty Name="PictureCount" ColumnName="PictureCount" />
+          <ScalarProperty Name="MapElementID" ColumnName="MapElementID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="Хранилище Gimnazia1Model.usfGetUnusedPenalList" FunctionImportName="usfGetUnusedPenalList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Gimnazia1Model.usfGetUnusedPenalList_Result">
+          <ScalarProperty Name="accessID" ColumnName="accessID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

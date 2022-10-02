@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peremen", "Peremen\Peremen.csproj", "{9B562B17-AC18-4CE2-AAD8-4F0A7AE6E25E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B562B17-AC18-4CE2-AAD8-4F0A7AE6E25E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B562B17-AC18-4CE2-AAD8-4F0A7AE6E25E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B562B17-AC18-4CE2-AAD8-4F0A7AE6E25E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B562B17-AC18-4CE2-AAD8-4F0A7AE6E25E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC44E8FB-255F-4922-9F12-14A62C0DC2CE}
+	EndGlobalSection
+EndGlobal

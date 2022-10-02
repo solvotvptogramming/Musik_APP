@@ -1,0 +1,3433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Gimnazia1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <ComplexType Name="fn_ClientObjectTypeToDbType_Result">
+    <Property Name="ClientType" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="GType" Type="Int32" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="fn_ParserStrToTable_Result">
+    <Property Name="RowNum" Type="Int32" Nullable="false" />
+    <Property Name="ID" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+  </ComplexType>
+  <ComplexType Name="fn_SelectCamerasTreePlan_Result">
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="MapID" Type="Int32" />
+    <Property Name="PictureCount" Type="Int32" Nullable="false" />
+    <Property Name="MapElementID" Type="Int32" />
+    <Property Name="NameCamera" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="GIndex" Type="Int32" />
+  </ComplexType>
+  <ComplexType Name="fn_SelectDevicesTreePlan_Result">
+    <Property Name="PKUID" Type="Int32" Nullable="false" />
+    <Property Name="GLineNo" Type="Int32" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="MapID" Type="Int32" />
+    <Property Name="PictureCount" Type="Int32" Nullable="false" />
+    <Property Name="MapElementID" Type="Int32" />
+    <Property Name="NameDevice" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+  </ComplexType>
+  <ComplexType Name="fn_SelectDoorsTreePlan_Result">
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="GIndex" Type="Int32" Nullable="false" />
+    <Property Name="MapID" Type="Int32" />
+    <Property Name="PictureCount" Type="Int32" Nullable="false" />
+    <Property Name="MapElementID" Type="Int32" />
+    <Property Name="NameDoor" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+  </ComplexType>
+  <ComplexType Name="fn_SelectGroupObjectsTreePlan_Result">
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="GIndex" Type="Int32" Nullable="false" />
+    <Property Name="MapID" Type="Int32" />
+    <Property Name="PictureCount" Type="Int32" Nullable="false" />
+    <Property Name="GType" Type="Int32" />
+    <Property Name="MapElementID" Type="Int32" />
+    <Property Name="NameGrObject" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+  </ComplexType>
+  <ComplexType Name="fn_SelectLinkTreePlan_Result">
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="MapID" Type="Int32" />
+    <Property Name="PictureCount" Type="Int32" Nullable="false" />
+    <Property Name="MapElementID" Type="Int32" />
+    <Property Name="NameLinkPlan" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+  </ComplexType>
+  <ComplexType Name="fn_SelectMapElements_Result">
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="MapID" Type="Int32" Nullable="false" />
+    <Property Name="GType" Type="Int32" Nullable="false" />
+    <Property Name="UnitID" Type="Int32" Nullable="false" />
+    <Property Name="UnitType" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="DeviceType" Type="Int32" />
+    <Property Name="LineNo" Type="Int32" />
+    <Property Name="MACAddress" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="DeviceInterface" Type="Int32" />
+    <Property Name="IdDevice" Type="Int32" />
+    <Property Name="ItemUnitType" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Text" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ImageIndex" Type="Int32" />
+    <Property Name="Data" Type="Int32" />
+    <Property Name="D1" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="D2" Type="Int32" />
+    <Property Name="PictureCount" Type="Int32" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="fn_SelectMapIndicatorsDefault_Result">
+    <Property Name="ID_Indicator" Type="Int32" Nullable="false" />
+    <Property Name="RangeMin" Type="Decimal" Precision="7" Scale="1" Nullable="false" />
+    <Property Name="RangeMax" Type="Decimal" Precision="6" Scale="1" Nullable="false" />
+    <Property Name="RangeColor" Type="Int32" Nullable="false" />
+    <Property Name="StatusRange" Type="Int32" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="fn_SelectObjectsTreePlan_Result">
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="GIndex" Type="Int32" Nullable="false" />
+    <Property Name="MapID" Type="Int32" />
+    <Property Name="PictureCount" Type="Int32" Nullable="false" />
+    <Property Name="MapElementID" Type="Int32" />
+    <Property Name="NameObject" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+  </ComplexType>
+  <ComplexType Name="fn_SelectReadersTreePlan_Result">
+    <Property Name="Address" Type="Int32" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="MapID" Type="Int32" />
+    <Property Name="PictureCount" Type="Int32" Nullable="false" />
+    <Property Name="MapElementID" Type="Int32" />
+    <Property Name="NameReader" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+  </ComplexType>
+  <ComplexType Name="fn_SelectScenarios_Result">
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ID_Parent" Type="Int32" />
+    <Property Name="ID_ScenariosTypes" Type="Int32" Nullable="false" />
+    <Property Name="ID_Device" Type="Int32" Nullable="false" />
+    <Property Name="DeviceType" Type="Int32" Nullable="false" />
+    <Property Name="ID_Level" Type="Int32" Nullable="false" />
+    <Property Name="Num" Type="Int32" />
+    <Property Name="ScenName" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="ImageIndex" Type="Int32" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="fn_SelectScenariosDevicesName_Result">
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="DeviceType" Type="Int32" />
+    <Property Name="NameDevice" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="ComPortNum" Type="Int32" />
+    <Property Name="CompNum" Type="Int32" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="fn_SelectSectionInputTreePlan_Result">
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="GIndex" Type="Int32" Nullable="false" />
+    <Property Name="PictureCount" Type="Int32" Nullable="false" />
+    <Property Name="ElementName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="ObjectID" Type="Int32" Nullable="false" />
+    <Property Name="MapID" Type="Int32" />
+    <Property Name="Address" Type="Int32" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="fn_SelectSectionOutputTreePlan_Result">
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="GIndex" Type="Int32" Nullable="false" />
+    <Property Name="PictureCount" Type="Int32" Nullable="false" />
+    <Property Name="MapID" Type="Int32" />
+    <Property Name="ElementName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="ObjectID" Type="Int32" Nullable="false" />
+    <Property Name="Address" Type="Int32" Nullable="false" />
+    <Property Name="MapElementID" Type="Int32" />
+  </ComplexType>
+  <ComplexType Name="fn_SelectZoneIndicatorsTreePlan_Result">
+    <Property Name="ObjectID" Type="Int32" />
+    <Property Name="GType" Type="Int32" Nullable="false" />
+    <Property Name="ElementName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="HintElementName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="MapID" Type="Int32" />
+    <Property Name="PictureCount" Type="Int32" />
+    <Property Name="MapElementID" Type="Int32" />
+  </ComplexType>
+  <ComplexType Name="usfGetUnusedPenalList_Result">
+    <Property Name="accessID" Type="Int32" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="AccessZone">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Comment" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="GIndex" Type="Int32" Nullable="false" />
+    <Property Name="Config" Type="Int32" />
+    <Property Name="Status" Type="Int32" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="AcessPoint">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ComputerID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Comment" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="GIndex" Type="Int32" Nullable="false" />
+    <Property Name="Gtype" Type="Int32" Nullable="false" />
+    <Property Name="InKeyID" Type="Int32" />
+    <Property Name="InDuration" Type="Int32" />
+    <Property Name="InCommand" Type="Int32" />
+    <Property Name="OutKeyID" Type="Int32" />
+    <Property Name="OutDuration" Type="Int32" />
+    <Property Name="OutCommand" Type="Int32" />
+    <Property Name="InKeyID2" Type="Int32" />
+    <Property Name="InDuration2" Type="Int32" />
+    <Property Name="InCommand2" Type="Int32" />
+    <Property Name="OutKeyID2" Type="Int32" />
+    <Property Name="OutDuration2" Type="Int32" />
+    <Property Name="OutCommand2" Type="Int32" />
+    <Property Name="Config" Type="Int32" />
+    <Property Name="IndexZone1" Type="Int32" />
+    <Property Name="IndexZone2" Type="Int32" />
+    <Property Name="IndexZone3" Type="Int32" />
+    <Property Name="IndexZone4" Type="Int32" />
+    <Property Name="WorkTimeZone1" Type="Int32" />
+    <Property Name="WorkTimeZone2" Type="Int32" />
+    <Property Name="WorkTimeZone3" Type="Int32" />
+    <Property Name="WorkTimeZone4" Type="Int32" />
+    <Property Name="Mode" Type="Int32" />
+    <Property Name="WeightTerminalID" Type="Int32" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Kone_COP" Relationship="Self.FK_KONE_Cop_FK_AсcessPoint_ID" FromRole="AcessPoint" ToRole="Kone_COP" />
+    <NavigationProperty Name="Kone_DOP" Relationship="Self.FK_KONE_Dop_FK_AсcessPoint_ID" FromRole="AcessPoint" ToRole="Kone_DOP" />
+  </EntityType>
+  <EntityType Name="adc">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="TimeVal" Type="DateTime" />
+    <Property Name="IndexZone" Type="Int32" />
+    <Property Name="IndexDevice" Type="Int32" />
+    <Property Name="ComputerID" Type="Int32" />
+    <Property Name="LogID" Type="Int32" />
+    <Property Name="ADC1" Type="Double" />
+    <Property Name="Status" Type="Int32" />
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+    <Property Name="TypeADC" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ApplicationModifData">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_Parent" Type="Int32" />
+    <Property Name="Caption" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Code" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="EventOnModificationData" Relationship="Self.FK_EventOnModificationData_ID_Application" FromRole="ApplicationModifData" ToRole="EventOnModificationData" />
+  </EntityType>
+  <EntityType Name="Authorities">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="GroupID" Type="Int32" Nullable="false" />
+    <Property Name="ProgramID" Type="Int32" Nullable="false" />
+    <Property Name="ProgramSubItemID" Type="Int32" />
+    <Property Name="aBrowse" Type="Int32" />
+    <Property Name="aInsert" Type="Int32" />
+    <Property Name="aEdit" Type="Int32" />
+    <Property Name="aDelete" Type="Int32" />
+    <Property Name="Archive" Type="Int32" />
+    <NavigationProperty Name="RelationDiv" Relationship="Self.FK_RelationDiv_IdAuto" FromRole="Authorities" ToRole="RelationDiv" />
+  </EntityType>
+  <EntityType Name="BindingCommandScenarios">
+    <Key>
+      <PropertyRef Name="ID_ItemsScenarios" />
+      <PropertyRef Name="ID_CommandScenarios" />
+      <PropertyRef Name="ID_Level" />
+    </Key>
+    <Property Name="ID_ItemsScenarios" Type="Int32" Nullable="false" />
+    <Property Name="ID_CommandScenarios" Type="Int32" Nullable="false" />
+    <Property Name="ID_Level" Type="Byte" Nullable="false" />
+    <Property Name="Sort" Type="Int32" Nullable="false" />
+    <Property Name="Def" Type="Boolean" Nullable="false" />
+    <Property Name="isNumber" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="ReferenceCommandScenarios" Relationship="Self.FK_BindingCommandScenarios_ID_CommandScenarios" FromRole="BindingCommandScenarios" ToRole="ReferenceCommandScenarios" />
+    <NavigationProperty Name="ReferenceItemsScenarios" Relationship="Self.FK_BindingCommandScenarios_ID_ItemsScenarios" FromRole="BindingCommandScenarios" ToRole="ReferenceItemsScenarios" />
+  </EntityType>
+  <EntityType Name="BindingConditionStepScen">
+    <Key>
+      <PropertyRef Name="ID_ScenDevice" />
+      <PropertyRef Name="Access" />
+      <PropertyRef Name="ID_ConditionScen" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_ScenDevice" Type="Int32" Nullable="false" />
+    <Property Name="Access" Type="Boolean" Nullable="false" />
+    <Property Name="ID_ConditionScen" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ConditionStepScenarios" Relationship="Self.FK_BindingConditionStepScen_ID_ConditionScen" FromRole="BindingConditionStepScen" ToRole="ConditionStepScenarios" />
+    <NavigationProperty Name="ScenariosDevice" Relationship="Self.FK_BindingConditionStepScen_ID_ScenDevice" FromRole="BindingConditionStepScen" ToRole="ScenariosDevice" />
+  </EntityType>
+  <EntityType Name="BindingGrObjectsStepScen">
+    <Key>
+      <PropertyRef Name="ID_ScenDevice" />
+      <PropertyRef Name="Access" />
+      <PropertyRef Name="ID_GrObject" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_ScenDevice" Type="Int32" Nullable="false" />
+    <Property Name="Access" Type="Boolean" Nullable="false" />
+    <Property Name="ID_GrObject" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="GroupObj" Relationship="Self.FK_BindingGrObjectsStepScen_ID_Object" FromRole="BindingGrObjectsStepScen" ToRole="GroupObj" />
+    <NavigationProperty Name="ScenariosDevice" Relationship="Self.FK_BindingGrObjectsStepScen_ID_ScenDevice" FromRole="BindingGrObjectsStepScen" ToRole="ScenariosDevice" />
+  </EntityType>
+  <EntityType Name="BindingItemsDevScenarios">
+    <Key>
+      <PropertyRef Name="ID_ElementType" />
+      <PropertyRef Name="ID_ItemsScenarios" />
+    </Key>
+    <Property Name="ID_ElementType" Type="Int32" Nullable="false" />
+    <Property Name="ID_ItemsScenarios" Type="Int32" Nullable="false" />
+    <Property Name="Sort" Type="Int32" Nullable="false" />
+    <Property Name="ReadOnly" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="ReferenceItemsScenarios" Relationship="Self.FK_BindingItemsDevScenarios_ID_ItemsScenarios" FromRole="BindingItemsDevScenarios" ToRole="ReferenceItemsScenarios" />
+  </EntityType>
+  <EntityType Name="BindingItemsScenarios">
+    <Key>
+      <PropertyRef Name="ID_ScenariosTypes" />
+      <PropertyRef Name="ID_ItemsScenarios" />
+      <PropertyRef Name="ID_Level" />
+    </Key>
+    <Property Name="ID_ScenariosTypes" Type="Int32" Nullable="false" />
+    <Property Name="ID_ItemsScenarios" Type="Int32" Nullable="false" />
+    <Property Name="ID_Level" Type="Byte" Nullable="false" />
+    <Property Name="Def" Type="Boolean" Nullable="false" />
+    <Property Name="Sort" Type="Int32" Nullable="false" />
+    <Property Name="ReadOnly" Type="Boolean" Nullable="false" />
+    <Property Name="RegExp" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SortExp" Type="Int32" />
+    <NavigationProperty Name="ReferenceItemsScenarios" Relationship="Self.FK_BindingItemsScenarios_ID_ItemsScenarios" FromRole="BindingItemsScenarios" ToRole="ReferenceItemsScenarios" />
+    <NavigationProperty Name="ReferenceScenariosTypes" Relationship="Self.FK_BindingItemsScenarios_ID_ScenariosTypes" FromRole="BindingItemsScenarios" ToRole="ReferenceScenariosTypes" />
+  </EntityType>
+  <EntityType Name="BindingObjectsStepScen">
+    <Key>
+      <PropertyRef Name="ID_ScenDevice" />
+      <PropertyRef Name="Access" />
+      <PropertyRef Name="ID_Object" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_ScenDevice" Type="Int32" Nullable="false" />
+    <Property Name="Access" Type="Boolean" Nullable="false" />
+    <Property Name="ID_Object" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="pObjects" Relationship="Self.FK_BindingObjectsStepScen_ID_Object" FromRole="BindingObjectsStepScen" ToRole="pObjects" />
+    <NavigationProperty Name="ScenariosDevice" Relationship="Self.FK_BindingObjectsStepScen_ID_ScenDevice" FromRole="BindingObjectsStepScen" ToRole="ScenariosDevice" />
+  </EntityType>
+  <EntityType Name="CameraMatrix">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Matrix" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="CreateDate" Type="DateTime" />
+    <Property Name="Reserv" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Cameras">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CamNumber" Type="Int32" />
+    <Property Name="MonNumber" Type="Int32" />
+    <Property Name="GType" Type="Int32" />
+    <Property Name="FAlertRecord" Type="Int32" />
+    <Property Name="RecTimeAfterAlarm" Type="Int32" />
+    <Property Name="Settings" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="IPCamParams" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="ChangeTime" Type="DateTime" />
+    <Property Name="AutoTakeOff" Type="Int32" />
+    <Property Name="GIndex" Type="Int32" />
+    <Property Name="IPAddr" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ClientFieldsNames">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ClientFieldsValues" Relationship="Self.FK_ClientFieldsValues_ClientFieldsNames" FromRole="ClientFieldsNames" ToRole="ClientFieldsValues" />
+  </EntityType>
+  <EntityType Name="ClientFieldsValues">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="field_id" Type="Int32" Nullable="false" />
+    <Property Name="owner" Type="Int32" Nullable="false" />
+    <Property Name="value" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ClientFieldsNames" Relationship="Self.FK_ClientFieldsValues_ClientFieldsNames" FromRole="ClientFieldsValues" ToRole="ClientFieldsNames" />
+    <NavigationProperty Name="pList" Relationship="Self.FK_ClientFieldsValues_pList" FromRole="ClientFieldsValues" ToRole="pList" />
+  </EntityType>
+  <EntityType Name="CodesList">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Letter" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ComPorts">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ComputerID" Type="Int32" Nullable="false" />
+    <Property Name="Number" Type="Int32" Nullable="false" />
+    <Property Name="Adaptor" Type="Int32" Nullable="false" />
+    <Property Name="PrAdaptor" Type="Int32" Nullable="false" />
+    <Property Name="PortType" Type="Int32" Nullable="false" />
+    <Property Name="AdaptorAddress" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="IPAddress" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="Protokoltype" Type="Int32" Nullable="false" />
+    <Property Name="TypeLine" Type="Int32" />
+    <Property Name="Comment" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Baud" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Comps">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Gindex" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Psevdonim" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="TCP_IP" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Gtype" Type="Int32" Nullable="false" />
+    <Property Name="Priority" Type="Int32" />
+    <Property Name="Works" Type="Int32" />
+    <Property Name="TypeEvents" Type="Int32" />
+    <Property Name="IpReservSrv" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="AbonentNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="ApplicationGuid" Type="Guid" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Comment" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="CompTrns">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="SenderID" Type="Int32" Nullable="false" />
+    <Property Name="ReceptorID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ConditionStepScenarios">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ParentID" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LatName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Version" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="BindingConditionStepScen" Relationship="Self.FK_BindingConditionStepScen_ID_ConditionScen" FromRole="ConditionStepScenarios" ToRole="BindingConditionStepScen" />
+    <NavigationProperty Name="ConditionStepScenarios1" Relationship="Self.FK_ConditionStepScenarios_ParentID" FromRole="ConditionStepScenarios" ToRole="ConditionStepScenarios1" />
+    <NavigationProperty Name="ConditionStepScenarios2" Relationship="Self.FK_ConditionStepScenarios_ParentID" FromRole="ConditionStepScenarios1" ToRole="ConditionStepScenarios" />
+  </EntityType>
+  <EntityType Name="ControlItems">
+    <Key>
+      <PropertyRef Name="guid_cmd" />
+    </Key>
+    <Property Name="item_type" Type="Int32" Nullable="false" />
+    <Property Name="item_id" Type="Int32" Nullable="false" />
+    <Property Name="tmvl" Type="DateTime" Nullable="false" />
+    <Property Name="cmd" Type="Int32" Nullable="false" />
+    <Property Name="action" Type="Int32" Nullable="false" />
+    <Property Name="guid_cmd" Type="String" MaxLength="64" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="id_owner" Type="Int32" />
+    <Property Name="result_cmd" Type="Int32" />
+    <Property Name="OwnercompId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Counters">
+    <Key>
+      <PropertyRef Name="TableName" />
+      <PropertyRef Name="FieldName" />
+    </Key>
+    <Property Name="TableName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FieldName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Counter" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DevCamerasItems">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+    <Property Name="ObjType" Type="Int32" Nullable="false" />
+    <Property Name="GIndex" Type="Int32" Nullable="false" />
+    <Property Name="CamIndex" Type="Int32" Nullable="false" />
+    <Property Name="Param" Type="Int32" />
+    <Property Name="IsEventRec" Type="Int32" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="DevElms">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="DevID" Type="Int32" Nullable="false" />
+    <Property Name="GType" Type="Int32" Nullable="false" />
+    <Property Name="UnitID" Type="Int32" Nullable="false" />
+    <Property Name="PhonesId" Type="Int32" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="devicemasterslave">
+    <Key>
+      <PropertyRef Name="mastertype" />
+      <PropertyRef Name="slavetype" />
+    </Key>
+    <Property Name="mastertype" Type="Int32" Nullable="false" />
+    <Property Name="slavetype" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DevItems">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ComputerID" Type="Int32" Nullable="false" />
+    <Property Name="DeviceID" Type="Int32" Nullable="false" />
+    <Property Name="Address" Type="Int32" Nullable="false" />
+    <Property Name="GIndex" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="Comment" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="GType" Type="Int32" />
+    <Property Name="ItemType" Type="Int32" Nullable="false" />
+    <Property Name="State" Type="Int32" />
+    <Property Name="Command" Type="Int32" />
+    <Property Name="TimeOutControl" Type="Int32" />
+    <Property Name="TimeOutConfig" Type="Int32" />
+    <Property Name="Config" Type="Int32" />
+    <Property Name="Flags" Type="Int32" />
+    <Property Name="IndexForContactId" Type="Int32" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="drivers">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="port" Type="Int32" Nullable="false" />
+    <Property Name="IP" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="mac" Type="String" MaxLength="18" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="files" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="mainfile" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="inifile" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="parameters" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="start_cmd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="stop_cmd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="install_cmd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="uninstall_cmd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="folder" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="drivers_comps">
+    <Key>
+      <PropertyRef Name="id_computer" />
+      <PropertyRef Name="id_driver" />
+    </Key>
+    <Property Name="id_computer" Type="Int32" Nullable="false" />
+    <Property Name="id_driver" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="dTypes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="CountShl" Type="Int32" />
+    <Property Name="CountKey" Type="Int32" />
+    <Property Name="CountReader" Type="Int32" />
+    <Property Name="Comment" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Face" Type="Int32" />
+    <Property Name="Icon" Type="Int32" />
+    <Property Name="ProtokolType" Type="Int32" />
+    <Property Name="Interfaces" Type="Int32" />
+    <Property Name="WorkLib" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="dTypesElement">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="DeviceType" Type="Int32" Nullable="false" />
+    <Property Name="DeviceVersion" Type="Int32" />
+    <Property Name="ElementType" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CountShl" Type="Int32" Nullable="false" />
+    <Property Name="CountKey" Type="Int32" Nullable="false" />
+    <Property Name="CountReader" Type="Int32" Nullable="false" />
+    <Property Name="Comment" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EventGroupID" Type="Int32" Nullable="false" />
+    <Property Name="DeviceVersionStr" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Property" Type="Int32" />
+    <Property Name="ElementsTypesGroupId" Type="Int32" />
+    <Property Name="SortingNum" Type="Int32" />
+  </EntityType>
+  <EntityType Name="DvsMass">
+    <Key>
+      <PropertyRef Name="IconGroup" />
+      <PropertyRef Name="Number" />
+      <PropertyRef Name="LargeIcon" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IconGroup" Type="Byte" Nullable="false" />
+    <Property Name="GroupSort" Type="Int32" />
+    <Property Name="Number" Type="Int32" Nullable="false" />
+    <Property Name="Left" Type="Int32" Nullable="false" />
+    <Property Name="Top" Type="Int32" Nullable="false" />
+    <Property Name="Width" Type="Int32" Nullable="false" />
+    <Property Name="Height" Type="Int32" Nullable="false" />
+    <Property Name="LargeIcon" Type="Boolean" Nullable="false" />
+    <Property Name="NumberRelation" Type="Int32" />
+    <Property Name="ResourceIco" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="ResWidth" Type="Int32" />
+    <Property Name="ResHeight" Type="Int32" />
+    <Property Name="ResCountIco" Type="Int32" />
+    <Property Name="DefaultLargeIcon" Type="Boolean" />
+    <Property Name="Description" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ElementsTypesGroups">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="EventGroup">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Comment" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="EventGroupCont">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="EventGroupID" Type="Int32" Nullable="false" />
+    <Property Name="EventID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EventOnModificationData">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="ChangeDate" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ChangeDate" Type="DateTime" Nullable="false" />
+    <Property Name="ID_Application" Type="Int32" Nullable="false" />
+    <Property Name="UpdateStatus" Type="Int32" Nullable="false" />
+    <Property Name="AGuid" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ID_Subj" Type="Int32" />
+    <Property Name="Subj" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AData" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ApplicationModifData" Relationship="Self.FK_EventOnModificationData_ID_Application" FromRole="EventOnModificationData" ToRole="ApplicationModifData" />
+  </EntityType>
+  <EntityType Name="Events">
+    <Key>
+      <PropertyRef Name="Event" />
+    </Key>
+    <Property Name="Event" Type="Int32" Nullable="false" />
+    <Property Name="CharID" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="Contents" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Comment" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="RealEvent" Type="Int32" />
+    <Property Name="State" Type="Int32" />
+    <Property Name="Category" Type="Int32" />
+    <Property Name="FormatView" Type="Int32" />
+    <Property Name="SoundNumber" Type="Int32" />
+    <Property Name="AlarmLevel" Type="Int32" />
+    <Property Name="GpEvent" Type="Int32" />
+    <Property Name="EventsCategoryID" Type="Int32" />
+    <Property Name="IsAlarm" Type="Int32" />
+  </EntityType>
+  <EntityType Name="EventsCategories">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="HexColor" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="EvReply">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ComputerID" Type="Int32" Nullable="false" />
+    <Property Name="Source" Type="Int32" Nullable="false" />
+    <Property Name="EventType" Type="Int32" Nullable="false" />
+    <Property Name="UnitID" Type="Int32" Nullable="false" />
+    <Property Name="ScriptID" Type="Int32" Nullable="false" />
+    <Property Name="Data" Type="Int32" />
+    <Property Name="DataType" Type="Int32" />
+  </EntityType>
+  <EntityType Name="GrAccess">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="GroupID" Type="Int32" Nullable="false" />
+    <Property Name="Mode" Type="Int32" Nullable="false" />
+    <Property Name="AccessID" Type="Int32" Nullable="false" />
+    <Property Name="Config" Type="Int32" />
+    <Property Name="TimeZone" Type="Int32" Nullable="false" />
+    <Property Name="Antipassback" Type="Int32" />
+    <Property Name="PardonTime" Type="DateTime" />
+    <Property Name="ConfirmID" Type="Int32" />
+    <Property Name="ConfirmID2" Type="Int32" />
+    <Property Name="Flags" Type="Int32" />
+    <Property Name="CodeType" Type="Int32" />
+    <Property Name="Code" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Config2" Type="Int32" />
+    <Property Name="PswAddCode" Type="Int32" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Kone_DopAccess" Relationship="Self.FK_KONE_DopAccess_FK_GRAccess_ID" FromRole="GrAccess" ToRole="Kone_DopAccess" />
+    <NavigationProperty Name="Kone_CopAccess" Relationship="Self.FK_KONE_СopAccess_FK_GRAccess_ID" FromRole="GrAccess" ToRole="Kone_CopAccess" />
+  </EntityType>
+  <EntityType Name="GrObjCont">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="GrObjID" Type="Int32" Nullable="false" />
+    <Property Name="ObjID" Type="Int32" Nullable="false" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GroupObj">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="GIndex" Type="Int32" Nullable="false" />
+    <Property Name="ComputerID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Comment" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="State" Type="Int32" />
+    <Property Name="Config" Type="Int32" />
+    <Property Name="AlarmKey" Type="Int32" />
+    <Property Name="GuardKey" Type="Int32" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="BindingGrObjectsStepScen" Relationship="Self.FK_BindingGrObjectsStepScen_ID_Object" FromRole="GroupObj" ToRole="BindingGrObjectsStepScen" />
+  </EntityType>
+  <EntityType Name="Groups">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Comment" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Flags" Type="Int32" />
+    <Property Name="GUID_1C" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Flags2" Type="Int32" Nullable="false" />
+    <Property Name="isTemplate" Type="Int32" />
+  </EntityType>
+  <EntityType Name="GsmSettings">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="RsLinesID" Type="Int32" Nullable="false" />
+    <Property Name="Apn" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Login" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Passw" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SmtpServer" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SmtpPort" Type="Int32" />
+    <Property Name="SmtpLogin" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SmtpPassw" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SmtpMailFrom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PopServer" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PopPort" Type="Int32" />
+    <Property Name="PopLogin" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PopPassw" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GTime">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Comment" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Calendar" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="TimeWinType" Type="Int32" />
+    <Property Name="WorkMode" Type="Int32" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Guest">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="PListID" Type="Int32" Nullable="false" />
+    <Property Name="ReceiveListId" Type="Int32" />
+    <Property Name="CompanyReceive" Type="Int32" />
+    <Property Name="SectionReceive" Type="Int32" />
+    <Property Name="Comment" Type="String" MaxLength="240" FixedLength="false" Unicode="false" />
+    <Property Name="Avto" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="AutoNumber" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="Automarka" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="AutoColor" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="AutoNigth" Type="Int32" />
+    <Property Name="DateVisit" Type="DateTime" />
+    <Property Name="ReceiveGuestName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ReceiveGuestFamaly" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="ReceiveGuestSecondName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ReceiveGuestRoom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ReceiveGuestPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="goalvisit" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="RuleAccess" Type="Int32" />
+    <Property Name="IDNoFace" Type="Int32" />
+    <Property Name="DateVisitEnd" Type="DateTime" />
+    <Property Name="RecRoomID" Type="Int32" />
+    <NavigationProperty Name="pList" Relationship="Self.FK_Guest_pList" FromRole="Guest" ToRole="pList" />
+  </EntityType>
+  <EntityType Name="Holidays">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="GDate" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="interfaceprotocol">
+    <Key>
+      <PropertyRef Name="interface_id" />
+      <PropertyRef Name="protocol_id" />
+    </Key>
+    <Property Name="interface_id" Type="Int32" Nullable="false" />
+    <Property Name="protocol_id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="interfaces">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ItemEvents">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ItemType" Type="Int32" />
+    <Property Name="ItemID" Type="Int32" Nullable="false" />
+    <Property Name="ItemEvent" Type="Int32" Nullable="false" />
+    <Property Name="EventID" Type="Int32" Nullable="false" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="KeyObjs">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="KeyID" Type="Int32" Nullable="false" />
+    <Property Name="ObjectID" Type="Int32" Nullable="false" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Kone_AllAccessMask">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Floor" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Floor" Type="Int16" Nullable="false" />
+    <Property Name="SF" Type="Int16" Nullable="false" />
+    <Property Name="SR" Type="Int16" Nullable="false" />
+    <Property Name="DF" Type="Int16" Nullable="false" />
+    <Property Name="DR" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="Kone_DOPGlobalDefaultAccessMask" Relationship="Self.FK_Kone_AllAccessMask_Kone_DOPGlobalDefaultAccessMask" FromRole="Kone_AllAccessMask" ToRole="Kone_DOPGlobalDefaultAccessMask" />
+  </EntityType>
+  <EntityType Name="Kone_COP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ID_KGS" Type="Int32" Nullable="false" />
+    <Property Name="ID_AcessPoint" Type="Int32" Nullable="false" />
+    <Property Name="elevator_id" Type="Int32" Nullable="false" />
+    <Property Name="group_id" Type="Int32" />
+    <Property Name="open_timeout" Type="Int32" />
+    <NavigationProperty Name="AcessPoint" Relationship="Self.FK_KONE_Cop_FK_AсcessPoint_ID" FromRole="Kone_COP" ToRole="AcessPoint" />
+    <NavigationProperty Name="Kone_CopAccess" Relationship="Self.FK_KONE_COP_FK_KONE_C_KONE_COP" FromRole="Kone_COP" ToRole="Kone_CopAccess" />
+    <NavigationProperty Name="Kone_KGS" Relationship="Self.FK_KONE_COP_FK_KONE_E_KONE_KGS" FromRole="Kone_COP" ToRole="Kone_KGS" />
+    <NavigationProperty Name="Kone_COPSpecificMask" Relationship="Self.FK_Kone_COPSpecificMask_Kone_Elevator" FromRole="Kone_COP" ToRole="Kone_COPSpecificMask" />
+  </EntityType>
+  <EntityType Name="Kone_CopAccess">
+    <Key>
+      <PropertyRef Name="ID_Elevator" />
+      <PropertyRef Name="ID_Access" />
+    </Key>
+    <Property Name="ID_Elevator" Type="Int32" Nullable="false" />
+    <Property Name="ID_Access" Type="Int32" Nullable="false" />
+    <Property Name="Floor" Type="Int16" Nullable="false" />
+    <Property Name="DF" Type="Int16" Nullable="false" />
+    <Property Name="DR" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="GrAccess" Relationship="Self.FK_KONE_СopAccess_FK_GRAccess_ID" FromRole="Kone_CopAccess" ToRole="GrAccess" />
+    <NavigationProperty Name="Kone_COP" Relationship="Self.FK_KONE_COP_FK_KONE_C_KONE_COP" FromRole="Kone_CopAccess" ToRole="Kone_COP" />
+  </EntityType>
+  <EntityType Name="Kone_COPGlobalDefaultAccessMask">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID_KGS" Type="Int32" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="SystemState" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="Kone_KGS" Relationship="Self.FK_Kone_COPGlobalDefaultAccessMask_Kone_KGS" FromRole="Kone_COPGlobalDefaultAccessMask" ToRole="Kone_KGS" />
+    <NavigationProperty Name="Kone_DestinationAccessMask" Relationship="Self.FK_Kone_DestinationAccessMask_Kone_COPGlobalDefaultAccessMask" FromRole="Kone_COPGlobalDefaultAccessMask" ToRole="Kone_DestinationAccessMask" />
+  </EntityType>
+  <EntityType Name="Kone_COPSpecificMask">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID_Elevator" Type="Int32" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="CopSpecificSystemState" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Kone_COP" Relationship="Self.FK_Kone_COPSpecificMask_Kone_Elevator" FromRole="Kone_COPSpecificMask" ToRole="Kone_COP" />
+  </EntityType>
+  <EntityType Name="Kone_DestinationAccessMask">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Floor" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Floor" Type="Int16" Nullable="false" />
+    <Property Name="DF" Type="Int16" Nullable="false" />
+    <Property Name="DR" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="Kone_COPGlobalDefaultAccessMask" Relationship="Self.FK_Kone_DestinationAccessMask_Kone_COPGlobalDefaultAccessMask" FromRole="Kone_DestinationAccessMask" ToRole="Kone_COPGlobalDefaultAccessMask" />
+  </EntityType>
+  <EntityType Name="Kone_DopAccess">
+    <Key>
+      <PropertyRef Name="ID_Dop" />
+      <PropertyRef Name="ID_Access" />
+      <PropertyRef Name="Floor" />
+    </Key>
+    <Property Name="ID_Dop" Type="Int32" Nullable="false" />
+    <Property Name="ID_Access" Type="Int32" Nullable="false" />
+    <Property Name="Floor" Type="Int16" Nullable="false" />
+    <Property Name="DF" Type="Int16" Nullable="false" />
+    <Property Name="DR" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="GrAccess" Relationship="Self.FK_KONE_DopAccess_FK_GRAccess_ID" FromRole="Kone_DopAccess" ToRole="GrAccess" />
+  </EntityType>
+  <EntityType Name="Kone_DOPGlobalDefaultAccessMask">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID_KGS" Type="Int32" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="SystemState" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="Kone_AllAccessMask" Relationship="Self.FK_Kone_AllAccessMask_Kone_DOPGlobalDefaultAccessMask" FromRole="Kone_DOPGlobalDefaultAccessMask" ToRole="Kone_AllAccessMask" />
+    <NavigationProperty Name="Kone_KGS" Relationship="Self.FK_Kone_DOPGlobalDefaultAccessMask_Kone_KGS" FromRole="Kone_DOPGlobalDefaultAccessMask" ToRole="Kone_KGS" />
+  </EntityType>
+  <EntityType Name="Kone_DOPSpecificMask">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID_DOP" Type="Int32" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="DopSpecificSystemState" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Kone_KGS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="RSLines_ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PrimaryHost" Type="String" MaxLength="15" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="PrimaryPort" Type="Int32" Nullable="false" />
+    <Property Name="BackupHost" Type="String" MaxLength="15" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="BackupPort" Type="Int32" Nullable="false" />
+    <Property Name="Floors" Type="Int32" />
+    <Property Name="ByteOrder" Type="Int16" Nullable="false" />
+    <Property Name="HeartBeatOutTimeOut" Type="Int32" Nullable="false" />
+    <Property Name="HeartBeatInTimeOut" Type="Int32" Nullable="false" />
+    <Property Name="ReConnectTimeOut" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Kone_COP" Relationship="Self.FK_KONE_COP_FK_KONE_E_KONE_KGS" FromRole="Kone_KGS" ToRole="Kone_COP" />
+    <NavigationProperty Name="Kone_COPGlobalDefaultAccessMask" Relationship="Self.FK_Kone_COPGlobalDefaultAccessMask_Kone_KGS" FromRole="Kone_KGS" ToRole="Kone_COPGlobalDefaultAccessMask" />
+    <NavigationProperty Name="Kone_DOPGlobalDefaultAccessMask" Relationship="Self.FK_Kone_DOPGlobalDefaultAccessMask_Kone_KGS" FromRole="Kone_KGS" ToRole="Kone_DOPGlobalDefaultAccessMask" />
+    <NavigationProperty Name="Kone_DOP" Relationship="Self.FK_KONE_DOP_FK_KONE_D_KONE_KGS" FromRole="Kone_KGS" ToRole="Kone_DOP" />
+    <NavigationProperty Name="RSLines" Relationship="Self.FK_KONE_KGS_FK_RSLINES_ID" FromRole="Kone_KGS" ToRole="RSLines" />
+  </EntityType>
+  <EntityType Name="LinesBroadcast">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="EventGroupID" Type="Int32" Nullable="false" />
+    <Property Name="DeviceID" Type="Int32" Nullable="false" />
+    <Property Name="PhonesId" Type="Int32" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="list_comments">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Comment" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ListComponents">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="TypePage" Type="Int32" Nullable="false" />
+    <Property Name="Caption" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="RelProf" Relationship="Self.FK_RelationsList_Components" FromRole="ListComponents" ToRole="RelProf" />
+  </EntityType>
+  <EntityType Name="logs">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="tpChange" Type="Int32" />
+    <Property Name="OperatorName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="ComputerName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ComputerIP" Type="Int32" />
+    <Property Name="TimeVal" Type="DateTime" />
+    <Property Name="RuquestDATA" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Reserv0" Type="Int32" />
+    <Property Name="Reserv1" Type="Int32" />
+    <Property Name="Reserv2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="logs_change_bd">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="timeVal" Type="DateTime" Nullable="false" />
+    <Property Name="state_record" Type="Int32" Nullable="false" />
+    <Property Name="table_name" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ValueId" Type="Int32" Nullable="false" />
+    <Property Name="OperatorId" Type="Int32" Nullable="false" />
+    <Property Name="InsideSystem" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="xml_data" Type="String" MaxLength="400" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Num" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="m_alarm">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="Time0" Type="DateTime" />
+    <Property Name="NumCom" Type="Int32" />
+    <Property Name="IDComp" Type="Int32" />
+    <Property Name="Operator0" Type="Int32" />
+    <Property Name="OperatorName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EventName" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="ZoneName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ObjectName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Event" Type="Int32" Nullable="false" />
+    <Property Name="AddrCOM" Type="Int32" />
+    <Property Name="Address" Type="Int32" />
+    <Property Name="Object" Type="Int32" />
+    <Property Name="Action1" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Time1" Type="DateTime" />
+    <Property Name="Operator1" Type="Int32" />
+    <Property Name="Action2" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Time2" Type="DateTime" />
+    <Property Name="Operator2" Type="Int32" />
+    <Property Name="Action3" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Time3" Type="DateTime" />
+    <Property Name="Operator3" Type="Int32" />
+    <Property Name="Action4" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Time4" Type="DateTime" />
+    <Property Name="Operator4" Type="Int32" />
+    <Property Name="Action5" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Time5" Type="DateTime" />
+    <Property Name="Operator5" Type="Int32" />
+    <Property Name="Action6" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Time6" Type="DateTime" />
+    <Property Name="Operator6" Type="Int32" />
+    <Property Name="Stage" Type="Int32" />
+    <Property Name="DoorID" Type="Int32" />
+    <Property Name="ZoneType" Type="Int32" />
+    <Property Name="AccessZoneIndex" Type="Int32" />
+    <Property Name="VEvent" Type="Int32" />
+    <Property Name="ZReserv" Type="Int32" />
+    <Property Name="Zone" Type="Int32" />
+    <Property Name="IndexZone" Type="Int32" />
+    <Property Name="tpIndex" Type="Int32" />
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Map_Elm">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="MapID" Type="Int32" Nullable="false" />
+    <Property Name="GType" Type="Int32" Nullable="false" />
+    <Property Name="Num" Type="Int32" />
+    <Property Name="UnitID" Type="Int32" Nullable="false" />
+    <Property Name="PictureCount" Type="Int32" />
+    <Property Name="Pictures" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="ChangeTime" Type="DateTime" />
+    <Property Name="Flags" Type="Int32" />
+    <Property Name="Link2Obj" Type="Int32" />
+    <Property Name="ApplicationGuid" Type="Guid" />
+    <NavigationProperty Name="map_indicators" Relationship="Self.FK_Map_indicators_MapElementID" FromRole="Map_Elm" ToRole="map_indicators" />
+  </EntityType>
+  <EntityType Name="map_indicators">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="MapElmId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="MapElmId" Type="Int32" Nullable="false" />
+    <Property Name="range_min" Type="Double" Nullable="false" />
+    <Property Name="range_max" Type="Double" Nullable="false" />
+    <Property Name="range_color" Type="Int32" Nullable="false" />
+    <Property Name="status_range" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Map_Elm" Relationship="Self.FK_Map_indicators_MapElementID" FromRole="map_indicators" ToRole="Map_Elm" />
+  </EntityType>
+  <EntityType Name="MapElements">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="table" Type="Int32" Nullable="false" />
+    <Property Name="map_id" Type="Int32" Nullable="false" />
+    <Property Name="item_id" Type="Int32" Nullable="false" />
+    <Property Name="x" Type="Double" Nullable="false" />
+    <Property Name="y" Type="Double" Nullable="false" />
+    <Property Name="rotate" Type="Double" Nullable="false" />
+    <Property Name="scale" Type="Double" Nullable="false" />
+    <Property Name="state_name" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="item_type" Type="Int32" Nullable="false" />
+    <Property Name="item_color" Type="Int32" Nullable="false" />
+    <Property Name="value_off" Type="Int32" Nullable="false" />
+    <Property Name="value_pos" Type="Int32" Nullable="false" />
+    <Property Name="text_off" Type="Int32" Nullable="false" />
+    <Property Name="text_pos" Type="Int32" Nullable="false" />
+    <Property Name="value_x" Type="Double" Nullable="false" />
+    <Property Name="value_y" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MapElementsLinks">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="MapElementsID" Type="Int32" Nullable="false" />
+    <Property Name="x" Type="Double" Nullable="false" />
+    <Property Name="y" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MapElementsRegions">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="MapElementsID" Type="Int32" Nullable="false" />
+    <Property Name="x" Type="Double" Nullable="false" />
+    <Property Name="y" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MapIndicatorsDefault">
+    <Key>
+      <PropertyRef Name="ID_Indicator" />
+      <PropertyRef Name="RangeMin" />
+      <PropertyRef Name="RangeMax" />
+    </Key>
+    <Property Name="ID_Indicator" Type="Int32" Nullable="false" />
+    <Property Name="RangeMin" Type="Double" Nullable="false" />
+    <Property Name="RangeMax" Type="Double" Nullable="false" />
+    <Property Name="RangeColor" Type="Int32" Nullable="false" />
+    <Property Name="StatusRange" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MapInfoMarker">
+    <Key>
+      <PropertyRef Name="ID_MapInfMark" />
+    </Key>
+    <Property Name="ID_MapInfMark" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Text" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="MasterSlave">
+    <Key>
+      <PropertyRef Name="MasterType" />
+      <PropertyRef Name="SlaveType" />
+    </Key>
+    <Property Name="MasterType" Type="Int32" Nullable="false" />
+    <Property Name="SlaveType" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NodeRepl">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="NodeID" Type="Int32" Nullable="false" />
+    <Property Name="ScriptID" Type="Int32" Nullable="false" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="orion_globalValues">
+    <Key>
+      <PropertyRef Name="id_value" />
+    </Key>
+    <Property Name="id_value" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="value" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="pBioAccess">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_pMark" Type="Int32" Nullable="false" />
+    <Property Name="GType" Type="Int32" Nullable="false" />
+    <Property Name="BioTemplate2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="pMark" Relationship="Self.FK_pBioAccess_To_pMark" FromRole="pBioAccess" ToRole="pMark" />
+  </EntityType>
+  <EntityType Name="pBioParams">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Device_Type" Type="Int32" Nullable="false" />
+    <Property Name="Master" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="128" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Caption" Type="String" MaxLength="128" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="Min" Type="Single" />
+    <Property Name="Max" Type="Single" />
+    <Property Name="DefValue" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="Values" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="RSBioParams" Relationship="Self.FK_RSBioParams_To_pBioParams" FromRole="pBioParams" ToRole="RSBioParams" />
+  </EntityType>
+  <EntityType Name="pCar">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Model" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Color" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="GIndex" Type="Int32" Nullable="false" />
+    <Property Name="Vin" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="RelationsListCar" Relationship="Self.FK_RelationsListCar_pCar" FromRole="pCar" ToRole="RelationsListCar" />
+  </EntityType>
+  <EntityType Name="PCompany">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Id_Number_Company" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="GUID_1C" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="IsGuest" Type="Int32" />
+  </EntityType>
+  <EntityType Name="PDivision">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Shedule" Type="Int32" />
+    <Property Name="GroupID" Type="Int32" />
+    <Property Name="Number" Type="Int32" />
+    <Property Name="PCompany_ID" Type="Int32" />
+    <Property Name="ID_Number_Division" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ID_Owner_Division" Type="Int32" />
+    <Property Name="Patterns_ID" Type="Int32" />
+    <Property Name="GUID_1C" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PersonsPhotos">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PersonID" Type="Int32" Nullable="false" />
+    <Property Name="PhotoDescriptor" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="DescriptorType" Type="Int32" />
+    <Property Name="GroupID" Type="Int32" />
+    <Property Name="PhotoNum" Type="Int32" />
+  </EntityType>
+  <EntityType Name="pGroupExit">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="NAme" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Comment" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="phone_numbers">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="phone_number" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="ip" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="port" Type="Int32" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="translateProtocol" Type="Int32" />
+    <Property Name="password" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="description" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="pList">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FirstName" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MidName" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="WorkPhone" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="HomePhone" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Picture" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="BirthDate" Type="DateTime" />
+    <Property Name="Address" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Company" Type="Int32" />
+    <Property Name="Section" Type="Int32" />
+    <Property Name="Post" Type="Int32" />
+    <Property Name="Schedule" Type="Int32" />
+    <Property Name="Avto" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Spack" Type="Int32" />
+    <Property Name="Config" Type="Int32" />
+    <Property Name="TabNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="GrStatus" Type="Int32" />
+    <Property Name="ChangeTime" Type="DateTime" />
+    <Property Name="IndexForContactId" Type="Int32" />
+    <Property Name="StatusRecord" Type="Int32" />
+    <Property Name="Patterns_ID" Type="Int32" />
+    <Property Name="ID_Number_List" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="weight" Type="Int32" />
+    <Property Name="delta_weight" Type="Int32" />
+    <Property Name="AutoID" Type="Int32" />
+    <Property Name="GUID_1C" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="status_list" Type="Int32" />
+    <Property Name="EmailList" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="fielddelete" Type="Int32" />
+    <Property Name="BlackList" Type="Int32" />
+    <Property Name="INN" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="ReasonToBlackList" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="TypeDocum" Type="Int32" />
+    <Property Name="SexGuest" Type="Int32" />
+    <Property Name="DokumSeries" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DokumNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateDocument" Type="DateTime" />
+    <Property Name="KodPodr" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Kem" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="DateDocumentEnd" Type="DateTime" />
+    <Property Name="birthplace" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="DateTimeInArchive" Type="DateTime" />
+    <Property Name="FireToList" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="IDSCAN" Type="Int32" />
+    <Property Name="RoomID" Type="Int32" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDGROUPEXIT" Type="Int32" />
+    <NavigationProperty Name="ClientFieldsValues" Relationship="Self.FK_ClientFieldsValues_pList" FromRole="pList" ToRole="ClientFieldsValues" />
+    <NavigationProperty Name="Guest" Relationship="Self.FK_Guest_pList" FromRole="pList" ToRole="Guest" />
+    <NavigationProperty Name="tPersonalStuff" Relationship="Self.FK_PList_PStuff" FromRole="pList" ToRole="tPersonalStuff" />
+    <NavigationProperty Name="tPStuffPhoto" Relationship="Self.FK_PList_PStufPhoto" FromRole="pList" ToRole="tPStuffPhoto" />
+    <NavigationProperty Name="RelationsListCar" Relationship="Self.FK_RelationsListCar_pList" FromRole="pList" ToRole="RelationsListCar" />
+  </EntityType>
+  <EntityType Name="pListNetPorts">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="NAME_TASK" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="PORT_TASK" Type="Int32" />
+    <Property Name="COMMENT" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="pLogData">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="TimeVal" Type="DateTime" Nullable="false" />
+    <Property Name="NumCom" Type="Int32" />
+    <Property Name="IDComp" Type="Int32" />
+    <Property Name="Par1" Type="Int32" />
+    <Property Name="Par2" Type="Int32" />
+    <Property Name="Par3" Type="Int32" />
+    <Property Name="Par4" Type="Int32" />
+    <Property Name="Event" Type="Int32" Nullable="false" />
+    <Property Name="IndexKey" Type="Int32" />
+    <Property Name="RazdIndex" Type="Int32" />
+    <Property Name="HozOrgan" Type="Int32" />
+    <Property Name="HozGuest" Type="Int32" />
+    <Property Name="Remark" Type="String" MaxLength="65" FixedLength="false" Unicode="false" />
+    <Property Name="DoorIndex" Type="Int32" />
+    <Property Name="Mode" Type="Int32" />
+    <Property Name="DeviceTime" Type="DateTime" />
+    <Property Name="VEvent" Type="Int32" />
+    <Property Name="ZReserv" Type="Int32" />
+    <Property Name="ZoneIndex" Type="Int32" />
+    <Property Name="ReaderIndex" Type="Int32" />
+    <Property Name="Sign" Type="Int32" />
+    <Property Name="tpRzdIndex" Type="Int32" />
+    <Property Name="tpPar4" Type="Int32" />
+    <Property Name="IndexZone" Type="Int32" />
+    <Property Name="tpIndex" Type="Int32" />
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+    <Property Name="IdComment" Type="Int32" />
+  </EntityType>
+  <EntityType Name="pMaps">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Comment" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="GIndex" Type="Int32" Nullable="false" />
+    <Property Name="ComputerID" Type="Int32" Nullable="false" />
+    <Property Name="PlanChild" Type="Int32" />
+    <Property Name="Spack" Type="Int32" />
+    <Property Name="Contents" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="ChangeTime" Type="DateTime" />
+    <Property Name="design_width" Type="Int32" />
+    <Property Name="design_height" Type="Int32" />
+    <Property Name="design_scale" Type="Double" />
+    <Property Name="SchemaExt" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="ApplicationGuid" Type="Guid" />
+  </EntityType>
+  <EntityType Name="pMark">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Gtype" Type="Int32" Nullable="false" />
+    <Property Name="GTypeCodeAdd" Type="Int32" />
+    <Property Name="Config" Type="Int32" Nullable="false" />
+    <Property Name="CodeP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CodePAdd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="Int32" />
+    <Property Name="Owner" Type="Int32" Nullable="false" />
+    <Property Name="OwnerName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="GrStatus" Type="Int32" />
+    <Property Name="GroupID" Type="Int32" Nullable="false" />
+    <Property Name="Start" Type="DateTime" />
+    <Property Name="Finish" Type="DateTime" />
+    <Property Name="IndexForContactId" Type="Int32" />
+    <Property Name="Comment" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Login" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fingertemplate" Type="String" MaxLength="2500" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="pBioAccess" Relationship="Self.FK_pBioAccess_To_pMark" FromRole="pMark" ToRole="pBioAccess" />
+  </EntityType>
+  <EntityType Name="pObjCont">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ObjectID" Type="Int32" Nullable="false" />
+    <Property Name="ShleifID" Type="Int32" Nullable="false" />
+    <Property Name="ItemType" Type="Int32" Nullable="false" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="pObjects">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="GIndex" Type="Int32" Nullable="false" />
+    <Property Name="SimIndex" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="ComputerID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Comment" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="State" Type="Int32" />
+    <Property Name="Config" Type="Int32" />
+    <Property Name="AlarmKey" Type="Int32" />
+    <Property Name="GuardKey" Type="Int32" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ElementsTypesGroupId" Type="Int32" />
+    <NavigationProperty Name="BindingObjectsStepScen" Relationship="Self.FK_BindingObjectsStepScen_ID_Object" FromRole="pObjects" ToRole="BindingObjectsStepScen" />
+  </EntityType>
+  <EntityType Name="PPost">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Number" Type="Int32" />
+    <Property Name="StatusMark" Type="Int32" />
+    <Property Name="Company_ID" Type="Int32" />
+    <Property Name="Id_Number_Ppost" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="GUID_1C" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PReason">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="GUID_1C" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ProFiles">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Comment" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="RelProf" Relationship="Self.FK_RelationsPro_Files" FromRole="ProFiles" ToRole="RelProf" />
+  </EntityType>
+  <EntityType Name="PRooms">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Number" Type="Int32" />
+  </EntityType>
+  <EntityType Name="protocoldevices">
+    <Key>
+      <PropertyRef Name="protocol_id" />
+      <PropertyRef Name="device_type_id" />
+    </Key>
+    <Property Name="protocol_id" Type="Int32" Nullable="false" />
+    <Property Name="device_type_id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="protocols">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="QueryLog">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="TimeVal" Type="DateTime" />
+    <Property Name="IP" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="OperatorName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ProgramID" Type="Int32" />
+    <Property Name="Query" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Parameters" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Action" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TableName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="RdrAccessPoint">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ReaderID" Type="Int32" Nullable="false" />
+    <Property Name="Mode" Type="Int32" Nullable="false" />
+    <Property Name="AccessPointID" Type="Int32" Nullable="false" />
+    <Property Name="ModeAcess" Type="Int32" Nullable="false" />
+    <Property Name="PenalID" Type="Int32" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Reasons">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="EmployeeID" Type="Int32" Nullable="false" />
+    <Property Name="DateStart" Type="DateTime" />
+    <Property Name="DateEnd" Type="DateTime" />
+    <Property Name="Comment" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="TimeStart" Type="DateTime" />
+    <Property Name="TimeEnd" Type="DateTime" />
+    <Property Name="Operator" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="GoodTime" Type="Int32" />
+    <Property Name="BUTNOTCALC" Type="Int32" />
+    <Property Name="Duration" Type="DateTime" />
+    <Property Name="ReasonID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="ReferenceCommandScenarios">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LatName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="BindingCommandScenarios" Relationship="Self.FK_BindingCommandScenarios_ID_CommandScenarios" FromRole="ReferenceCommandScenarios" ToRole="BindingCommandScenarios" />
+  </EntityType>
+  <EntityType Name="ReferenceItemsScenarios">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LatName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TypeValue" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TypeContrl" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Code" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="RegExp" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MaxValue" Type="Decimal" Precision="14" Scale="4" />
+    <Property Name="MinValue" Type="Decimal" Precision="14" Scale="4" />
+    <Property Name="isRefresh" Type="Boolean" Nullable="false" />
+    <Property Name="ExpText" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Increment" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IncrFixed" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="BindingCommandScenarios" Relationship="Self.FK_BindingCommandScenarios_ID_ItemsScenarios" FromRole="ReferenceItemsScenarios" ToRole="BindingCommandScenarios" />
+    <NavigationProperty Name="BindingItemsDevScenarios" Relationship="Self.FK_BindingItemsDevScenarios_ID_ItemsScenarios" FromRole="ReferenceItemsScenarios" ToRole="BindingItemsDevScenarios" />
+    <NavigationProperty Name="BindingItemsScenarios" Relationship="Self.FK_BindingItemsScenarios_ID_ItemsScenarios" FromRole="ReferenceItemsScenarios" ToRole="BindingItemsScenarios" />
+    <NavigationProperty Name="ValueDevItemsScenarios" Relationship="Self.FK_ValueDevItemsScenarios_ID_RefItemsScen" FromRole="ReferenceItemsScenarios" ToRole="ValueDevItemsScenarios" />
+    <NavigationProperty Name="ValueItemsScenarios" Relationship="Self.FK_ValueItemsScenarios_ID_RefItemsScen" FromRole="ReferenceItemsScenarios" ToRole="ValueItemsScenarios" />
+  </EntityType>
+  <EntityType Name="ReferenceScenariosTypes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LatName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Def" Type="Boolean" Nullable="false" />
+    <Property Name="Sort" Type="Int32" Nullable="false" />
+    <Property Name="ImageIndex" Type="Int32" Nullable="false" />
+    <Property Name="ImageIDScen" Type="Int32" Nullable="false" />
+    <Property Name="ImageIDStep" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="BindingItemsScenarios" Relationship="Self.FK_BindingItemsScenarios_ID_ScenariosTypes" FromRole="ReferenceScenariosTypes" ToRole="BindingItemsScenarios" />
+    <NavigationProperty Name="ScenariosDevice" Relationship="Self.FK_ScenariosDevice_ID_ScenariosTypes" FromRole="ReferenceScenariosTypes" ToRole="ScenariosDevice" />
+    <NavigationProperty Name="ScenariosFilterDevice" Relationship="Self.FK_ScenariosFilterDevice_ID_ScenariosType" FromRole="ReferenceScenariosTypes" ToRole="ScenariosFilterDevice" />
+  </EntityType>
+  <EntityType Name="ReferenceTactics">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LatName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="RelatedCameras">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="CameraID" Type="Int32" Nullable="false" />
+    <Property Name="RelatedCameraID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="relation_phone_id_dev">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="id_phone" Type="Int32" Nullable="false" />
+    <Property Name="id_rslines" Type="Int32" Nullable="false" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="RelationDiv">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="IdDiv" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="IdAuth" Type="Int32" Nullable="false" />
+    <Property Name="IdDiv" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Authorities" Relationship="Self.FK_RelationDiv_IdAuto" FromRole="RelationDiv" ToRole="Authorities" />
+  </EntityType>
+  <EntityType Name="RelationsListCar">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="IdList" Type="Int32" Nullable="false" />
+    <Property Name="IdCar" Type="Int32" Nullable="false" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="pCar" Relationship="Self.FK_RelationsListCar_pCar" FromRole="RelationsListCar" ToRole="pCar" />
+    <NavigationProperty Name="pList" Relationship="Self.FK_RelationsListCar_pList" FromRole="RelationsListCar" ToRole="pList" />
+  </EntityType>
+  <EntityType Name="RelProf">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="IDListComp" Type="Int32" Nullable="false" />
+    <Property Name="IDProfiles" Type="Int32" Nullable="false" />
+    <Property Name="Reserve" Type="Int32" />
+    <NavigationProperty Name="ListComponents" Relationship="Self.FK_RelationsList_Components" FromRole="RelProf" ToRole="ListComponents" />
+    <NavigationProperty Name="ProFiles" Relationship="Self.FK_RelationsPro_Files" FromRole="RelProf" ToRole="ProFiles" />
+  </EntityType>
+  <EntityType Name="RemoteControlCategories">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Comment" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="RemoteAction" Type="Int32" />
+    <Property Name="GroupByCategoryId" Type="Int32" />
+    <Property Name="IsVisibleInPersonalArea" Type="Int32" />
+  </EntityType>
+  <EntityType Name="RemoteControlCategoryToDTypesElement">
+    <Key>
+      <PropertyRef Name="dTypesElementId" />
+      <PropertyRef Name="CategoryId" />
+    </Key>
+    <Property Name="dTypesElementId" Type="Int32" Nullable="false" />
+    <Property Name="CategoryId" Type="Int32" Nullable="false" />
+    <Property Name="Comment" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ReservLine">
+    <Key>
+      <PropertyRef Name="MainId" />
+      <PropertyRef Name="ReservId" />
+    </Key>
+    <Property Name="ComputerId" Type="Int32" Nullable="false" />
+    <Property Name="MainId" Type="Int32" Nullable="false" />
+    <Property Name="ReservId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RSLines">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="GIndex" Type="Int32" Nullable="false" />
+    <Property Name="ComPortID" Type="Int32" Nullable="false" />
+    <Property Name="PKUID" Type="Int32" Nullable="false" />
+    <Property Name="GLineNo" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="DeviceType" Type="Int32" />
+    <Property Name="Comment" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Priority" Type="Int32" />
+    <Property Name="Broadcast" Type="Int32" />
+    <Property Name="DeviceVersion" Type="Int32" />
+    <Property Name="IPAddress" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="MACAddress" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="GATEWAY" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="SUBMASK" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="Port" Type="Int32" />
+    <Property Name="UseDHCP" Type="Int32" />
+    <Property Name="IdContactName" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="IdDevice" Type="Int32" />
+    <Property Name="DeviceInterface" Type="Int32" Nullable="false" />
+    <Property Name="IndexForContactId" Type="Int32" />
+    <Property Name="DeviceTypeBIO" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="AbonentType" Type="Int32" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Kone_KGS" Relationship="Self.FK_KONE_KGS_FK_RSLINES_ID" FromRole="RSLines" ToRole="Kone_KGS" />
+    <NavigationProperty Name="RSBioParams" Relationship="Self.FK_RSBioParams_To_RSLines" FromRole="RSLines" ToRole="RSBioParams" />
+  </EntityType>
+  <EntityType Name="ScanDoc">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="IDPLIST" />
+      <PropertyRef Name="Spack" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="IDPLIST" Type="Int32" Nullable="false" />
+    <Property Name="Picture" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Spack" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ScenariosDevice">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Num" Type="Int32" />
+    <Property Name="ID_Parent" Type="Int32" />
+    <Property Name="ID_ScenariosTypes" Type="Int32" Nullable="false" />
+    <Property Name="ID_Device" Type="Int32" Nullable="false" />
+    <Property Name="DeviceType" Type="Int32" Nullable="false" />
+    <Property Name="ID_Level" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="BindingConditionStepScen" Relationship="Self.FK_BindingConditionStepScen_ID_ScenDevice" FromRole="ScenariosDevice" ToRole="BindingConditionStepScen" />
+    <NavigationProperty Name="BindingGrObjectsStepScen" Relationship="Self.FK_BindingGrObjectsStepScen_ID_ScenDevice" FromRole="ScenariosDevice" ToRole="BindingGrObjectsStepScen" />
+    <NavigationProperty Name="BindingObjectsStepScen" Relationship="Self.FK_BindingObjectsStepScen_ID_ScenDevice" FromRole="ScenariosDevice" ToRole="BindingObjectsStepScen" />
+    <NavigationProperty Name="ReferenceScenariosTypes" Relationship="Self.FK_ScenariosDevice_ID_ScenariosTypes" FromRole="ScenariosDevice" ToRole="ReferenceScenariosTypes" />
+    <NavigationProperty Name="ScenariosDevice1" Relationship="Self.FK_ScenariosDevice_ID_Parent" FromRole="ScenariosDevice" ToRole="ScenariosDevice1" />
+    <NavigationProperty Name="ScenariosDevice2" Relationship="Self.FK_ScenariosDevice_ID_Parent" FromRole="ScenariosDevice1" ToRole="ScenariosDevice" />
+    <NavigationProperty Name="ValueItemsScenarios" Relationship="Self.FK_ValueItemsScenarios_ID_ScenDevice" FromRole="ScenariosDevice" ToRole="ValueItemsScenarios" />
+  </EntityType>
+  <EntityType Name="ScenariosFilterDevice">
+    <Key>
+      <PropertyRef Name="DeviceType" />
+      <PropertyRef Name="ElementType" />
+      <PropertyRef Name="ID_ScenariosType" />
+      <PropertyRef Name="DeviceVersion" />
+      <PropertyRef Name="NumberDevItem" />
+      <PropertyRef Name="ParentDevType" />
+    </Key>
+    <Property Name="DeviceType" Type="Int32" Nullable="false" />
+    <Property Name="ElementType" Type="Int32" Nullable="false" />
+    <Property Name="ID_ScenariosType" Type="Int32" Nullable="false" />
+    <Property Name="DeviceVersion" Type="Int32" Nullable="false" />
+    <Property Name="NumberDevItem" Type="Int32" Nullable="false" />
+    <Property Name="ParentDevType" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ReferenceScenariosTypes" Relationship="Self.FK_ScenariosFilterDevice_ID_ScenariosType" FromRole="ScenariosFilterDevice" ToRole="ReferenceScenariosTypes" />
+  </EntityType>
+  <EntityType Name="Schedule">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ScriptID" Type="Int32" />
+    <Property Name="Calendar" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="TimeID" Type="Int32" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Script">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Comment" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="HotKey" Type="Int32" />
+    <Property Name="Config" Type="Int32" />
+    <Property Name="Content" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Settings">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ComputerID" Type="Int32" Nullable="false" />
+    <Property Name="Settings1" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Settings_group">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Settings_Value" Relationship="Self.FK_RelationsListSet_Group" FromRole="Settings_group" ToRole="Settings_Value" />
+  </EntityType>
+  <EntityType Name="Settings_Value">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="id_comp" Type="Int32" Nullable="false" />
+    <Property Name="Groups_Id" Type="Int32" Nullable="false" />
+    <Property Name="settings" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Value" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TypeValue" Type="Int32" Nullable="false" />
+    <Property Name="Reserve" Type="Int32" />
+    <NavigationProperty Name="Settings_group" Relationship="Self.FK_RelationsListSet_Group" FromRole="Settings_Value" ToRole="Settings_group" />
+  </EntityType>
+  <EntityType Name="SmsGatesParams">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Login" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Passw" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SenderName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="InboundPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RsLinesId" Type="Int32" Nullable="false" />
+    <Property Name="ProxyServer" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ProxyPort" Type="Int32" Nullable="false" />
+    <Property Name="ProxyLogin" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ProxyPassw" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SSLCertificate">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="RootCA" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="CAKey" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="CreateDate" Type="DateTime" />
+    <Property Name="Reserv" Type="Int32" />
+  </EntityType>
+  <EntityType Name="states_item">
+    <Key>
+      <PropertyRef Name="item_type" />
+      <PropertyRef Name="item_id" />
+    </Key>
+    <Property Name="item_type" Type="Int32" Nullable="false" />
+    <Property Name="item_id" Type="Int32" Nullable="false" />
+    <Property Name="tmvl" Type="DateTime" Nullable="false" />
+    <Property Name="state_item" Type="Int32" />
+    <Property Name="comps_id" Type="Int32" />
+    <Property Name="id_owner" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Sys">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Number" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Gtype" Type="Int32" Nullable="false" />
+    <Property Name="MinValue" Type="Int32" Nullable="false" />
+    <Property Name="MaxValue" Type="Int32" Nullable="false" />
+    <Property Name="DefaultValue" Type="Int32" Nullable="false" />
+    <Property Name="Required" Type="Int32" Nullable="false" />
+    <Property Name="Comments" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Hint" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="List" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="GroupID" Type="Int32" />
+    <Property Name="SysOrder" Type="Int32" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="SysGroup">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Value" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SysOrder" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SysParam">
+    <Key>
+      <PropertyRef Name="Num" />
+    </Key>
+    <Property Name="Num" Type="Int32" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ComputerID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Gtype" Type="Int32" />
+    <Property Name="GValue" Type="Int32" />
+    <Property Name="Required" Type="Int32" />
+    <Property Name="Comment" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="SystemObjects">
+    <Key>
+      <PropertyRef Name="GIndex" />
+      <PropertyRef Name="Type" />
+    </Key>
+    <Property Name="GIndex" Type="Int32" Nullable="false" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="State" Type="Int32" Nullable="false" />
+    <Property Name="ExState" Type="Int32" Nullable="false" />
+    <Property Name="ChangeTime" Type="DateTime" Nullable="false" />
+    <Property Name="Reserve1" Type="Int32" Nullable="false" />
+    <Property Name="Reserve2" Type="Int32" Nullable="false" />
+    <Property Name="Reserve3" Type="Int32" Nullable="false" />
+    <Property Name="Reserve4" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TimeCont">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="TimeID" Type="Int32" Nullable="false" />
+    <Property Name="Num" Type="Int32" />
+    <Property Name="Start" Type="DateTime" />
+    <Property Name="Finish" Type="DateTime" />
+    <Property Name="Days" Type="Int32" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TimeTable">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="WorkTimeZoneID" Type="Int32" Nullable="false" />
+    <Property Name="TimeID" Type="Int32" Nullable="false" />
+    <Property Name="Config" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tKBPenals">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="GIndex" Type="Int32" Nullable="false" />
+    <Property Name="ID_Section" Type="Int32" Nullable="false" />
+    <Property Name="BIndex" Type="Int32" Nullable="false" />
+    <Property Name="Box_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="State" Type="Int32" />
+    <Property Name="Comment" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="IndexForContactID" Type="Int32" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="pListID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tKBSections">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ID_Keybox" Type="Int32" Nullable="false" />
+    <Property Name="SType" Type="Int32" Nullable="false" />
+    <Property Name="Rows" Type="Int32" />
+    <Property Name="Columns" Type="Int32" />
+    <Property Name="SecNo" Type="Int32" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tKeyBoxes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="GIndex" Type="Int32" Nullable="false" />
+    <Property Name="IdComPort" Type="Int32" Nullable="false" />
+    <Property Name="Adress" Type="Int32" />
+    <Property Name="DevName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SectionsQTY" Type="Int32" Nullable="false" />
+    <Property Name="Ver" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Comment" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="CompID" Type="Int32" Nullable="false" />
+    <Property Name="IPAddress" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="Port" Type="Int32" />
+    <Property Name="AccessKey" Type="String" MaxLength="27" FixedLength="false" Unicode="false" />
+    <Property Name="IndexForContactID" Type="Int32" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tPersonalStuff">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="PListID" Type="Int32" Nullable="false" />
+    <Property Name="PenalID" Type="Int32" Nullable="false" />
+    <Property Name="ReferenceBookID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="pList" Relationship="Self.FK_PList_PStuff" FromRole="tPersonalStuff" ToRole="pList" />
+    <NavigationProperty Name="tReferenceBook" Relationship="Self.FK_RefBook_PStuff" FromRole="tPersonalStuff" ToRole="tReferenceBook" />
+  </EntityType>
+  <EntityType Name="tPStuffLogData">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+    <Property Name="PenalID" Type="Int32" Nullable="false" />
+    <Property Name="PListID" Type="Int32" Nullable="false" />
+    <Property Name="ReferenceBookID" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="Int32" />
+    <Property Name="Comment" Type="String" MaxLength="240" FixedLength="false" Unicode="false" />
+    <Property Name="TimeVal" Type="DateTime" Nullable="false" />
+    <Property Name="FIO" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="PStuffName" Type="String" MaxLength="240" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tPStuffPhoto">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="IDPLIST" Type="Int32" Nullable="false" />
+    <Property Name="picture" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Spack" Type="Int32" />
+    <NavigationProperty Name="pList" Relationship="Self.FK_PList_PStufPhoto" FromRole="tPStuffPhoto" ToRole="pList" />
+  </EntityType>
+  <EntityType Name="TreeCtrl">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="AbsoluteIndex" Type="Int32" Nullable="false" />
+    <Property Name="Text" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="GLevel" Type="Int32" Nullable="false" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TreeNode">
+    <Key>
+      <PropertyRef Name="Num" />
+    </Key>
+    <Property Name="Num" Type="Int32" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Comment" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Icon" Type="Int32" />
+    <Property Name="Special" Type="Int32" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tReferenceBook">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="RefType" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Comment" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tPersonalStuff" Relationship="Self.FK_RefBook_PStuff" FromRole="tReferenceBook" ToRole="tPersonalStuff" />
+  </EntityType>
+  <EntityType Name="TypeDocList">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="IndentSh" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NumberType" Type="Int32" Nullable="false" />
+    <Property Name="SibStringName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NumInList" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TypeShlDevice">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="DeviceType" />
+      <PropertyRef Name="DeviceTypeName" />
+      <PropertyRef Name="DeviceVersion" />
+      <PropertyRef Name="NumShBegin" />
+      <PropertyRef Name="NumShStop" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="DeviceType" Type="Int32" Nullable="false" />
+    <Property Name="DeviceTypeName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DeviceVersion" Type="Int32" Nullable="false" />
+    <Property Name="NumShBegin" Type="Int32" Nullable="false" />
+    <Property Name="NumShStop" Type="Int32" Nullable="false" />
+    <Property Name="ElementType" Type="Int32" Nullable="false" />
+    <Property Name="ShlType" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ValueDevItemsScenarios">
+    <Key>
+      <PropertyRef Name="ID_Device" />
+      <PropertyRef Name="ID_DeviceType" />
+      <PropertyRef Name="ID_RefItemsScen" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_Device" Type="Int32" Nullable="false" />
+    <Property Name="ID_DeviceType" Type="Int32" Nullable="false" />
+    <Property Name="ID_RefItemsScen" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ReferenceItemsScenarios" Relationship="Self.FK_ValueDevItemsScenarios_ID_RefItemsScen" FromRole="ValueDevItemsScenarios" ToRole="ReferenceItemsScenarios" />
+  </EntityType>
+  <EntityType Name="ValueItemsScenarios">
+    <Key>
+      <PropertyRef Name="ID_ScenDevice" />
+      <PropertyRef Name="ID_RefItemsScen" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_ScenDevice" Type="Int32" Nullable="false" />
+    <Property Name="ID_RefItemsScen" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ReferenceItemsScenarios" Relationship="Self.FK_ValueItemsScenarios_ID_RefItemsScen" FromRole="ValueItemsScenarios" ToRole="ReferenceItemsScenarios" />
+    <NavigationProperty Name="ScenariosDevice" Relationship="Self.FK_ValueItemsScenarios_ID_ScenDevice" FromRole="ValueItemsScenarios" ToRole="ScenariosDevice" />
+  </EntityType>
+  <EntityType Name="VersionDB">
+    <Key>
+      <PropertyRef Name="Num" />
+    </Key>
+    <Property Name="Num" Type="Int32" Nullable="false" />
+    <Property Name="Version" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="VersionDataBase" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CountTable" Type="Int32" Nullable="false" />
+    <Property Name="Info" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Rezerv1" Type="Int32" Nullable="false" />
+    <Property Name="GUID_DB" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VideoArchive">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+    <Property Name="Path" Type="String" MaxLength="256" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ObjType" Type="Int32" Nullable="false" />
+    <Property Name="GIndex" Type="Int32" Nullable="false" />
+    <Property Name="Param" Type="Int32" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VideoCamShots">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="CameraID" Type="Int32" Nullable="false" />
+    <Property Name="EventTime" Type="DateTime" Nullable="false" />
+    <Property Name="Picture" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Reserv" Type="Int32" />
+  </EntityType>
+  <EntityType Name="VideoEvents">
+    <Key>
+      <PropertyRef Name="GUID" />
+    </Key>
+    <Property Name="GUID" Type="Guid" Nullable="false" />
+    <Property Name="TypeObj" Type="Int32" Nullable="false" />
+    <Property Name="GIndex" Type="Int32" Nullable="false" />
+    <Property Name="Event" Type="Int32" Nullable="false" />
+    <Property Name="StartTime" Type="DateTime" Nullable="false" />
+    <Property Name="EndTime" Type="DateTime" />
+    <Property Name="FileSize" Type="Int32" Nullable="false" />
+    <Property Name="FileName" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="Param" Type="Int32" />
+    <Property Name="PathID" Type="Guid" Nullable="false" />
+    <Property Name="NumRec" Type="Int32" />
+    <Property Name="NumPart" Type="Int32" />
+    <Property Name="ProtectedRec" Type="Byte" />
+  </EntityType>
+  <EntityType Name="VideoRecognizeAccessPoint">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ReaderID" Type="Int32" Nullable="false" />
+    <Property Name="Mode" Type="Int32" Nullable="false" />
+    <Property Name="AccessPointID" Type="Int32" Nullable="false" />
+    <Property Name="ModeAccess" Type="Int32" Nullable="false" />
+    <Property Name="ReaderMode" Type="Int32" Nullable="false" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VideoRecognizeChannels">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="VideoInspectorID" Type="Int32" Nullable="false" />
+    <Property Name="Number" Type="Int32" Nullable="false" />
+    <Property Name="GIndex" Type="Int32" Nullable="false" />
+    <Property Name="ProfileID" Type="Int32" Nullable="false" />
+    <Property Name="CameraID" Type="Int32" Nullable="false" />
+    <Property Name="ChannelMode" Type="Int32" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VideoRecognizeProfiles">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="Settings" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vInsp">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ComputerID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="TCP_IP" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="VinspType" Type="Int32" />
+    <Property Name="ActiveX" Type="Int32" />
+    <Property Name="CompName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="GIndex" Type="Int32" />
+    <Property Name="vInspParams" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="ArchivePath" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="IsSecure" Type="Int32" />
+    <Property Name="Settings" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="OperatorID" Type="Int32" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vInspTypes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="vInspType" Type="Int32" />
+    <Property Name="Icon" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="Flags" Type="Int32" />
+  </EntityType>
+  <EntityType Name="weightcamera">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="door" Type="Int32" Nullable="false" />
+    <Property Name="weightterminal" Type="Int32" Nullable="false" />
+    <Property Name="weight0" Type="Int32" Nullable="false" />
+    <Property Name="weightdiscret" Type="Int32" Nullable="false" />
+    <Property Name="deltaweightstable" Type="Int32" Nullable="false" />
+    <Property Name="durationdooropen" Type="Int32" Nullable="false" />
+    <Property Name="durationdooropenclose" Type="Int32" Nullable="false" />
+    <Property Name="timefilter" Type="Int32" Nullable="false" />
+    <Property Name="timestep" Type="Int32" Nullable="false" />
+    <Property Name="minpersonweight" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="WorkTimeZone">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Comment" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="GIndex" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Codes_T12">
+    <Key>
+      <PropertyRef Name="DateC" />
+      <PropertyRef Name="IDHOZORGAN" />
+      <PropertyRef Name="LetterID" />
+    </Key>
+    <Property Name="DateC" Type="DateTime" Nullable="false" />
+    <Property Name="IDHOZORGAN" Type="Int32" Nullable="false" />
+    <Property Name="LetterID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Kone_DOP">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="ID_KGS" />
+      <PropertyRef Name="ID_AcessPoint" />
+      <PropertyRef Name="dop_id" />
+      <PropertyRef Name="dop_floor_id" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ID_KGS" Type="Int32" Nullable="false" />
+    <Property Name="ID_AcessPoint" Type="Int32" Nullable="false" />
+    <Property Name="dop_id" Type="Int32" Nullable="false" />
+    <Property Name="dop_floor_id" Type="Int32" Nullable="false" />
+    <Property Name="open_timeout" Type="Int32" />
+    <NavigationProperty Name="AcessPoint" Relationship="Self.FK_KONE_Dop_FK_AсcessPoint_ID" FromRole="Kone_DOP" ToRole="AcessPoint" />
+    <NavigationProperty Name="Kone_KGS" Relationship="Self.FK_KONE_DOP_FK_KONE_D_KONE_KGS" FromRole="Kone_DOP" ToRole="Kone_KGS" />
+  </EntityType>
+  <EntityType Name="RSBioAccess">
+    <Key>
+      <PropertyRef Name="ID_DeviceType" />
+      <PropertyRef Name="ID_ReaderTypeAvailable" />
+    </Key>
+    <Property Name="ID_DeviceType" Type="Int32" Nullable="false" />
+    <Property Name="ID_ReaderTypeAvailable" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RSBioAccess2">
+    <Key>
+      <PropertyRef Name="ID_DeviceType" />
+      <PropertyRef Name="ID_ReaderTypeAvailable" />
+    </Key>
+    <Property Name="ID_DeviceType" Type="Int32" Nullable="false" />
+    <Property Name="ID_ReaderTypeAvailable" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RSBioParams">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="ID_Device" />
+      <PropertyRef Name="ID_Param" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_Device" Type="Int32" Nullable="false" />
+    <Property Name="ID_Param" Type="Int32" Nullable="false" />
+    <Property Name="Value" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="pBioParams" Relationship="Self.FK_RSBioParams_To_pBioParams" FromRole="RSBioParams" ToRole="pBioParams" />
+    <NavigationProperty Name="RSLines" Relationship="Self.FK_RSBioParams_To_RSLines" FromRole="RSBioParams" ToRole="RSLines" />
+  </EntityType>
+  <EntityType Name="FixVersionRsLine">
+    <Key>
+      <PropertyRef Name="ID_RsLine" />
+    </Key>
+    <Property Name="ID_RsLine" Type="Int32" Nullable="false" />
+    <Property Name="DeviceType" Type="Int32" />
+    <Property Name="DeviceVersionOld" Type="Int32" />
+    <Property Name="DeviceVersionNew" Type="Int32" />
+    <Property Name="ChangeDateTme" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="v_ChangeLogForDB">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="timeVal" />
+      <PropertyRef Name="state_record" />
+      <PropertyRef Name="table_name" />
+      <PropertyRef Name="ValueId" />
+      <PropertyRef Name="OperatorId" />
+      <PropertyRef Name="InsideSystem" />
+      <PropertyRef Name="Num" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="timeVal" Type="DateTime" Nullable="false" />
+    <Property Name="state_record" Type="Int32" Nullable="false" />
+    <Property Name="table_name" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ValueId" Type="Int32" Nullable="false" />
+    <Property Name="OperatorId" Type="Int32" Nullable="false" />
+    <Property Name="InsideSystem" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="xml_data" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Num" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Workstation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK_KONE_Cop_FK_AсcessPoint_ID">
+    <End Role="AcessPoint" Type="Self.AcessPoint" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Kone_COP" Type="Self.Kone_COP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AcessPoint">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Kone_COP">
+        <PropertyRef Name="ID_AcessPoint" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KONE_Dop_FK_AсcessPoint_ID">
+    <End Role="AcessPoint" Type="Self.AcessPoint" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Kone_DOP" Type="Self.Kone_DOP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AcessPoint">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Kone_DOP">
+        <PropertyRef Name="ID_AcessPoint" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventOnModificationData_ID_Application">
+    <End Role="ApplicationModifData" Type="Self.ApplicationModifData" Multiplicity="1" />
+    <End Role="EventOnModificationData" Type="Self.EventOnModificationData" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ApplicationModifData">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="EventOnModificationData">
+        <PropertyRef Name="ID_Application" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RelationDiv_IdAuto">
+    <End Role="Authorities" Type="Self.Authorities" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="RelationDiv" Type="Self.RelationDiv" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Authorities">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="RelationDiv">
+        <PropertyRef Name="IdAuth" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BindingCommandScenarios_ID_CommandScenarios">
+    <End Role="ReferenceCommandScenarios" Type="Self.ReferenceCommandScenarios" Multiplicity="1" />
+    <End Role="BindingCommandScenarios" Type="Self.BindingCommandScenarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ReferenceCommandScenarios">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="BindingCommandScenarios">
+        <PropertyRef Name="ID_CommandScenarios" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BindingCommandScenarios_ID_ItemsScenarios">
+    <End Role="ReferenceItemsScenarios" Type="Self.ReferenceItemsScenarios" Multiplicity="1" />
+    <End Role="BindingCommandScenarios" Type="Self.BindingCommandScenarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ReferenceItemsScenarios">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="BindingCommandScenarios">
+        <PropertyRef Name="ID_ItemsScenarios" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BindingConditionStepScen_ID_ConditionScen">
+    <End Role="ConditionStepScenarios" Type="Self.ConditionStepScenarios" Multiplicity="1" />
+    <End Role="BindingConditionStepScen" Type="Self.BindingConditionStepScen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ConditionStepScenarios">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="BindingConditionStepScen">
+        <PropertyRef Name="ID_ConditionScen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BindingConditionStepScen_ID_ScenDevice">
+    <End Role="ScenariosDevice" Type="Self.ScenariosDevice" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="BindingConditionStepScen" Type="Self.BindingConditionStepScen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ScenariosDevice">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="BindingConditionStepScen">
+        <PropertyRef Name="ID_ScenDevice" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BindingGrObjectsStepScen_ID_Object">
+    <End Role="GroupObj" Type="Self.GroupObj" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="BindingGrObjectsStepScen" Type="Self.BindingGrObjectsStepScen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GroupObj">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="BindingGrObjectsStepScen">
+        <PropertyRef Name="ID_GrObject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BindingGrObjectsStepScen_ID_ScenDevice">
+    <End Role="ScenariosDevice" Type="Self.ScenariosDevice" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="BindingGrObjectsStepScen" Type="Self.BindingGrObjectsStepScen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ScenariosDevice">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="BindingGrObjectsStepScen">
+        <PropertyRef Name="ID_ScenDevice" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BindingItemsDevScenarios_ID_ItemsScenarios">
+    <End Role="ReferenceItemsScenarios" Type="Self.ReferenceItemsScenarios" Multiplicity="1" />
+    <End Role="BindingItemsDevScenarios" Type="Self.BindingItemsDevScenarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ReferenceItemsScenarios">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="BindingItemsDevScenarios">
+        <PropertyRef Name="ID_ItemsScenarios" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BindingItemsScenarios_ID_ItemsScenarios">
+    <End Role="ReferenceItemsScenarios" Type="Self.ReferenceItemsScenarios" Multiplicity="1" />
+    <End Role="BindingItemsScenarios" Type="Self.BindingItemsScenarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ReferenceItemsScenarios">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="BindingItemsScenarios">
+        <PropertyRef Name="ID_ItemsScenarios" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BindingItemsScenarios_ID_ScenariosTypes">
+    <End Role="ReferenceScenariosTypes" Type="Self.ReferenceScenariosTypes" Multiplicity="1" />
+    <End Role="BindingItemsScenarios" Type="Self.BindingItemsScenarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ReferenceScenariosTypes">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="BindingItemsScenarios">
+        <PropertyRef Name="ID_ScenariosTypes" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BindingObjectsStepScen_ID_Object">
+    <End Role="pObjects" Type="Self.pObjects" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="BindingObjectsStepScen" Type="Self.BindingObjectsStepScen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pObjects">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="BindingObjectsStepScen">
+        <PropertyRef Name="ID_Object" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BindingObjectsStepScen_ID_ScenDevice">
+    <End Role="ScenariosDevice" Type="Self.ScenariosDevice" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="BindingObjectsStepScen" Type="Self.BindingObjectsStepScen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ScenariosDevice">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="BindingObjectsStepScen">
+        <PropertyRef Name="ID_ScenDevice" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ClientFieldsValues_ClientFieldsNames">
+    <End Role="ClientFieldsNames" Type="Self.ClientFieldsNames" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ClientFieldsValues" Type="Self.ClientFieldsValues" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClientFieldsNames">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ClientFieldsValues">
+        <PropertyRef Name="field_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ClientFieldsValues_pList">
+    <End Role="pList" Type="Self.pList" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ClientFieldsValues" Type="Self.ClientFieldsValues" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pList">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ClientFieldsValues">
+        <PropertyRef Name="owner" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConditionStepScenarios_ParentID">
+    <End Role="ConditionStepScenarios" Type="Self.ConditionStepScenarios" Multiplicity="0..1" />
+    <End Role="ConditionStepScenarios1" Type="Self.ConditionStepScenarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ConditionStepScenarios">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ConditionStepScenarios1">
+        <PropertyRef Name="ParentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KONE_DopAccess_FK_GRAccess_ID">
+    <End Role="GrAccess" Type="Self.GrAccess" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Kone_DopAccess" Type="Self.Kone_DopAccess" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GrAccess">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Kone_DopAccess">
+        <PropertyRef Name="ID_Access" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KONE_СopAccess_FK_GRAccess_ID">
+    <End Role="GrAccess" Type="Self.GrAccess" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Kone_CopAccess" Type="Self.Kone_CopAccess" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GrAccess">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Kone_CopAccess">
+        <PropertyRef Name="ID_Access" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Guest_pList">
+    <End Role="pList" Type="Self.pList" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Guest" Type="Self.Guest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pList">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Guest">
+        <PropertyRef Name="PListID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kone_AllAccessMask_Kone_DOPGlobalDefaultAccessMask">
+    <End Role="Kone_DOPGlobalDefaultAccessMask" Type="Self.Kone_DOPGlobalDefaultAccessMask" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Kone_AllAccessMask" Type="Self.Kone_AllAccessMask" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kone_DOPGlobalDefaultAccessMask">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Kone_AllAccessMask">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KONE_COP_FK_KONE_C_KONE_COP">
+    <End Role="Kone_COP" Type="Self.Kone_COP" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Kone_CopAccess" Type="Self.Kone_CopAccess" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kone_COP">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Kone_CopAccess">
+        <PropertyRef Name="ID_Elevator" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KONE_COP_FK_KONE_E_KONE_KGS">
+    <End Role="Kone_KGS" Type="Self.Kone_KGS" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Kone_COP" Type="Self.Kone_COP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kone_KGS">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Kone_COP">
+        <PropertyRef Name="ID_KGS" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kone_COPSpecificMask_Kone_Elevator">
+    <End Role="Kone_COP" Type="Self.Kone_COP" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Kone_COPSpecificMask" Type="Self.Kone_COPSpecificMask" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kone_COP">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Kone_COPSpecificMask">
+        <PropertyRef Name="ID_Elevator" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kone_COPGlobalDefaultAccessMask_Kone_KGS">
+    <End Role="Kone_KGS" Type="Self.Kone_KGS" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Kone_COPGlobalDefaultAccessMask" Type="Self.Kone_COPGlobalDefaultAccessMask" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kone_KGS">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Kone_COPGlobalDefaultAccessMask">
+        <PropertyRef Name="ID_KGS" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kone_DestinationAccessMask_Kone_COPGlobalDefaultAccessMask">
+    <End Role="Kone_COPGlobalDefaultAccessMask" Type="Self.Kone_COPGlobalDefaultAccessMask" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Kone_DestinationAccessMask" Type="Self.Kone_DestinationAccessMask" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kone_COPGlobalDefaultAccessMask">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Kone_DestinationAccessMask">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kone_DOPGlobalDefaultAccessMask_Kone_KGS">
+    <End Role="Kone_KGS" Type="Self.Kone_KGS" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Kone_DOPGlobalDefaultAccessMask" Type="Self.Kone_DOPGlobalDefaultAccessMask" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kone_KGS">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Kone_DOPGlobalDefaultAccessMask">
+        <PropertyRef Name="ID_KGS" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KONE_DOP_FK_KONE_D_KONE_KGS">
+    <End Role="Kone_KGS" Type="Self.Kone_KGS" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Kone_DOP" Type="Self.Kone_DOP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kone_KGS">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Kone_DOP">
+        <PropertyRef Name="ID_KGS" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KONE_KGS_FK_RSLINES_ID">
+    <End Role="RSLines" Type="Self.RSLines" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Kone_KGS" Type="Self.Kone_KGS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RSLines">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Kone_KGS">
+        <PropertyRef Name="RSLines_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RelationsList_Components">
+    <End Role="ListComponents" Type="Self.ListComponents" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="RelProf" Type="Self.RelProf" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ListComponents">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="RelProf">
+        <PropertyRef Name="IDListComp" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Map_indicators_MapElementID">
+    <End Role="Map_Elm" Type="Self.Map_Elm" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="map_indicators" Type="Self.map_indicators" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Map_Elm">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="map_indicators">
+        <PropertyRef Name="MapElmId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_pBioAccess_To_pMark">
+    <End Role="pMark" Type="Self.pMark" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="pBioAccess" Type="Self.pBioAccess" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pMark">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="pBioAccess">
+        <PropertyRef Name="ID_pMark" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RSBioParams_To_pBioParams">
+    <End Role="pBioParams" Type="Self.pBioParams" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="RSBioParams" Type="Self.RSBioParams" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pBioParams">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="RSBioParams">
+        <PropertyRef Name="ID_Param" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RelationsListCar_pCar">
+    <End Role="pCar" Type="Self.pCar" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="RelationsListCar" Type="Self.RelationsListCar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pCar">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="RelationsListCar">
+        <PropertyRef Name="IdCar" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PList_PStuff">
+    <End Role="pList" Type="Self.pList" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tPersonalStuff" Type="Self.tPersonalStuff" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pList">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tPersonalStuff">
+        <PropertyRef Name="PListID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PList_PStufPhoto">
+    <End Role="pList" Type="Self.pList" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tPStuffPhoto" Type="Self.tPStuffPhoto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pList">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tPStuffPhoto">
+        <PropertyRef Name="IDPLIST" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RelationsListCar_pList">
+    <End Role="pList" Type="Self.pList" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="RelationsListCar" Type="Self.RelationsListCar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pList">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="RelationsListCar">
+        <PropertyRef Name="IdList" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RelationsPro_Files">
+    <End Role="ProFiles" Type="Self.ProFiles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="RelProf" Type="Self.RelProf" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProFiles">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="RelProf">
+        <PropertyRef Name="IDProfiles" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ValueDevItemsScenarios_ID_RefItemsScen">
+    <End Role="ReferenceItemsScenarios" Type="Self.ReferenceItemsScenarios" Multiplicity="1" />
+    <End Role="ValueDevItemsScenarios" Type="Self.ValueDevItemsScenarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ReferenceItemsScenarios">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ValueDevItemsScenarios">
+        <PropertyRef Name="ID_RefItemsScen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ValueItemsScenarios_ID_RefItemsScen">
+    <End Role="ReferenceItemsScenarios" Type="Self.ReferenceItemsScenarios" Multiplicity="1" />
+    <End Role="ValueItemsScenarios" Type="Self.ValueItemsScenarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ReferenceItemsScenarios">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ValueItemsScenarios">
+        <PropertyRef Name="ID_RefItemsScen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScenariosDevice_ID_ScenariosTypes">
+    <End Role="ReferenceScenariosTypes" Type="Self.ReferenceScenariosTypes" Multiplicity="1" />
+    <End Role="ScenariosDevice" Type="Self.ScenariosDevice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ReferenceScenariosTypes">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ScenariosDevice">
+        <PropertyRef Name="ID_ScenariosTypes" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScenariosFilterDevice_ID_ScenariosType">
+    <End Role="ReferenceScenariosTypes" Type="Self.ReferenceScenariosTypes" Multiplicity="1" />
+    <End Role="ScenariosFilterDevice" Type="Self.ScenariosFilterDevice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ReferenceScenariosTypes">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ScenariosFilterDevice">
+        <PropertyRef Name="ID_ScenariosType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RSBioParams_To_RSLines">
+    <End Role="RSLines" Type="Self.RSLines" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="RSBioParams" Type="Self.RSBioParams" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RSLines">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="RSBioParams">
+        <PropertyRef Name="ID_Device" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScenariosDevice_ID_Parent">
+    <End Role="ScenariosDevice" Type="Self.ScenariosDevice" Multiplicity="0..1" />
+    <End Role="ScenariosDevice1" Type="Self.ScenariosDevice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ScenariosDevice">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ScenariosDevice1">
+        <PropertyRef Name="ID_Parent" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ValueItemsScenarios_ID_ScenDevice">
+    <End Role="ScenariosDevice" Type="Self.ScenariosDevice" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ValueItemsScenarios" Type="Self.ValueItemsScenarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ScenariosDevice">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ValueItemsScenarios">
+        <PropertyRef Name="ID_ScenDevice" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RelationsListSet_Group">
+    <End Role="Settings_group" Type="Self.Settings_group" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Settings_Value" Type="Self.Settings_Value" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Settings_group">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Settings_Value">
+        <PropertyRef Name="Groups_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RefBook_PStuff">
+    <End Role="tReferenceBook" Type="Self.tReferenceBook" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tPersonalStuff" Type="Self.tPersonalStuff" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tReferenceBook">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tPersonalStuff">
+        <PropertyRef Name="ReferenceBookID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Gimnazia1Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AccessZone" EntityType="Self.AccessZone" />
+    <EntitySet Name="AcessPoint" EntityType="Self.AcessPoint" />
+    <EntitySet Name="adc" EntityType="Self.adc" />
+    <EntitySet Name="ApplicationModifData" EntityType="Self.ApplicationModifData" />
+    <EntitySet Name="Authorities" EntityType="Self.Authorities" />
+    <EntitySet Name="BindingCommandScenarios" EntityType="Self.BindingCommandScenarios" />
+    <EntitySet Name="BindingConditionStepScen" EntityType="Self.BindingConditionStepScen" />
+    <EntitySet Name="BindingGrObjectsStepScen" EntityType="Self.BindingGrObjectsStepScen" />
+    <EntitySet Name="BindingItemsDevScenarios" EntityType="Self.BindingItemsDevScenarios" />
+    <EntitySet Name="BindingItemsScenarios" EntityType="Self.BindingItemsScenarios" />
+    <EntitySet Name="BindingObjectsStepScen" EntityType="Self.BindingObjectsStepScen" />
+    <EntitySet Name="CameraMatrix" EntityType="Self.CameraMatrix" />
+    <EntitySet Name="Cameras" EntityType="Self.Cameras" />
+    <EntitySet Name="ClientFieldsNames" EntityType="Self.ClientFieldsNames" />
+    <EntitySet Name="ClientFieldsValues" EntityType="Self.ClientFieldsValues" />
+    <EntitySet Name="CodesList" EntityType="Self.CodesList" />
+    <EntitySet Name="ComPorts" EntityType="Self.ComPorts" />
+    <EntitySet Name="Comps" EntityType="Self.Comps" />
+    <EntitySet Name="CompTrns" EntityType="Self.CompTrns" />
+    <EntitySet Name="ConditionStepScenarios" EntityType="Self.ConditionStepScenarios" />
+    <EntitySet Name="ControlItems" EntityType="Self.ControlItems" />
+    <EntitySet Name="Counters" EntityType="Self.Counters" />
+    <EntitySet Name="DevCamerasItems" EntityType="Self.DevCamerasItems" />
+    <EntitySet Name="DevElms" EntityType="Self.DevElms" />
+    <EntitySet Name="devicemasterslave" EntityType="Self.devicemasterslave" />
+    <EntitySet Name="DevItems" EntityType="Self.DevItems" />
+    <EntitySet Name="drivers" EntityType="Self.drivers" />
+    <EntitySet Name="drivers_comps" EntityType="Self.drivers_comps" />
+    <EntitySet Name="dTypes" EntityType="Self.dTypes" />
+    <EntitySet Name="dTypesElement" EntityType="Self.dTypesElement" />
+    <EntitySet Name="DvsMass" EntityType="Self.DvsMass" />
+    <EntitySet Name="ElementsTypesGroups" EntityType="Self.ElementsTypesGroups" />
+    <EntitySet Name="EventGroup" EntityType="Self.EventGroup" />
+    <EntitySet Name="EventGroupCont" EntityType="Self.EventGroupCont" />
+    <EntitySet Name="EventOnModificationData" EntityType="Self.EventOnModificationData" />
+    <EntitySet Name="Events" EntityType="Self.Events" />
+    <EntitySet Name="EventsCategories" EntityType="Self.EventsCategories" />
+    <EntitySet Name="EvReply" EntityType="Self.EvReply" />
+    <EntitySet Name="GrAccess" EntityType="Self.GrAccess" />
+    <EntitySet Name="GrObjCont" EntityType="Self.GrObjCont" />
+    <EntitySet Name="GroupObj" EntityType="Self.GroupObj" />
+    <EntitySet Name="Groups" EntityType="Self.Groups" />
+    <EntitySet Name="GsmSettings" EntityType="Self.GsmSettings" />
+    <EntitySet Name="GTime" EntityType="Self.GTime" />
+    <EntitySet Name="Guest" EntityType="Self.Guest" />
+    <EntitySet Name="Holidays" EntityType="Self.Holidays" />
+    <EntitySet Name="interfaceprotocol" EntityType="Self.interfaceprotocol" />
+    <EntitySet Name="interfaces" EntityType="Self.interfaces" />
+    <EntitySet Name="ItemEvents" EntityType="Self.ItemEvents" />
+    <EntitySet Name="KeyObjs" EntityType="Self.KeyObjs" />
+    <EntitySet Name="Kone_AllAccessMask" EntityType="Self.Kone_AllAccessMask" />
+    <EntitySet Name="Kone_COP" EntityType="Self.Kone_COP" />
+    <EntitySet Name="Kone_CopAccess" EntityType="Self.Kone_CopAccess" />
+    <EntitySet Name="Kone_COPGlobalDefaultAccessMask" EntityType="Self.Kone_COPGlobalDefaultAccessMask" />
+    <EntitySet Name="Kone_COPSpecificMask" EntityType="Self.Kone_COPSpecificMask" />
+    <EntitySet Name="Kone_DestinationAccessMask" EntityType="Self.Kone_DestinationAccessMask" />
+    <EntitySet Name="Kone_DopAccess" EntityType="Self.Kone_DopAccess" />
+    <EntitySet Name="Kone_DOPGlobalDefaultAccessMask" EntityType="Self.Kone_DOPGlobalDefaultAccessMask" />
+    <EntitySet Name="Kone_DOPSpecificMask" EntityType="Self.Kone_DOPSpecificMask" />
+    <EntitySet Name="Kone_KGS" EntityType="Self.Kone_KGS" />
+    <EntitySet Name="LinesBroadcast" EntityType="Self.LinesBroadcast" />
+    <EntitySet Name="list_comments" EntityType="Self.list_comments" />
+    <EntitySet Name="ListComponents" EntityType="Self.ListComponents" />
+    <EntitySet Name="logs" EntityType="Self.logs" />
+    <EntitySet Name="logs_change_bd" EntityType="Self.logs_change_bd" />
+    <EntitySet Name="m_alarm" EntityType="Self.m_alarm" />
+    <EntitySet Name="Map_Elm" EntityType="Self.Map_Elm" />
+    <EntitySet Name="map_indicators" EntityType="Self.map_indicators" />
+    <EntitySet Name="MapElements" EntityType="Self.MapElements" />
+    <EntitySet Name="MapElementsLinks" EntityType="Self.MapElementsLinks" />
+    <EntitySet Name="MapElementsRegions" EntityType="Self.MapElementsRegions" />
+    <EntitySet Name="MapIndicatorsDefault" EntityType="Self.MapIndicatorsDefault" />
+    <EntitySet Name="MapInfoMarker" EntityType="Self.MapInfoMarker" />
+    <EntitySet Name="MasterSlave" EntityType="Self.MasterSlave" />
+    <EntitySet Name="NodeRepl" EntityType="Self.NodeRepl" />
+    <EntitySet Name="orion_globalValues" EntityType="Self.orion_globalValues" />
+    <EntitySet Name="pBioAccess" EntityType="Self.pBioAccess" />
+    <EntitySet Name="pBioParams" EntityType="Self.pBioParams" />
+    <EntitySet Name="pCar" EntityType="Self.pCar" />
+    <EntitySet Name="PCompany" EntityType="Self.PCompany" />
+    <EntitySet Name="PDivision" EntityType="Self.PDivision" />
+    <EntitySet Name="PersonsPhotos" EntityType="Self.PersonsPhotos" />
+    <EntitySet Name="pGroupExit" EntityType="Self.pGroupExit" />
+    <EntitySet Name="phone_numbers" EntityType="Self.phone_numbers" />
+    <EntitySet Name="pList" EntityType="Self.pList" />
+    <EntitySet Name="pListNetPorts" EntityType="Self.pListNetPorts" />
+    <EntitySet Name="pLogData" EntityType="Self.pLogData" />
+    <EntitySet Name="pMaps" EntityType="Self.pMaps" />
+    <EntitySet Name="pMark" EntityType="Self.pMark" />
+    <EntitySet Name="pObjCont" EntityType="Self.pObjCont" />
+    <EntitySet Name="pObjects" EntityType="Self.pObjects" />
+    <EntitySet Name="PPost" EntityType="Self.PPost" />
+    <EntitySet Name="PReason" EntityType="Self.PReason" />
+    <EntitySet Name="ProFiles" EntityType="Self.ProFiles" />
+    <EntitySet Name="PRooms" EntityType="Self.PRooms" />
+    <EntitySet Name="protocoldevices" EntityType="Self.protocoldevices" />
+    <EntitySet Name="protocols" EntityType="Self.protocols" />
+    <EntitySet Name="QueryLog" EntityType="Self.QueryLog" />
+    <EntitySet Name="RdrAccessPoint" EntityType="Self.RdrAccessPoint" />
+    <EntitySet Name="Reasons" EntityType="Self.Reasons" />
+    <EntitySet Name="ReferenceCommandScenarios" EntityType="Self.ReferenceCommandScenarios" />
+    <EntitySet Name="ReferenceItemsScenarios" EntityType="Self.ReferenceItemsScenarios" />
+    <EntitySet Name="ReferenceScenariosTypes" EntityType="Self.ReferenceScenariosTypes" />
+    <EntitySet Name="ReferenceTactics" EntityType="Self.ReferenceTactics" />
+    <EntitySet Name="RelatedCameras" EntityType="Self.RelatedCameras" />
+    <EntitySet Name="relation_phone_id_dev" EntityType="Self.relation_phone_id_dev" />
+    <EntitySet Name="RelationDiv" EntityType="Self.RelationDiv" />
+    <EntitySet Name="RelationsListCar" EntityType="Self.RelationsListCar" />
+    <EntitySet Name="RelProf" EntityType="Self.RelProf" />
+    <EntitySet Name="RemoteControlCategories" EntityType="Self.RemoteControlCategories" />
+    <EntitySet Name="RemoteControlCategoryToDTypesElement" EntityType="Self.RemoteControlCategoryToDTypesElement" />
+    <EntitySet Name="ReservLine" EntityType="Self.ReservLine" />
+    <EntitySet Name="RSLines" EntityType="Self.RSLines" />
+    <EntitySet Name="ScanDoc" EntityType="Self.ScanDoc" />
+    <EntitySet Name="ScenariosDevice" EntityType="Self.ScenariosDevice" />
+    <EntitySet Name="ScenariosFilterDevice" EntityType="Self.ScenariosFilterDevice" />
+    <EntitySet Name="Schedule" EntityType="Self.Schedule" />
+    <EntitySet Name="Script" EntityType="Self.Script" />
+    <EntitySet Name="Settings" EntityType="Self.Settings" />
+    <EntitySet Name="Settings_group" EntityType="Self.Settings_group" />
+    <EntitySet Name="Settings_Value" EntityType="Self.Settings_Value" />
+    <EntitySet Name="SmsGatesParams" EntityType="Self.SmsGatesParams" />
+    <EntitySet Name="SSLCertificate" EntityType="Self.SSLCertificate" />
+    <EntitySet Name="states_item" EntityType="Self.states_item" />
+    <EntitySet Name="Sys" EntityType="Self.Sys" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="SysGroup" EntityType="Self.SysGroup" />
+    <EntitySet Name="SysParam" EntityType="Self.SysParam" />
+    <EntitySet Name="SystemObjects" EntityType="Self.SystemObjects" />
+    <EntitySet Name="TimeCont" EntityType="Self.TimeCont" />
+    <EntitySet Name="TimeTable" EntityType="Self.TimeTable" />
+    <EntitySet Name="tKBPenals" EntityType="Self.tKBPenals" />
+    <EntitySet Name="tKBSections" EntityType="Self.tKBSections" />
+    <EntitySet Name="tKeyBoxes" EntityType="Self.tKeyBoxes" />
+    <EntitySet Name="tPersonalStuff" EntityType="Self.tPersonalStuff" />
+    <EntitySet Name="tPStuffLogData" EntityType="Self.tPStuffLogData" />
+    <EntitySet Name="tPStuffPhoto" EntityType="Self.tPStuffPhoto" />
+    <EntitySet Name="TreeCtrl" EntityType="Self.TreeCtrl" />
+    <EntitySet Name="TreeNode" EntityType="Self.TreeNode" />
+    <EntitySet Name="tReferenceBook" EntityType="Self.tReferenceBook" />
+    <EntitySet Name="TypeDocList" EntityType="Self.TypeDocList" />
+    <EntitySet Name="TypeShlDevice" EntityType="Self.TypeShlDevice" />
+    <EntitySet Name="ValueDevItemsScenarios" EntityType="Self.ValueDevItemsScenarios" />
+    <EntitySet Name="ValueItemsScenarios" EntityType="Self.ValueItemsScenarios" />
+    <EntitySet Name="VersionDB" EntityType="Self.VersionDB" />
+    <EntitySet Name="VideoArchive" EntityType="Self.VideoArchive" />
+    <EntitySet Name="VideoCamShots" EntityType="Self.VideoCamShots" />
+    <EntitySet Name="VideoEvents" EntityType="Self.VideoEvents" />
+    <EntitySet Name="VideoRecognizeAccessPoint" EntityType="Self.VideoRecognizeAccessPoint" />
+    <EntitySet Name="VideoRecognizeChannels" EntityType="Self.VideoRecognizeChannels" />
+    <EntitySet Name="VideoRecognizeProfiles" EntityType="Self.VideoRecognizeProfiles" />
+    <EntitySet Name="vInsp" EntityType="Self.vInsp" />
+    <EntitySet Name="vInspTypes" EntityType="Self.vInspTypes" />
+    <EntitySet Name="weightcamera" EntityType="Self.weightcamera" />
+    <EntitySet Name="WorkTimeZone" EntityType="Self.WorkTimeZone" />
+    <EntitySet Name="Codes_T12" EntityType="Self.Codes_T12" />
+    <EntitySet Name="Kone_DOP" EntityType="Self.Kone_DOP" />
+    <EntitySet Name="RSBioAccess" EntityType="Self.RSBioAccess" />
+    <EntitySet Name="RSBioAccess2" EntityType="Self.RSBioAccess2" />
+    <EntitySet Name="RSBioParams" EntityType="Self.RSBioParams" />
+    <EntitySet Name="FixVersionRsLine" EntityType="Self.FixVersionRsLine" />
+    <EntitySet Name="v_ChangeLogForDB" EntityType="Self.v_ChangeLogForDB" />
+    <AssociationSet Name="FK_KONE_Cop_FK_AсcessPoint_ID" Association="Self.FK_KONE_Cop_FK_AсcessPoint_ID">
+      <End Role="AcessPoint" EntitySet="AcessPoint" />
+      <End Role="Kone_COP" EntitySet="Kone_COP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KONE_Dop_FK_AсcessPoint_ID" Association="Self.FK_KONE_Dop_FK_AсcessPoint_ID">
+      <End Role="AcessPoint" EntitySet="AcessPoint" />
+      <End Role="Kone_DOP" EntitySet="Kone_DOP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventOnModificationData_ID_Application" Association="Self.FK_EventOnModificationData_ID_Application">
+      <End Role="ApplicationModifData" EntitySet="ApplicationModifData" />
+      <End Role="EventOnModificationData" EntitySet="EventOnModificationData" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RelationDiv_IdAuto" Association="Self.FK_RelationDiv_IdAuto">
+      <End Role="Authorities" EntitySet="Authorities" />
+      <End Role="RelationDiv" EntitySet="RelationDiv" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BindingCommandScenarios_ID_CommandScenarios" Association="Self.FK_BindingCommandScenarios_ID_CommandScenarios">
+      <End Role="ReferenceCommandScenarios" EntitySet="ReferenceCommandScenarios" />
+      <End Role="BindingCommandScenarios" EntitySet="BindingCommandScenarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BindingCommandScenarios_ID_ItemsScenarios" Association="Self.FK_BindingCommandScenarios_ID_ItemsScenarios">
+      <End Role="ReferenceItemsScenarios" EntitySet="ReferenceItemsScenarios" />
+      <End Role="BindingCommandScenarios" EntitySet="BindingCommandScenarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BindingConditionStepScen_ID_ConditionScen" Association="Self.FK_BindingConditionStepScen_ID_ConditionScen">
+      <End Role="ConditionStepScenarios" EntitySet="ConditionStepScenarios" />
+      <End Role="BindingConditionStepScen" EntitySet="BindingConditionStepScen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BindingConditionStepScen_ID_ScenDevice" Association="Self.FK_BindingConditionStepScen_ID_ScenDevice">
+      <End Role="ScenariosDevice" EntitySet="ScenariosDevice" />
+      <End Role="BindingConditionStepScen" EntitySet="BindingConditionStepScen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BindingGrObjectsStepScen_ID_Object" Association="Self.FK_BindingGrObjectsStepScen_ID_Object">
+      <End Role="GroupObj" EntitySet="GroupObj" />
+      <End Role="BindingGrObjectsStepScen" EntitySet="BindingGrObjectsStepScen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BindingGrObjectsStepScen_ID_ScenDevice" Association="Self.FK_BindingGrObjectsStepScen_ID_ScenDevice">
+      <End Role="ScenariosDevice" EntitySet="ScenariosDevice" />
+      <End Role="BindingGrObjectsStepScen" EntitySet="BindingGrObjectsStepScen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BindingItemsDevScenarios_ID_ItemsScenarios" Association="Self.FK_BindingItemsDevScenarios_ID_ItemsScenarios">
+      <End Role="ReferenceItemsScenarios" EntitySet="ReferenceItemsScenarios" />
+      <End Role="BindingItemsDevScenarios" EntitySet="BindingItemsDevScenarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BindingItemsScenarios_ID_ItemsScenarios" Association="Self.FK_BindingItemsScenarios_ID_ItemsScenarios">
+      <End Role="ReferenceItemsScenarios" EntitySet="ReferenceItemsScenarios" />
+      <End Role="BindingItemsScenarios" EntitySet="BindingItemsScenarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BindingItemsScenarios_ID_ScenariosTypes" Association="Self.FK_BindingItemsScenarios_ID_ScenariosTypes">
+      <End Role="ReferenceScenariosTypes" EntitySet="ReferenceScenariosTypes" />
+      <End Role="BindingItemsScenarios" EntitySet="BindingItemsScenarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BindingObjectsStepScen_ID_Object" Association="Self.FK_BindingObjectsStepScen_ID_Object">
+      <End Role="pObjects" EntitySet="pObjects" />
+      <End Role="BindingObjectsStepScen" EntitySet="BindingObjectsStepScen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BindingObjectsStepScen_ID_ScenDevice" Association="Self.FK_BindingObjectsStepScen_ID_ScenDevice">
+      <End Role="ScenariosDevice" EntitySet="ScenariosDevice" />
+      <End Role="BindingObjectsStepScen" EntitySet="BindingObjectsStepScen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ClientFieldsValues_ClientFieldsNames" Association="Self.FK_ClientFieldsValues_ClientFieldsNames">
+      <End Role="ClientFieldsNames" EntitySet="ClientFieldsNames" />
+      <End Role="ClientFieldsValues" EntitySet="ClientFieldsValues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ClientFieldsValues_pList" Association="Self.FK_ClientFieldsValues_pList">
+      <End Role="pList" EntitySet="pList" />
+      <End Role="ClientFieldsValues" EntitySet="ClientFieldsValues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConditionStepScenarios_ParentID" Association="Self.FK_ConditionStepScenarios_ParentID">
+      <End Role="ConditionStepScenarios" EntitySet="ConditionStepScenarios" />
+      <End Role="ConditionStepScenarios1" EntitySet="ConditionStepScenarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KONE_DopAccess_FK_GRAccess_ID" Association="Self.FK_KONE_DopAccess_FK_GRAccess_ID">
+      <End Role="GrAccess" EntitySet="GrAccess" />
+      <End Role="Kone_DopAccess" EntitySet="Kone_DopAccess" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KONE_СopAccess_FK_GRAccess_ID" Association="Self.FK_KONE_СopAccess_FK_GRAccess_ID">
+      <End Role="GrAccess" EntitySet="GrAccess" />
+      <End Role="Kone_CopAccess" EntitySet="Kone_CopAccess" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Guest_pList" Association="Self.FK_Guest_pList">
+      <End Role="pList" EntitySet="pList" />
+      <End Role="Guest" EntitySet="Guest" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kone_AllAccessMask_Kone_DOPGlobalDefaultAccessMask" Association="Self.FK_Kone_AllAccessMask_Kone_DOPGlobalDefaultAccessMask">
+      <End Role="Kone_DOPGlobalDefaultAccessMask" EntitySet="Kone_DOPGlobalDefaultAccessMask" />
+      <End Role="Kone_AllAccessMask" EntitySet="Kone_AllAccessMask" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KONE_COP_FK_KONE_C_KONE_COP" Association="Self.FK_KONE_COP_FK_KONE_C_KONE_COP">
+      <End Role="Kone_COP" EntitySet="Kone_COP" />
+      <End Role="Kone_CopAccess" EntitySet="Kone_CopAccess" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KONE_COP_FK_KONE_E_KONE_KGS" Association="Self.FK_KONE_COP_FK_KONE_E_KONE_KGS">
+      <End Role="Kone_KGS" EntitySet="Kone_KGS" />
+      <End Role="Kone_COP" EntitySet="Kone_COP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kone_COPSpecificMask_Kone_Elevator" Association="Self.FK_Kone_COPSpecificMask_Kone_Elevator">
+      <End Role="Kone_COP" EntitySet="Kone_COP" />
+      <End Role="Kone_COPSpecificMask" EntitySet="Kone_COPSpecificMask" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kone_COPGlobalDefaultAccessMask_Kone_KGS" Association="Self.FK_Kone_COPGlobalDefaultAccessMask_Kone_KGS">
+      <End Role="Kone_KGS" EntitySet="Kone_KGS" />
+      <End Role="Kone_COPGlobalDefaultAccessMask" EntitySet="Kone_COPGlobalDefaultAccessMask" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kone_DestinationAccessMask_Kone_COPGlobalDefaultAccessMask" Association="Self.FK_Kone_DestinationAccessMask_Kone_COPGlobalDefaultAccessMask">
+      <End Role="Kone_COPGlobalDefaultAccessMask" EntitySet="Kone_COPGlobalDefaultAccessMask" />
+      <End Role="Kone_DestinationAccessMask" EntitySet="Kone_DestinationAccessMask" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kone_DOPGlobalDefaultAccessMask_Kone_KGS" Association="Self.FK_Kone_DOPGlobalDefaultAccessMask_Kone_KGS">
+      <End Role="Kone_KGS" EntitySet="Kone_KGS" />
+      <End Role="Kone_DOPGlobalDefaultAccessMask" EntitySet="Kone_DOPGlobalDefaultAccessMask" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KONE_DOP_FK_KONE_D_KONE_KGS" Association="Self.FK_KONE_DOP_FK_KONE_D_KONE_KGS">
+      <End Role="Kone_KGS" EntitySet="Kone_KGS" />
+      <End Role="Kone_DOP" EntitySet="Kone_DOP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KONE_KGS_FK_RSLINES_ID" Association="Self.FK_KONE_KGS_FK_RSLINES_ID">
+      <End Role="RSLines" EntitySet="RSLines" />
+      <End Role="Kone_KGS" EntitySet="Kone_KGS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RelationsList_Components" Association="Self.FK_RelationsList_Components">
+      <End Role="ListComponents" EntitySet="ListComponents" />
+      <End Role="RelProf" EntitySet="RelProf" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Map_indicators_MapElementID" Association="Self.FK_Map_indicators_MapElementID">
+      <End Role="Map_Elm" EntitySet="Map_Elm" />
+      <End Role="map_indicators" EntitySet="map_indicators" />
+    </AssociationSet>
+    <AssociationSet Name="FK_pBioAccess_To_pMark" Association="Self.FK_pBioAccess_To_pMark">
+      <End Role="pMark" EntitySet="pMark" />
+      <End Role="pBioAccess" EntitySet="pBioAccess" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RSBioParams_To_pBioParams" Association="Self.FK_RSBioParams_To_pBioParams">
+      <End Role="pBioParams" EntitySet="pBioParams" />
+      <End Role="RSBioParams" EntitySet="RSBioParams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RelationsListCar_pCar" Association="Self.FK_RelationsListCar_pCar">
+      <End Role="pCar" EntitySet="pCar" />
+      <End Role="RelationsListCar" EntitySet="RelationsListCar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PList_PStuff" Association="Self.FK_PList_PStuff">
+      <End Role="pList" EntitySet="pList" />
+      <End Role="tPersonalStuff" EntitySet="tPersonalStuff" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PList_PStufPhoto" Association="Self.FK_PList_PStufPhoto">
+      <End Role="pList" EntitySet="pList" />
+      <End Role="tPStuffPhoto" EntitySet="tPStuffPhoto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RelationsListCar_pList" Association="Self.FK_RelationsListCar_pList">
+      <End Role="pList" EntitySet="pList" />
+      <End Role="RelationsListCar" EntitySet="RelationsListCar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RelationsPro_Files" Association="Self.FK_RelationsPro_Files">
+      <End Role="ProFiles" EntitySet="ProFiles" />
+      <End Role="RelProf" EntitySet="RelProf" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ValueDevItemsScenarios_ID_RefItemsScen" Association="Self.FK_ValueDevItemsScenarios_ID_RefItemsScen">
+      <End Role="ReferenceItemsScenarios" EntitySet="ReferenceItemsScenarios" />
+      <End Role="ValueDevItemsScenarios" EntitySet="ValueDevItemsScenarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ValueItemsScenarios_ID_RefItemsScen" Association="Self.FK_ValueItemsScenarios_ID_RefItemsScen">
+      <End Role="ReferenceItemsScenarios" EntitySet="ReferenceItemsScenarios" />
+      <End Role="ValueItemsScenarios" EntitySet="ValueItemsScenarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScenariosDevice_ID_ScenariosTypes" Association="Self.FK_ScenariosDevice_ID_ScenariosTypes">
+      <End Role="ReferenceScenariosTypes" EntitySet="ReferenceScenariosTypes" />
+      <End Role="ScenariosDevice" EntitySet="ScenariosDevice" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScenariosFilterDevice_ID_ScenariosType" Association="Self.FK_ScenariosFilterDevice_ID_ScenariosType">
+      <End Role="ReferenceScenariosTypes" EntitySet="ReferenceScenariosTypes" />
+      <End Role="ScenariosFilterDevice" EntitySet="ScenariosFilterDevice" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RSBioParams_To_RSLines" Association="Self.FK_RSBioParams_To_RSLines">
+      <End Role="RSLines" EntitySet="RSLines" />
+      <End Role="RSBioParams" EntitySet="RSBioParams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScenariosDevice_ID_Parent" Association="Self.FK_ScenariosDevice_ID_Parent">
+      <End Role="ScenariosDevice" EntitySet="ScenariosDevice" />
+      <End Role="ScenariosDevice1" EntitySet="ScenariosDevice" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ValueItemsScenarios_ID_ScenDevice" Association="Self.FK_ValueItemsScenarios_ID_ScenDevice">
+      <End Role="ScenariosDevice" EntitySet="ScenariosDevice" />
+      <End Role="ValueItemsScenarios" EntitySet="ValueItemsScenarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RelationsListSet_Group" Association="Self.FK_RelationsListSet_Group">
+      <End Role="Settings_group" EntitySet="Settings_group" />
+      <End Role="Settings_Value" EntitySet="Settings_Value" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RefBook_PStuff" Association="Self.FK_RefBook_PStuff">
+      <End Role="tReferenceBook" EntitySet="tReferenceBook" />
+      <End Role="tPersonalStuff" EntitySet="tPersonalStuff" />
+    </AssociationSet>
+    <FunctionImport Name="fn_ClientObjectTypeToDbType" IsComposable="true" ReturnType="Collection(Gimnazia1Model.fn_ClientObjectTypeToDbType_Result)">
+      <Parameter Name="ClietnObjTypes" Mode="In" Type="String" />
+      <Parameter Name="Delimeter" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="fn_ParserStrToTable" IsComposable="true" ReturnType="Collection(Gimnazia1Model.fn_ParserStrToTable_Result)">
+      <Parameter Name="input_str" Mode="In" Type="String" />
+      <Parameter Name="delimeter" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="fn_SelectCamerasTreePlan" IsComposable="true" ReturnType="Collection(Gimnazia1Model.fn_SelectCamerasTreePlan_Result)">
+      <Parameter Name="ID_Comp" Mode="In" Type="Int32" />
+      <Parameter Name="GType" Mode="In" Type="Int32" />
+      <Parameter Name="isMap" Mode="In" Type="Boolean" />
+      <Parameter Name="ID_Object" Mode="In" Type="Int32" />
+      <Parameter Name="ID_Map" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="fn_SelectDevicesTreePlan" IsComposable="true" ReturnType="Collection(Gimnazia1Model.fn_SelectDevicesTreePlan_Result)">
+      <Parameter Name="ID_Comp" Mode="In" Type="Int32" />
+      <Parameter Name="GType" Mode="In" Type="Int32" />
+      <Parameter Name="isMap" Mode="In" Type="Boolean" />
+      <Parameter Name="ID_Object" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="fn_SelectDoorsTreePlan" IsComposable="true" ReturnType="Collection(Gimnazia1Model.fn_SelectDoorsTreePlan_Result)">
+      <Parameter Name="ID_Comp" Mode="In" Type="Int32" />
+      <Parameter Name="GType" Mode="In" Type="Int32" />
+      <Parameter Name="isMap" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="fn_SelectGroupObjectsTreePlan" IsComposable="true" ReturnType="Collection(Gimnazia1Model.fn_SelectGroupObjectsTreePlan_Result)">
+      <Parameter Name="ID_Comp" Mode="In" Type="Int32" />
+      <Parameter Name="GType" Mode="In" Type="Int32" />
+      <Parameter Name="ID_Map" Mode="In" Type="Int32" />
+      <Parameter Name="isMap" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="fn_SelectLinkTreePlan" IsComposable="true" ReturnType="Collection(Gimnazia1Model.fn_SelectLinkTreePlan_Result)">
+      <Parameter Name="ID_Comp" Mode="In" Type="Int32" />
+      <Parameter Name="GType" Mode="In" Type="Int32" />
+      <Parameter Name="ID_Map" Mode="In" Type="Int32" />
+      <Parameter Name="isMap" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="fn_SelectMapElements" IsComposable="true" ReturnType="Collection(Gimnazia1Model.fn_SelectMapElements_Result)">
+      <Parameter Name="ID_Map" Mode="In" Type="Int32" />
+      <Parameter Name="ID_Section" Mode="In" Type="Int32" />
+      <Parameter Name="GTypes" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="fn_SelectMapIndicatorsDefault" IsComposable="true" ReturnType="Collection(Gimnazia1Model.fn_SelectMapIndicatorsDefault_Result)" />
+    <FunctionImport Name="fn_SelectObjectsTreePlan" IsComposable="true" ReturnType="Collection(Gimnazia1Model.fn_SelectObjectsTreePlan_Result)">
+      <Parameter Name="ID_Comp" Mode="In" Type="Int32" />
+      <Parameter Name="GType" Mode="In" Type="Int32" />
+      <Parameter Name="ID_Map" Mode="In" Type="Int32" />
+      <Parameter Name="isMap" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="fn_SelectReadersTreePlan" IsComposable="true" ReturnType="Collection(Gimnazia1Model.fn_SelectReadersTreePlan_Result)">
+      <Parameter Name="ID_Comp" Mode="In" Type="Int32" />
+      <Parameter Name="GType" Mode="In" Type="Int32" />
+      <Parameter Name="isMap" Mode="In" Type="Boolean" />
+      <Parameter Name="ID_Object" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="fn_SelectScenarios" IsComposable="true" ReturnType="Collection(Gimnazia1Model.fn_SelectScenarios_Result)" />
+    <FunctionImport Name="fn_SelectScenariosDevicesName" IsComposable="true" ReturnType="Collection(Gimnazia1Model.fn_SelectScenariosDevicesName_Result)">
+      <Parameter Name="DeviceType" Mode="In" Type="Int32" />
+      <Parameter Name="isScenarios" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="fn_SelectSectionInputTreePlan" IsComposable="true" ReturnType="Collection(Gimnazia1Model.fn_SelectSectionInputTreePlan_Result)">
+      <Parameter Name="ID_Comp" Mode="In" Type="Int32" />
+      <Parameter Name="GType" Mode="In" Type="Int32" />
+      <Parameter Name="isMap" Mode="In" Type="Boolean" />
+      <Parameter Name="ID_Object" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="fn_SelectSectionOutputTreePlan" IsComposable="true" ReturnType="Collection(Gimnazia1Model.fn_SelectSectionOutputTreePlan_Result)">
+      <Parameter Name="ID_Comp" Mode="In" Type="Int32" />
+      <Parameter Name="GType" Mode="In" Type="Int32" />
+      <Parameter Name="isMap" Mode="In" Type="Boolean" />
+      <Parameter Name="ID_Object" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="fn_SelectZoneIndicatorsTreePlan" IsComposable="true" ReturnType="Collection(Gimnazia1Model.fn_SelectZoneIndicatorsTreePlan_Result)">
+      <Parameter Name="ID_Map" Mode="In" Type="Int32" />
+      <Parameter Name="ID_Object" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usfGetUnusedPenalList" IsComposable="true" ReturnType="Collection(Gimnazia1Model.usfGetUnusedPenalList_Result)">
+      <Parameter Name="PListID" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>
